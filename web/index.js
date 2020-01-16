@@ -11,12 +11,12 @@ function hello() {
 //   	x.style.display = "none";
 //   }
 
-  if (x.style.visibility === "hidden") {
-		x.style.visibility = "visible";
-		y.style.background = "yellowgreen";
-  } else {
-  	x.style.visibility = "hidden";
+  if (x.style.visibility === "visible") {
+		x.style.visibility = "hidden";
 		x.style.background = url('HeadrickDavid.jpg');
+  } else {
+  	x.style.visibility = "visible";
+		y.style.background = "yellowgreen";
   }
 
 }
