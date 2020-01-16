@@ -14,9 +14,11 @@ function hello() {
   if (text.style.visibility === "visible") {
 		text.style.visibility = "hidden";
 		circle.style.backgroundColor = "none";
+		circle.style.visibility = "visible";
   } else {
   	text.style.visibility = "visible";
 		circle.style.backgroundColor = "yellowgreen";
+		circle.style.visibility = "hidden";
   }
 
 }
