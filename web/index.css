@@ -45,7 +45,7 @@
 	  box-shadow: inset 0px 0px 3px 2px rgba(0,0,0,0.5);
   }
 
-#circle:hover {
+#text:hover {
 	cursor: pointer;
   background-color: lime;
 }
