@@ -13,10 +13,10 @@ function hello() {
 
   if (text.style.visibility === "visible") {
 		text.style.visibility = "hidden";
-		circle.style.backgroundColor = "yellowgreen";
+		circle.style.backgroundColor = "none";
   } else {
   	text.style.visibility = "visible";
-		circle.style.backgroundColor = "none";
+		circle.style.backgroundColor = "yellowgreen";
   }
 
 }
