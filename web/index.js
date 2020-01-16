@@ -16,7 +16,7 @@ function hello() {
 		circle.style.backgroundColor = "yellowgreen";
   } else {
   	text.style.visibility = "visible";
-		circle.style.background = url('HeadrickDavid.jpg');
+		circle.style.background = "url('HeadrickDavid.jpg')";
   }
 
 }
