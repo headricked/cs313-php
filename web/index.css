@@ -16,7 +16,8 @@
   }
 
 .circle span {
-/*   display: block; */
-  display: none;
+  display: block;
+/*   display: none; */
   font-size: 2rem;
+  background-color: yellowgreen;
 }
