@@ -14,9 +14,11 @@ function hello() {
   if (text.style.visibility === "visible") {
 		text.style.visibility = "hidden";
 		circle.style.backgroundColor = "yellowgreen";
+		circle.style.background = "none";
   } else {
   	text.style.visibility = "visible";
 		circle.style.background = "url('HeadrickDavid.jpg')";
+		circle.style.backgroundColor = "none"";
   }
 
 }
