@@ -1,7 +1,7 @@
 /* index.js */
 function hello() {
-	var x = document.getElementById("hello");
-	var y = document.getElementById("circle");
+	var text = document.getElementById("hello");
+	var circle = document.getElementById("circle");
 
 //   if (x.style.display === "none") {
 // //   	x.style.display = "block";
@@ -11,12 +11,12 @@ function hello() {
 //   	x.style.display = "none";
 //   }
 
-  if (x.style.visibility === "visible") {
-		x.style.visibility = "hidden";
-		y.style.background = url('HeadrickDavid.jpg');
+  if (text.style.visibility === "visible") {
+		text.style.visibility = "hidden";
+		circle.style.background = url('HeadrickDavid.jpg');
   } else {
-  	x.style.visibility = "visible";
-		y.style.background = "yellowgreen";
+  	text.style.visibility = "visible";
+		circle.style.background = "yellowgreen";
   }
 
 }
