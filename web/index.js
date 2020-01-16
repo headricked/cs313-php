@@ -11,16 +11,18 @@ function hello() {
 //   	x.style.display = "none";
 //   }
 
-//   if (text.style.visibility === "hidden") {
-// 		text.style.visibility = "visible";
-//   } else {
-//   	text.style.visibility = "hidden";
-//   }
-
-  if (circle.style.backgroundImage === "none") {
-		circle.style.backgroundImage = "initial";
+  if (text.style.visibility === "hidden") {
+		text.style.visibility = "visible";
+		circle.style.backgroundColor = "initial";
   } else {
-  	circle.style.backgroundImage = "none";
+  	text.style.visibility = "hidden";
+		circle.style.backgroundColor = "none";
   }
+
+//   if (circle.style.backgroundImage === "none") {
+// 		circle.style.backgroundImage = "initial";
+//   } else {
+//   	circle.style.backgroundImage = "none";
+//   }
 
 }
