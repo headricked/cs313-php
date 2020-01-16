@@ -1,7 +1,7 @@
 /* index.js */
 function hello() {
-	var text = document.getElementById("hello");
-	var circle = document.getElementById("circle");
+	var text = document.getElementById("text");
+	var circle = document.getElementById("image");
 
 //   if (x.style.display === "none") {
 // //   	x.style.display = "block";
