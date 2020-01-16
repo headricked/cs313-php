@@ -10,11 +10,11 @@ function hello() {
 //   	x.style.display = "none";
 //   }
 
-  if (x.style.visibility === "visible") {
-		x.style.background = url('HeadrickDavid.jpg');
-		x.style.visibility = "hidden";
+  if (x.style.visibility === "hidden") {
+// 		x.style.background = url('HeadrickDavid.jpg');
+		x.style.visibility = "visible";
   } else {
-  	x.style.display = "visible";
+  	x.style.visibility = "hidden";
   }
 
 }
