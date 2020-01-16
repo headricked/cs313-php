@@ -9,6 +9,7 @@
     line-height: 5rem;
 /*     background-color: yellowgreen; */
     background-image: url("HeadrickDavid.jpg");
+	  background-size: auto;
   }
 
   .circle span {
