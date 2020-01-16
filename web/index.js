@@ -13,12 +13,12 @@ function hello() {
 
   if (text.style.visibility === "visible") {
 		text.style.visibility = "hidden";
-		circle.style.backgroundColor = "none";
-		circle.style.background = "url('HeadrickDavid'.jpg)";
+		circle.style.backgroundColor = "transparent";
+// 		circle.style.background = "url('HeadrickDavid'.jpg)";
   } else {
   	text.style.visibility = "visible";
 		circle.style.backgroundColor = "yellowgreen";
-		circle.style.visibility = "visible";
+// 		circle.style.visibility = "visible";
   }
 
 }
