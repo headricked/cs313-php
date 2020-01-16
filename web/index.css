@@ -10,7 +10,6 @@
     border-radius: 100%;
     border: 1px solid yellowgreen;
     line-height: 5rem;
-	  background-color: yellowgreen;
     background-image: url("HeadrickDavid.jpg");
 	  background-size: 5rem 5rem;
 	  box-shadow: inset 0px 0px 3px 2px rgba(0,0,0,0.5);
@@ -25,4 +24,5 @@
 /*   display: none; */
 	visibility: visible;
   font-size: 2rem;
+  background-color: yellowgreen;
 }
