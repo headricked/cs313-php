@@ -11,11 +11,11 @@ function hello() {
 //   	x.style.display = "none";
 //   }
 
-  if (text.style.visibility === "visible") {
-		text.style.visibility = "hidden";
+  if (text.style.visibility === "hidden") {
+		text.style.visibility = "visible";
 		circle.style.background = "'none' 'initial'";
   } else {
-  	text.style.visibility = "visible";
+  	text.style.visibility = "hidden";
 		circle.style.background = "'initial' 'none'";
   }
 
