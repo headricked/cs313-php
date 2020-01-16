@@ -11,14 +11,14 @@ function hello() {
 //   	x.style.display = "none";
 //   }
 
-  if (text.style.visibility === "hidden") {
-		text.style.visibility = "visible";
-		circle.style.backgroundColor = "initial";
-		circle.style.backgroundImage = "none";
-  } else {
-  	text.style.visibility = "hidden";
+  if (text.style.visibility === "visible") {
+		text.style.visibility = "hidden";
 		circle.style.backgroundColor = "none";
 		circle.style.backgroundImage = "initial";
+  } else {
+  	text.style.visibility = "visible";
+		circle.style.backgroundColor = "initial";
+		circle.style.backgroundImage = "none";
   }
 
 }
