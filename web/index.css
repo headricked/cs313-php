@@ -17,7 +17,8 @@
   }
 
 .circle span {
-  display: block;
+/*   display: block; */
 /*   display: none; */
+	visibility: visible;
   font-size: 2rem;
 }
