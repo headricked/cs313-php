@@ -14,7 +14,7 @@ function hello() {
   if (text.style.visibility === "visible") {
 		text.style.visibility = "hidden";
 		circle.style.backgroundColor = "transparent";
-// 		circle.style.background = "url('HeadrickDavid'.jpg)";
+		circle.style.background = "url('HeadrickDavid'.jpg)";
   } else {
   	text.style.visibility = "visible";
 		circle.style.backgroundColor = "yellowgreen";
