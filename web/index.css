@@ -1,7 +1,6 @@
 /* index.css */
 body {
 	margin: 10px;
-	font-size: 1rem;
 }
 
 #text {
@@ -43,7 +42,8 @@ body {
 	border: solid 1px rgb(138,185,45);
 	color: rgb(0,0,0);
 	text-decoration: none;
-	text-align: center;
+	display: block;
+	margin: 10px 0px;
 }
 
 #button:hover {
