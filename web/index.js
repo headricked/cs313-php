@@ -4,6 +4,7 @@ function hello() {
 
   if (x.style.display === "none") {
   	x.style.display = "block";
+  	x.style.background-color = "none";
   } else {
   	x.style.display = "none";
   }
