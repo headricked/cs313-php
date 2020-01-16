@@ -13,10 +13,10 @@ function hello() {
 
   if (x.style.visibility === "hidden") {
 		x.style.visibility = "visible";
+		y.style.background = "yellowgreen";
   } else {
   	x.style.visibility = "hidden";
-// 		x.style.background = url('HeadrickDavid.jpg');
-		y.style.background = "yellowgreen";
+		x.style.background = url('HeadrickDavid.jpg');
   }
 
 }
