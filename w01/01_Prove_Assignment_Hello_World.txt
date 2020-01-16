@@ -1,0 +1,26 @@
+1. Copy and paste the URL for your Heroku web application:
+https://dashboard.heroku.com/apps/shrouded-everglades-98637
+
+
+2. Copy and paste the URL for your GitHub source code repository:
+https://github.com/headricked/cs313-php
+
+3. Briefly list and describe the elements of the application that are functioning. Include any special instructions about how to login and/or use your application.
+The HTML page is functioning as expected. The words "Hello World!" are displaying as expected. The additional CSS file is successfully handling the font color and background color, at both normal state and hover state. The additional JavaScript file is successfully handling the HTML button onclick event that changes the text "Hello World!" to "Hola Mundo!".
+
+
+4. Briefly describe any pieces of the assignment that are not yet working correctly.
+All pieces of the assignment are functioning correctly.
+
+
+5. Briefly describe the "coolest" thing you learned while completing this assignment.
+The coolest thing I learned while completing this assignment is how to use the terminal application to use Visual Studio Code IDE to edit files. I needed to research how to do so because the assignment instructions did not appear to explain how, or were not clear. As a result, I found a good answer to my question on Stack Exchange and was able to make the connection to use the terminal command for Visual Studio Code.
+
+
+6. Please select the category you feel best describes your assignment: 5 Shows creativity and excels above and beyond requirements
+
+
+7. Provide a brief justification (1-2 sentences) for selecting that category.
+I scored myself a 5 because I went above and beyond the requirements of making a simple HTML page; I added style and functionality to the static page by referring to:
+ (a) a CSS file to set the style rules and behaviors, and
+ (b) a JavaScript file to add onclick functionality to a button that, when pressed, changed the words "Hello World" to "Hola Mundo".

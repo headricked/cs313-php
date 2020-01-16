@@ -1,0 +1,10 @@
+h1 {
+    color: blue;
+    padding: 10px;
+    background-color: lightblue;
+}
+
+h1:hover {
+    color: red;
+    background-color: lightcoral;
+}
