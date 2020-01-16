@@ -13,12 +13,8 @@ function hello() {
 
   if (text.style.visibility === "hidden") {
 		text.style.visibility = "visible";
-		circle.style.backgroundColor = "initial";
-		circle.style.backgroundImage = "none";
   } else {
   	text.style.visibility = "hidden";
-		circle.style.backgroundColor = "none";
-		circle.style.backgroundImage = "initial";
   }
 
 }
