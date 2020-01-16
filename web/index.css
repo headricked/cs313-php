@@ -39,6 +39,7 @@
     width: 5rem;
     height: 5rem;
     border-radius: 100%;
+    border: 1px solid yellowgreen;
     background-image: url("HeadrickDavid.jpg");
 	  background-size: 5rem 5rem;
 	  box-shadow: inset 0px 0px 3px 2px rgba(0,0,0,0.5);
