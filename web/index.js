@@ -12,9 +12,9 @@ function hello() {
 //   }
 
   if (text.style.display === "none") {
-		text.style.visibility = "inline";
+		text.style.display = "inline";
   } else {
-  	text.style.visibility = "none";
+  	text.style.display = "none";
   }
 
 //   if (circle.style.backgroundImage === "none") {
