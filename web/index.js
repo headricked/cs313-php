@@ -11,10 +11,10 @@ function hello() {
 //   	x.style.display = "none";
 //   }
 
-  if (text.style.display === "none") {
-		text.style.display = "inline";
+  if (text.style.visibility === "hidden") {
+		text.style.visibility = "visible";
   } else {
-  	text.style.display = "none";
+  	text.style.visibility = "hidden";
   }
 
 //   if (circle.style.backgroundImage === "none") {
