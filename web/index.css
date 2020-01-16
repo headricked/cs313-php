@@ -4,8 +4,7 @@
 .circle {
     width: 5rem;
     height: 5rem;
-    border: 1px solid #000;
-/*     background: #fff; */
+    border: 1rem solid #000;
     text-align: center;
     border-radius: 100%;
     line-height: 5rem;
