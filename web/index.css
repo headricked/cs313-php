@@ -1,21 +1,4 @@
 /* index.css */
-
-
-/* 
-#circle {
-		float: left;
-		margin: 0 1rem 1rem 0;
-    width: 5rem;
-    height: 5rem;
-    text-align: center;
-    border-radius: 100%;
-    border: 1px solid yellowgreen;
-    line-height: 5rem;
-	  background-color: yellowgreen;
-	  background-size: 5rem 5rem;
-	  font-size: 2rem;
-  }
- */
   
 #text {
 		float: left;
@@ -24,13 +7,18 @@
     height: 5rem;
     text-align: center;
     border-radius: 100%;
-/*     border: 1px solid yellowgreen; */
     line-height: 5rem;
-	  background-color: rgba(154, 205, 50, 1);
+	  background-color: rgb(154,205,50);
 	  background-size: 5rem 5rem;
 	  font-size: 2rem;
 	  display: inline;
 	  opacity: 1;
+}
+
+#text:hover {
+	cursor: pointer;
+  background-color: rgb(138,185,45);
+  transition
 }
 
 #image {
@@ -44,8 +32,3 @@
 	  background-size: 5rem 5rem;
 	  box-shadow: inset 0px 0px 3px 2px rgba(0,0,0,0.5);
   }
-
-#text:hover {
-	cursor: pointer;
-  background-color: rgba(154, 205, 50, 0.5);
-}
