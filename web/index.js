@@ -1,7 +1,7 @@
 /* index.js */
 function hello() {
 	var text = document.getElementById("text");
-	var circle = document.getElementById("image");
+	var image = document.getElementById("image");
 
 //   if (x.style.display === "none") {
 // //   	x.style.display = "block";
@@ -11,10 +11,16 @@ function hello() {
 //   	x.style.display = "none";
 //   }
 
-  if (text.style.visibility === "hidden") {
-		text.style.visibility = "visible";
+//   if (text.style.visibility === "hidden") {
+// 		text.style.visibility = "visible";
+//   } else {
+//   	text.style.visibility = "hidden";
+//   }
+
+  if (text.style.opacity === "0") {
+		text.style.opacity = "1";
   } else {
-  	text.style.visibility = "hidden";
+  	text.style.opacity = "0";
   }
 
 //   if (circle.style.backgroundImage === "none") {
