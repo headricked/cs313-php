@@ -1,10 +1,5 @@
 /* index.css */
 
-h1 {
-    background-color: yellowgreen;
-    padding: 2rem;
-    font-size: 2rem;
-}
 
 .circle {
     width: 60px;
@@ -17,9 +12,10 @@ h1 {
     line-height: 16px;
     padding-top: 14px;
   }
-  .circle span{
-    font-size: 14px;
-    text-transform: uppercase;
+  .circle h1{
     margin-top: 5px;
     display: block;
+    background-color: yellowgreen;
+    padding: 2rem;
+    font-size: 2rem;
   }
