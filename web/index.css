@@ -1,4 +1,7 @@
 /* index.css */
+body {
+    margin: 10px;
+}
 
 #text {
     float: left;
