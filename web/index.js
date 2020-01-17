@@ -9,3 +9,5 @@ function reveal() {
   }
 
 }
+
+alert("HOLA!");
