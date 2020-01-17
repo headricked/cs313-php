@@ -1,25 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Page Title</title>
-<style>
-	.btn-group {
-    	margin-top:2%;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>David Headrick Portfolio</title>
+<!--     <link rel="stylesheet" type="text/css" href="index.css"> -->
+		<style>
+			.btn-group {
+				margin-top:2%;
         display: flex;
         justify-content: center;
-    }
+    	}
     
-    button {
-    	padding: 0.25rem 0.5rem;
-    }
-</style>
+    	button {
+    		padding: 0.25rem 0.5rem;
+    	}
+		</style>
 </head>
 <body>
-	<p>This is a paragraph</p>
+    <section>
+        <div>
+        	<div id="image">
+        		<span id="text" onclick="reveal(this)">Hi.</span>
+        	</div>
+        </div>
+        <p>My name is David Headrick.</p>
+        <p>I'm honing my web application development skills through taking online courses through BYU-Idaho.</p>
+        <p>I enjoy being creative and finding ways to use technology to solve challenging problems.</p>
+
+<!-- 
+        <div class="btn-wrapper">
+	       	<a href="assignments.html">
+	       		<button class="button">See my Assignments Page</button>
+	       	</a>
+       	</div>
+ -->
+       	
 	<div class="btn-group" role="group" aria-label="Basic example">
     	<a href="http://www.ups.com" target="_blank">
         	<button id="button">UPS</button>
         </a>
     </div>
+
+       	
+    </section>
+    <script src="index.js"></script>
 </body>
 </html>
