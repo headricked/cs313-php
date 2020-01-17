@@ -14,8 +14,6 @@ body {
     background-color: rgb(154,205,50);
     background-size: 5rem 5rem;
     font-size: 2rem;
-    /* display: inline; */
-    /* opacity: 1; */
 }
 
 #text:hover {
