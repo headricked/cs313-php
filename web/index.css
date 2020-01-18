@@ -42,4 +42,5 @@ body {
 button {
     padding: 0.25rem 0.5rem;
     background-color: #ffc400;
+    border: none;
 }
