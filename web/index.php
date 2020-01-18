@@ -1,5 +1,3 @@
 <?php
-
-  phpinfo();
-
+  echo "<p>Copyright &copy; " . date("Y") . " David Headrick</p>";
 ?>
