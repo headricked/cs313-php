@@ -24,6 +24,9 @@
             </a>
         </div>
     </section>
+    <footer>
+        <?php include 'footer.php';?>
+    </footer>
     <script src="index.js"></script>
 </body>
 </html>
