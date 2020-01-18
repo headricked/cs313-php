@@ -9,6 +9,11 @@
 </head>
 
 <body>
+    <header>
+        <nav>
+            <?php include 'header.php';?>
+        </nav>
+    </header>
     <section>
         <div>
         	<div id="image">
