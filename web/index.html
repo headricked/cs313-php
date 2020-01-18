@@ -18,7 +18,7 @@
         <h1>I'm David Headrick.</h1>
         <p>I'm honing my web application development skills through taking online courses through BYU-Idaho.</p>
         <p>I enjoy being creative and finding ways to use technology to solve challenging problems.</p>
-	    <div class="btn-group" role="group" aria-label="Basic example">
+	    <div class="btn-wrapper" role="group" aria-label="Basic example">
     	    <a href="assignments.html">
         	    <button id="button">View my assignments</button>
             </a>
