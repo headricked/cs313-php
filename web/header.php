@@ -9,6 +9,7 @@
     </head>
 
     <body>
+        <!-- modified from w3schools.com -->
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <div class="navbar-header">
