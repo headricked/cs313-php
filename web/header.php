@@ -21,7 +21,7 @@
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.html">Home</a></li>
+                        <li class="active"><a href="index.php">Home</a></li>
                         <li><a href="#">Week01</a></li>
                         <li><a href="#">Week02</a></li>
                         <li><a href="#">Week03</a></li>
