@@ -18,12 +18,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>                        
                 </button>
-                <a class="navbar-brand" href="#">David Headrick | Portfolio</a>
+                <a class="navbar-brand" href="index.php">David Headrick | Portfolio</a>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="index.php">Home</a></li>
-                        <li><a href="#">Week01</a></li>
+                        <li><a href="week01.html">Week01</a></li>
                         <li><a href="#">Week02</a></li>
                         <li><a href="#">Week03</a></li>
                     </ul>
