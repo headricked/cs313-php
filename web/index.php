@@ -24,7 +24,7 @@
         <p>I'm honing my web application development skills through learning and practice.</p>
         <p>I enjoy being creative and finding ways to use technology to solve challenging problems.</p>
 	    <div class="btn-wrapper">
-    	    <a class="a-btn" href="assignments.html">
+    	    <a class="a-btn" href="assignments.php">
         	    <button id="button">View my assignments</button>
             </a>
         </div>
