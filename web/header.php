@@ -23,9 +23,18 @@
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="index.php">Home</a></li>
-                        <li><a href="week01.html">Week01</a></li>
-                        <li><a href="#">Week02</a></li>
+                        <li><a href="week02.html">Week02</a></li>
                         <li><a href="#">Week03</a></li>
+                        <li><a href="#">Week04</a></li>
+                        <li><a href="#">Week05</a></li>
+                        <li><a href="#">Week06</a></li>
+                        <li><a href="#">Week07</a></li>
+                        <li><a href="#">Week08</a></li>
+                        <li><a href="#">Week09</a></li>
+                        <li><a href="#">Week10</a></li>
+                        <li><a href="#">Week11</a></li>
+                        <li><a href="#">Week12</a></li>
+                        <li><a href="#">Week13</a></li>
                     </ul>
                 </div>
             </div>
