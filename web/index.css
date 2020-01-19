@@ -38,13 +38,13 @@ section {
 	justify-content: center;
 }
 
-button {
+#button {
     padding: 0.25rem 0.5rem;
     background-color: #ffc400;
     border: #b58b00;
 }
 
-button:hover {
+#button:hover {
     background-color: #b58b00;
 }
 
