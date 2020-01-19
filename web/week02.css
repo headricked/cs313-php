@@ -43,9 +43,9 @@ input {
     vertical-align: middle;
 }
 
-div {
+/* div {
     margin: 20px 0;
-}
+} */
 
 button#button1 {
     display: inline;
