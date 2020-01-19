@@ -1,0 +1,25 @@
+1. Copy and paste the URL for your web application:
+https://dashboard.heroku.com/apps/shrouded-everglades-98637
+https://floating-headland-29156.herokuapp.com/index.php
+
+2. Copy and paste the URL for your source code repository (e.g., GitHub):
+https://github.com/headricked/cs313-php
+
+3. Briefly list and describe the elements of the application that are functioning. Include any special instructions about how to login and/or use your application.
+The web application originally was built on HTML, but was converted over to PHP to be run on the server side. The functionality makes two 'include' calls to two PHP files: header.php and footer.php. CSS dictates style rules such that when a user clicks on the circular shape "Hi.", it reveals a picture of me.
+
+4. Briefly describe any pieces of the assignment that are not yet working correctly.
+All pieces of the assignment are functioning correctly.
+
+5. Briefly describe the "coolest" thing you learned while completing this assignment.
+The coolest thing I learned while completing this assignment is how to use the "include" statement to include separate PHP files (e.g. header.php, footer.php). Knowing this allows me to use a simple, consistent navigation and footer across all pages.
+
+6. What is the difference between an HTTP Get and Post? When should each be used?
+The Get method requests data from a specific resource. The request sends information through the URL via query parameters. These query parameters persist in the history and are visible. As such, Get requests should never be used to send sensitive data/information. The Post method sends data to a server to update or create a resource. Post method is more secure than Get because the data is stored within the body of the HTTP request.
+
+7. Please select the category you feel best describes your assignment:
+5 Shows creativity and excels above and beyond requirements
+
+
+8. Provide a brief justification (1-2 sentences) for selecting that category.
+I scored myself a 5 because I both fulfilled the requirements, and I also went beyond the requirements by creating multiple PHP files to the site: assignments.php, header.php, footer.php, index.php, and week02.php. I also used JavaScript to change the opacity of the "Hi." button so that, when clicked, it fired off a function that changed the opacity.
