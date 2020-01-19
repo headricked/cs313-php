@@ -40,13 +40,13 @@ section {
 
 #button {
     padding: 1.25rem 1.5rem;
-    background-color: #ffc400;
-    border: 1px solid #b58b00;
+    background-color: rgb(154,205,50);
+    border: 1px solid rgb(138,185,45);
     font-size: 2rem;
 }
 
 #button:hover {
-    background-color: #b58b00;
+    background-color: rgb(138,185,45);
 }
 
 footer {
