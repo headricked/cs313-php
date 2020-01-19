@@ -31,68 +31,6 @@
         	    <button id="button">View my assignments</button>
             </a>
         </div>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
-        <p>This is some content.</p>
     </section>
     <footer>
         <?php include 'footer.php';?>
