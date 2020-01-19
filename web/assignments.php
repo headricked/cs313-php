@@ -7,7 +7,7 @@
     <title>Assignments</title>
 </head>
 <body>
-<header>
+    <header>
         <nav>
             <?php include 'header.php';?>
         </nav>
