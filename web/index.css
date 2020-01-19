@@ -39,9 +39,10 @@ section {
 }
 
 #button {
-    padding: 0.25rem 0.5rem;
+    padding: 1.25rem 1.5rem;
     background-color: #ffc400;
-    border: #b58b00;
+    border: 1px solid #b58b00;
+    font-size: 2rem;
 }
 
 #button:hover {
