@@ -41,7 +41,11 @@ section {
 button {
     padding: 0.25rem 0.5rem;
     background-color: #ffc400;
-    border: none;
+    border: #b58b00;
+}
+
+button:hover {
+    background-color: #b58b00;
 }
 
 footer {
