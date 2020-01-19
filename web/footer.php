@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>footer.php</title>
+    <link rel="stylesheet" href="footer.css">
   </head>
   <body>
     <?php
