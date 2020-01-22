@@ -8,9 +8,20 @@
 </head>
 <body>
 
+<div>
+	    Name: <?php echo $_POST["name"]; ?>
+	</div>
+    
     <div>
-	    Username:
-		    <?php echo $_POST["name"]; ?>
+	    Email: <?php echo $_POST["email"]; ?>
+	</div>
+    
+    <div>
+	    Major: <?php echo $_POST["major"]; ?>
+	</div>
+    
+    <div>
+	    Comments: <?php echo $_POST["comments"]; ?>
 	</div>
     
 </body>
