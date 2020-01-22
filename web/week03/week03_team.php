@@ -8,14 +8,10 @@
 </head>
 <body>
 
-    <?php
-        echo `<div>Name: $_POST['name']; </div>`
-
-    ?>
-
-    <?php
-		echo $_POST["name"];
-    ?>
+    <div>
+	    Username:
+		    <?php echo $_POST["name"]; ?>
+	</div>
     
 </body>
 </html>
