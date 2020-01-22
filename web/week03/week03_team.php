@@ -9,9 +9,13 @@
 <body>
 
     <?php
-        echo "<div>Name: </div> $name;"
+        echo `<div>Name: $_POST['name']; </div>`
+
     ?>
 
+    <?php
+		echo $_POST["name"];
+    ?>
     
 </body>
 </html>
