@@ -42,19 +42,17 @@
         <?
             foreach ($continents as $continent) {
                 $continent_clean = htmlspecialchars($continent);
-                echo "<li><p>$continent_clean</p></li>";
+                echo "<li>$continent_clean</li>";
             }
         ?>		
 
 <br/>For:<br/>
         <?php
-            echo "<ul>";
             for ($i = 0; $i < 7; $i++) {
-                if (isset($_POST["places".$i])) {
-                    echo "<li>" . $_POST["continent" . $i] . "</li>";
+                if (isset($_POST["continents".$i])) {
+                    echo "<li>" . $_POST["continents" . $i] . "</li>";
                 }
             };
-            echo "</ul>";
         ?>
     </div>
 
