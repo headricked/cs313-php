@@ -7,7 +7,7 @@
     );
 
     foreach($major as $code => $majorName) {
-        echo "$code = $majorName<br>";
+        echo "<li><input type='radio' id='major' name='major' value='$majorName'> $majorName</li><br/>";
     }
 ?>
 
