@@ -48,9 +48,11 @@
                             <li>
                                 <input type="radio" id="major" name="major" value="Computer Engineering"> Computer Engineering
                             </li> -->
-                            foreach($major as $code => $majorName) {
-                                echo "<li><input type='radio' id='major' name='major' value='$majorName'> $majorName</li>";
-                            }
+                            <?php
+                                foreach($major as $code => $majorName) {
+                                    echo "<li><input type='radio' id='major' name='major' value='$majorName'> $majorName</li>";
+                                }
+                            ?>
                         </ul>
                 </li>
                 <li>
