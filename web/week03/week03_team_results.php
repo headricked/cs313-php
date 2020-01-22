@@ -1,9 +1,8 @@
 <?php
-    $name     = $_POST['name'];
+    $name     = htmlspecialchars($_POST['name']);
     $email    = $_POST['email'];
     $major    = $_POST['major'];
     $comments = $_POST['comments'];
-
 ?>
 
 
