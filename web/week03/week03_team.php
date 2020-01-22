@@ -6,9 +6,9 @@
         "ce"  =>"Computer Engineering"
     );
 
-    foreach($major as $code => $majorName) {
-        echo "<li><input type='radio' id='major' name='major' value='$majorName'> $majorName</li><br/>";
-    }
+    // foreach($major as $code => $majorName) {
+    //     echo "<li><input type='radio' id='major' name='major' value='$majorName'> $majorName</li>";
+    // }
 ?>
 
 <!DOCTYPE html>
@@ -36,7 +36,7 @@
                 <li>
                     <label for="major">Major:</label>
                         <ul>
-                            <li>
+                            <!-- <li>
                                 <input type="radio" id="major" name="major" value="Computer Science"> Computer Science<br/>
                             </li>
                             <li>
@@ -47,7 +47,10 @@
                             </li>
                             <li>
                                 <input type="radio" id="major" name="major" value="Computer Engineering"> Computer Engineering
-                            </li>
+                            </li> -->
+                            foreach($major as $code => $majorName) {
+                                echo "<li><input type='radio' id='major' name='major' value='$majorName'> $majorName</li>";
+                            }
                         </ul>
                 </li>
                 <li>
