@@ -25,5 +25,16 @@
 	    Comments: <?php echo $_POST["comments"]; ?>
 	</div>
     
+    <div>
+        Continents visited:
+    <?php
+        for ($i = 0; $i < 7; $i++) {
+            if (isset($_POST["continents".$i])) {
+                echo $_POST["continents".$i];
+            }
+        };
+    ?>
+    </div>
+
 </body>
 </html>
