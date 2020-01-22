@@ -49,25 +49,25 @@
                     <label for="continents">You've visited:</label>
                     <ul>
                         <li>
-                            <input type="checkbox" name="continent0" id="North America" value="North America"> North America
+                            <input type="checkbox" name="continents[]" id="North America" value="North America"> North America
                         </li>
                         <li>
-                            <input type="checkbox" name="continent1" id="South America" value="South America"> South America
+                            <input type="checkbox" name="continents[]" id="South America" value="South America"> South America
                         </li>
                         <li>
-                            <input type="checkbox" name="continent2" id="Europe" value="Europe"> Europe
+                            <input type="checkbox" name="continents[]" id="Europe" value="Europe"> Europe
                         </li>
                         <li>
-                            <input type="checkbox" name="continent3" id="Asia" value="Asia"> Asia
+                            <input type="checkbox" name="continents[]" id="Asia" value="Asia"> Asia
                         </li>
                         <li>
-                            <input type="checkbox" name="continent4" id="Australia" value="Australia"> Australia
+                            <input type="checkbox" name="continents[]" id="Australia" value="Australia"> Australia
                         </li>
                         <li>
-                            <input type="checkbox" name="continent5" id="Africa" value="Africa"> Africa
+                            <input type="checkbox" name="continents[]" id="Africa" value="Africa"> Africa
                         </li>
                         <li>
-                            <input type="checkbox" name="continent6" id="Antarctica" value="Antarctica"> Antarctica
+                            <input type="checkbox" name="continents[]" id="Antarctica" value="Antarctica"> Antarctica
                         </li>
                     </ul>
                 </li>
