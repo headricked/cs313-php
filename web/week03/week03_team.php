@@ -13,7 +13,8 @@
 	</div>
     
     <div>
-	    Email: <?php echo "<a mailto:" . $_POST["email"] . ">" . $_POST["email"] . "</a>"; ?>
+        Email: <?php echo "<a href='mailto:{$_POST['email']}'>" . $_POST['email'] . "</a>"; ?>
+        
 	</div>
     
     <div>
