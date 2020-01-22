@@ -28,11 +28,13 @@
     <div>
         Continents visited:
     <?php
+        echo "<ul>";
         for ($i = 0; $i < 7; $i++) {
-            if (isset($_POST["continents".$i])) {
-                echo $_POST["continents".$i];
+            if (isset($_POST["continent".$i])) {
+                echo "<li>" . $_POST["continent" . $i] . "</li>";
             }
         };
+        echo "</ul>";
     ?>
     </div>
 
