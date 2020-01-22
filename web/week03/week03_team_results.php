@@ -1,8 +1,9 @@
 <?php
-    $name     = htmlspecialchars($_POST['name']);
-    $email    = htmlspecialchars($_POST['email']);
-    $major    = htmlspecialchars($_POST['major']);
-    $comments = htmlspecialchars($_POST['comments']);
+    $name       = htmlspecialchars($_POST['name']);
+    $email      = htmlspecialchars($_POST['email']);
+    $major      = htmlspecialchars($_POST['major']);
+    $continents = $_POST['continents'];
+    $comments   = htmlspecialchars($_POST['comments']);
 ?>
 
 
@@ -36,10 +37,20 @@
     
     <div>
         Continents visited:
+
+<br/>For each:<br/>
+        <?
+            foreach ($continents as $continent) {
+                $continent_clean = htmlspecialchars($continent);
+                echo "<li><p>$continent_clean</p></li>";
+            }
+        ?>		
+
+<br/>For:<br/>
         <?php
             echo "<ul>";
             for ($i = 0; $i < 7; $i++) {
-                if (isset($_POST["continent".$i])) {
+                if (isset($_POST["places".$i])) {
                     echo "<li>" . $_POST["continent" . $i] . "</li>";
                 }
             };
