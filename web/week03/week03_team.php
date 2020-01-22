@@ -66,7 +66,7 @@
                 <li>
                     <label for="continents">You've visited:</label>
                     <ul>
-                        <li>
+                        <!-- <li>
                             <input type="checkbox" name="continents[]" id="North America" value="North America"> North America
                         </li>
                         <li>
@@ -86,6 +86,27 @@
                         </li>
                         <li>
                             <input type="checkbox" name="continents[]" id="Antarctica" value="Antarctica"> Antarctica
+                        </li> -->
+                        <li>
+                            <input type="checkbox" name="continents[]" id="North America" value="na"> North America
+                        </li>
+                        <li>
+                            <input type="checkbox" name="continents[]" id="South America" value="sa"> South America
+                        </li>
+                        <li>
+                            <input type="checkbox" name="continents[]" id="Europe" value="eu"> Europe
+                        </li>
+                        <li>
+                            <input type="checkbox" name="continents[]" id="Asia" value="as"> Asia
+                        </li>
+                        <li>
+                            <input type="checkbox" name="continents[]" id="Australia" value="au"> Australia
+                        </li>
+                        <li>
+                            <input type="checkbox" name="continents[]" id="Africa" value="af"> Africa
+                        </li>
+                        <li>
+                            <input type="checkbox" name="continents[]" id="Antarctica" value="at"> Antarctica
                         </li>
                     </ul>
                 </li>

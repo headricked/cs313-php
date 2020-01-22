@@ -2,8 +2,18 @@
     $name       = htmlspecialchars($_POST['name']);
     $email      = htmlspecialchars($_POST['email']);
     $major      = htmlspecialchars($_POST['major']);
-    $continents = $_POST['continents'];
     $comments   = htmlspecialchars($_POST['comments']);
+    $continents = $_POST['continents'];
+    
+    // $oneContinent = array(
+    //     "na" => "North America",
+    //     "sa" => "South America",
+    //     "eu" => "Europe",
+    //     "as" => "Asia",
+    //     "au" => "Australia",
+    //     "af" => "Africa",
+    //     "at" => "Antartica"
+    // );
 ?>
 
 
@@ -38,11 +48,16 @@
     <div>
         Continents visited:
         <?
-            foreach ($continents as $continent) {
-                $continent_clean = htmlspecialchars($continent);
-                echo "<li>$continent_clean</li>";
-            }
-        ?>		
+         foreach ($continents as $continent) {
+             $continent_clean = htmlspecialchars($continent);
+             echo "<li>$continent_clean</li>";
+         }
+            
+            // foreach ($continents as $continent) {
+            //     $continent_clean = htmlspecialchars($continent);
+            //     echo "<li>$continent_clean</li>";
+            // }
+        ?>
 
 </body>
 </html>
