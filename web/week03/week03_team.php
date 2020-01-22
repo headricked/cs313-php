@@ -1,3 +1,16 @@
+<?php
+    $major = array(
+        "cs"  =>"Computer Science",
+        "wdd" =>"Web Design and Development",
+        "cit" =>"Computer Information Technology",
+        "ce"  =>"Computer Engineering"
+    );
+
+    foreach($major as $code => $majorName) {
+        echo "$code = $majorName<br>";
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
