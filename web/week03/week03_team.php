@@ -4,39 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Week 03 | Tell me about yourself</title>
 </head>
 <body>
+    <form action="week03_team_results.php" method="post">
 
-<div>
-	    Name: <?php echo $_POST["name"]; ?>
-	</div>
+        <fieldset>
+            <legend>So, tell me about yourself...</legend>
+            <ul>
+                <li>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="name">
+                </li>
+                <li>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" placeholder="email">
+                </li>
+                <li>
+                    <label for="major">Major:</label>
+                        <ul>
+                            <li>
+                                <input type="radio" id="major" name="major" value="Computer Science"> Computer Science<br/>
+                            </li>
+                            <li>
+                                <input type="radio" id="major" name="major" value="Web Design and Development"> Web Design and Development<br/>
+                            </li>
+                            <li>
+                                <input type="radio" id="major" name="major" value="Computer Information Technology"> Computer Information Technology<br/>
+                            </li>
+                            <li>
+                                <input type="radio" id="major" name="major" value="Computer Engineering"> Computer Engineering
+                            </li>
+                        </ul>
+                </li>
+                <li>
+                    <label for="comments">Comments:</label>
+                    <ul>
+                        <li>
+                            <textarea name="comments" id="comments" name="comments" cols="30" rows="10" placeholder="comments"></textarea>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <label for="continents">You've visited:</label>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="continent0" id="North America" value="North America"> North America
+                        </li>
+                        <li>
+                            <input type="checkbox" name="continent1" id="South America" value="South America"> South America
+                        </li>
+                        <li>
+                            <input type="checkbox" name="continent2" id="Europe" value="Europe"> Europe
+                        </li>
+                        <li>
+                            <input type="checkbox" name="continent3" id="Asia" value="Asia"> Asia
+                        </li>
+                        <li>
+                            <input type="checkbox" name="continent4" id="Australia" value="Australia"> Australia
+                        </li>
+                        <li>
+                            <input type="checkbox" name="continent5" id="Africa" value="Africa"> Africa
+                        </li>
+                        <li>
+                            <input type="checkbox" name="continent6" id="Antarctica" value="Antarctica"> Antarctica
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <input type="submit" value="Submit"><input type="reset" value="Reset">
+        </fieldset>        
+    </form>
     
-    <div>
-        Email: <?php echo "<a href='mailto:{$_POST['email']}'>{$_POST['email']}</a>"; ?>
-        
-	</div>
-    
-    <div>
-	    Major: <?php echo $_POST["major"]; ?>
-	</div>
-    
-    <div>
-	    Comments: <?php echo $_POST["comments"]; ?>
-	</div>
-    
-    <div>
-        Continents visited:
-    <?php
-        echo "<ul>";
-        for ($i = 0; $i < 7; $i++) {
-            if (isset($_POST["continent".$i])) {
-                echo "<li>" . $_POST["continent" . $i] . "</li>";
-            }
-        };
-        echo "</ul>";
-    ?>
-    </div>
-
 </body>
 </html>
