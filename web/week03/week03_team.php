@@ -13,7 +13,7 @@
 	</div>
     
     <div>
-	    Email: <?php echo $_POST["email"]; ?>
+	    Email: <?php echo "<a mailto=" . $_POST["email"] . ">" . $_POST["email"] . "</a>"; ?>
 	</div>
     
     <div>
