@@ -13,7 +13,7 @@
 
 <?php
     // echo "Number of Items in the cart = ".sizeof($_SESSION['cart'])." <a href=2-cart-remove-all.php>Remove all</a><br>";
-    echo "Number of Items in the cart = ".sizeof($_SESSION['cart'])." <a href=2-cart-remove.php>Remove all</a><br>";
+    echo "Number of Items in the cart = ".sizeof($_SESSION['cart'])." <a href=2-cart-remove.php>Remove</a><br>";
 
     while (list ($key, $val) = each ($_SESSION['cart'])) { 
         echo "$key -> $val <br>"; 

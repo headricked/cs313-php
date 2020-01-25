@@ -15,7 +15,8 @@
 
     echo    "Number of Items in the cart = " .
             sizeof($_SESSION['cart']) .
-            " <a href=2-cart-remove-all.php>Remove all</a><br>";
+            // " <a href=2-cart-remove-all.php>Remove all</a><br>";
+            " <a href=2-cart-remove.php>Remove</a><br>";
 ?>
 
 </body>
