@@ -53,7 +53,7 @@
             echo "Session variables are set.";
         ?>
 
-        <a href="">View Cart</a>
+        <a href="viewCart.php">View Cart</a>
 
     </section>
     
