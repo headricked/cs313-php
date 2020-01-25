@@ -11,9 +11,11 @@
 
 <?php
     $_SESSION['cart']=array(); // Declaring session array
-    array_push($_SESSION['cart'],'apple','mango','banana'); // Items added to cart
+    array_push($_SESSION['cart'],'apple','mango','banana','orange'); // Items added to cart
 
-    echo "Number of Items in the cart = ".sizeof($_SESSION['cart'])." <a href=2-cart-remove-all.php>Remove all</a><br>";
+    echo    "Number of Items in the cart = " .
+            sizeof($_SESSION['cart']) .
+            " <a href=2-cart-remove-all.php>Remove all</a><br>";
 ?>
 
 </body>
