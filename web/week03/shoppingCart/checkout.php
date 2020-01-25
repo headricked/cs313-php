@@ -11,7 +11,7 @@
     <title>Week 03 | Tell me about yourself</title>
 </head>
 <body>
-    <form action="week03_team_results.php" method="post">
+    <form action="confirmation.php" method="post">
 
         <fieldset>
             <legend>Please provide shipping information</legend>
