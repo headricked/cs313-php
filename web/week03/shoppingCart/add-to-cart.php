@@ -11,5 +11,5 @@
 ?>
 
 <p>Product was successfully added to your shopping cart.
-    <a href="shopping-cart.php">View shopping cart</a>
+    <a href="viewCart.php">View shopping cart</a>
 </p>
