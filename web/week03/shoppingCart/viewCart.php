@@ -15,6 +15,7 @@
     <?php
         // Echo session variables that were set on previous page
         echo "Your cart: " . $_SESSION['cart'] . ".<br>";
+        var_dump($_SESSION['cart']);
     ?>    
 </body>
 </html>
