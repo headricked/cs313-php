@@ -16,6 +16,9 @@
         // Echo session variables that were set on previous page
         echo "Your cart: " . $_SESSION['cart'] . ".<br>";
         var_dump($_SESSION['cart']);
-    ?>    
+    ?>  
+
+    <div><a href="index.php">Shop More</a></div>
+    <div><a href="checkout.php">Checkout</a></div>
 </body>
 </html>
