@@ -46,6 +46,13 @@
             </tr>
         </table>
 
+        <?php
+            // Set session variables
+            $_SESSION["favcolor"] = "green";
+            $_SESSION["favanimal"] = "cat";
+            echo "Session variables are set.";
+        ?>
+
         <a href="">View Cart</a>
 
     </section>
