@@ -2,8 +2,8 @@
     // Start session
     session_start();
 
-    // if (empty($_SESSION['cart'])) {
-    if (isset($_SESSION['cart'])) {
+    if (empty($_SESSION['cart'])) {
+    // if (isset($_SESSION['cart'])) {
         $_SESSION['cart'] = array();
     }
 
