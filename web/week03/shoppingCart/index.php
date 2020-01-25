@@ -1,6 +1,12 @@
 <?php
     // Start session
     session_start();
+
+    if (isset($_SESSION['cart'])) {
+        $_SESSION['cart'] = array();
+    }
+
+    array_push($_SESSION['cart'],$item);
 ?>
 
 
@@ -53,7 +59,7 @@
             echo "Session variables are set.";
         ?>
 
-        <a href="viewCart.php">View Cart</a>
+        <div><a href="viewCart.php">View Cart</a></div>
 
     </section>
     
