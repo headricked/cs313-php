@@ -18,26 +18,29 @@
 </head>
 <body>
 
-    <div>
-	    Name: <?php echo $name; ?>
-	</div>
-    
-    <div>
-        Address: <?php echo $address; ?>
-        
-	</div>
-    
-    <div>
-	    City: <?php echo $city; ?>
-	</div>
-    
-    <div>
-	    State: <?php echo $state; ?>
-	</div>
-    
-    <div>
-	    ZIP: <?php echo $zip; ?>
-	</div>
-    
+    <fieldset>
+        <legend>Thank you for your purchase.</legend>
+            <div>
+                Name: <?php echo $name; ?>
+            </div>
+            
+            <div>
+                Address: <?php echo $address; ?>
+                
+            </div>
+            
+            <div>
+                City: <?php echo $city; ?>
+            </div>
+            
+            <div>
+                State: <?php echo $state; ?>
+            </div>
+            
+            <div>
+                ZIP: <?php echo $zip; ?>
+            </div>
+    </fieldset>
+
 </body>
 </html>
