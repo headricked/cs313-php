@@ -7,8 +7,8 @@
         $_SESSION['cart'] = array();
     }
 
-    array_push($_SESSION['cart'], $_GET['id']);
-    // array_push($_SESSION['cart'],$item);
+    // array_push($_SESSION['cart'], $_GET['id']);
+    array_push($_SESSION['cart'],$item);
 ?>
 
 <p>Product was successfully added to your shopping cart.
