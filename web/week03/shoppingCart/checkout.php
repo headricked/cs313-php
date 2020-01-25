@@ -15,28 +15,26 @@
 
         <fieldset>
             <legend>Please provide shipping information</legend>
-            <ul>
-                <li>
+                <div>
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" placeholder="name">
-                </li>
-                <li>
+                </div>
+                <div>
                     <label for="address">Address:</label>
                     <input type="text" id="address" name="address" placeholder="address">
-                </li>
-                <li>
+                </div>
+                <div>
                     <label for="name">City:</label>
                     <input type="text" id="city" name="city" placeholder="city">
-                </li>
-                <li>
+                </div>
+                <div>
                     <label for="name">State:</label>
                     <input type="text" id="state" name="state" placeholder="state">
-                </li>
-                <li>
+                </div>
+                <div>
                     <label for="name">ZIP:</label>
                     <input type="text" id="zip" name="zip" placeholder="zip">
-                </li>
-            </ul>
+                </div>
             <input type="submit" value="Submit"><input type="reset" value="Reset">
         </fieldset>        
     </form>
