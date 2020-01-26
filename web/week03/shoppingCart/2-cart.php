@@ -16,19 +16,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="text/css" rel="cart.css"></link>
     <title>Cart</title>
 </head>
 <body>
 
 <!-- <form method="post" action="2-cart-display.php"> -->
 <form method="post" action="">
-    <table>
-    <tr>
-            <td>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/IPhone_X_vector.svg/800px-IPhone_X_vector.svg.png" />
-            </td>
+    <table id="phones">
+        <tr>
             <td>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Samsung_Galaxy_S9-2.png" />
+            </td>
+            <td>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/IPhone_X_vector.svg/800px-IPhone_X_vector.svg.png" />
             </td>
             <td>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Pixel_4_schematic.svg/560px-Pixel_4_schematic.svg.png" />
