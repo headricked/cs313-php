@@ -32,17 +32,16 @@
         
     echo "<br>Number of Items in the cart = " . sizeof($_SESSION['cart']) . "<br/>";
     
-    while (list ($key, $val) = each ($_SESSION['cart'])) { 
+    while (list($key, $val) = each ($_SESSION['cart'])) { 
         // echo "$key -> $val <br>"; 
-        echo "key: " . $key . " value: " . $val . "<br>"; 
+        // echo "key: " . $key . " value: " . $val . "<br>"; 
+        echo "Item: " . $val . "<br>"; 
     }
 ?>
 
 <div><a href="2-cart-add.php">Add</a></div>
 <div><a href="2-cart-display.php">Display</a></div>
 <div><a href="2-cart-remove.php">Remove</a></div>
-
-<script src="script.js"></script>
 
 </body>
 </html>
