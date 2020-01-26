@@ -13,12 +13,10 @@
 <body>
 
 <?php
-    /// test david  begin ///
+    /// assign the value of the 'product' input to php variable
     @$product=$_POST['product'];
-    // if(strlen($product)>3){
-    
-        if(strlen($product) != '') {
-            array_push($_SESSION['cart'],$product); // Items added to cart
+    if(strlen($product) != '') {
+        array_push($_SESSION['cart'],$product); // Items added to cart
     }
     /// test david end ///
 
