@@ -13,9 +13,15 @@
 <body>
 
 <?php
-    $_SESSION['cart']=array(); // Declaring session array
+    $_SESSION['cart'] = array(); // Declaring session array
     // array_push($_SESSION['cart'],'apple','mango','banana','orange'); // Items added to cart
-    array_push($_SESSION['cart']); // Items added to cart
+    // array_push($_SESSION['cart']); // Items added to cart
+
+    // 
+    array_push($_SESSION['cart'] = array(
+                   'itemName'  => "'" . $_POST["name"]  . "'",
+                   'itemPrice' => "'" . $_POST["price"] . "'"
+                ));
 
     echo    "Number of Items in the cart = " .
             sizeof($_SESSION['cart']);
