@@ -22,5 +22,9 @@
 
 ?>
 
+<div><a href=2-cart-add.php>Add</a></div>
+<div><a href=2-cart-display.php>Display</a></div>
+<div><a href=2-cart-remove.php>Remove</a></div>
+
 </body>
 </html>
