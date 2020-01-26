@@ -1,6 +1,6 @@
 <?php
     session_start();
-    if (!empty($_SESSION["cart"]))
+    if (!isset($_SESSION["cart"]))
     {
         $_SESSION["cart"][] = array();
     }
@@ -84,7 +84,6 @@
 ?>
 
 
-<!-- <?php include '2-add-cart.php';?> -->
 
 <div><a href="2-cart-add.php">Add</a></div>
 <div><a href="2-cart-display.php">View cart</a></div>
