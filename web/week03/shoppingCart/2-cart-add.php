@@ -12,7 +12,11 @@
 </head>
 <body>
 
-<!-- <form method=post action=''> -->
+<!-- <form method="post" action="2-cart-display.php">
+    Enter a product name <input type="text" name="product">
+    <input type="submit" value="Add to Cart">
+</form> -->
+
 <form method="post" action="2-cart-display.php">
     Enter a product name <input type="text" name="product">
     <input type="submit" value="Add to Cart">
