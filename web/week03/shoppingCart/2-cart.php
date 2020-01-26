@@ -26,16 +26,16 @@
     <table id="phones">
         <tr>
             <td>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Samsung_Galaxy_S9-2.png" />
+                <img src="samsung.png" />
             </td>
             <td>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/IPhone_X_vector.svg/800px-IPhone_X_vector.svg.png" />
+                <img src="apple.png" />
             </td>
             <td>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Pixel_4_schematic.svg/560px-Pixel_4_schematic.svg.png" />
+                <img src="google.png" />
             </td>
             <td>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Moto_G7_Plus_XT1965-2_LATAM.jpg/708px-Moto_G7_Plus_XT1965-2_LATAM.jpg" />
+                <img src="motorola.jpg" />
             </td>
         </tr>
         <tr>
