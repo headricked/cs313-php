@@ -26,16 +26,16 @@
     <table>
         <tr>
             <td>
-                <img src="samsung.png" />
+                <img src="samsung.png" /><br/><br/>Samsung<br/>
             </td>
             <td>
-                <img src="apple.png" />
+                <img src="apple.png" /><br/><br/>Apple<br/>
             </td>
             <td>
-                <img src="google.png" />
+                <img src="google.png" /><br/><br/>Google<br/>
             </td>
             <td>
-                <img src="motorola.jpg" />
+                <img src="motorola.jpg" /><br/><br/>Motorola<br/>
             </td>
         </tr>
         <tr>
