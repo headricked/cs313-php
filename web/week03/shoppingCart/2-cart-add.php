@@ -26,31 +26,11 @@
 
 
 <?php
-    // @$product = $_POST['product'];
-    // if(strlen($product) != '') {
-    //         array_push($_SESSION['cart'],$product); // Items added to cart
-    // }
-    
-    @$samsung = $_POST['samsung'];
-    if(strlen($samsung) != '') {
-            array_push($_SESSION['cart'],$samsung); // Items added to cart
+    @$product = $_POST['product'];
+    if(strlen($product) != '') {
+            array_push($_SESSION['cart'],$product); // Items added to cart
     }
-    
-    @$apple = $_POST['apple'];
-    if(strlen($apple) != '') {
-            array_push($_SESSION['cart'],$apple); // Items added to cart
-    }
-    
-    @$google = $_POST['google'];
-    if(strlen($google) != '') {
-            array_push($_SESSION['cart'],$google); // Items added to cart
-    }
-    
-    @$motorola = $_POST['motorola'];
-    if(strlen($motorola) != '') {
-            array_push($_SESSION['cart'],$motorola); // Items added to cart
-    }
-    
+        
     echo "<br>Number of Items in the cart = " . sizeof($_SESSION['cart']) . "<br/>";
     
     while (list ($key, $val) = each ($_SESSION['cart'])) { 
