@@ -22,10 +22,35 @@
 
 <!-- <form method="post" action="2-cart-display.php"> -->
 <form method="post" action="">
-    <button type="submit" id="samsung" name="product" value="Samsung">Add to Cart</button>
-    <button type="submit" id="apple" name="product" value="Apple">Add to Cart</button>
-    <button type="submit" id="google" name="product" value="Google">Add to Cart</button>
-    <button type="submit" id="motorola" name="product" value="Motorola">Add to Cart</button>
+    <table>
+    <tr>
+            <td>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/IPhone_X_vector.svg/800px-IPhone_X_vector.svg.png">
+            </td>
+            <td>
+                
+            </td>
+            <td>
+
+            </td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="submit" id="samsung" name="product" value="Samsung">Add to Cart</button>
+            </td>
+            <td>
+                <button type="submit" id="apple" name="product" value="Apple">Add to Cart</button>
+            </td>
+            <td>
+                <button type="submit" id="google" name="product" value="Google">Add to Cart</button>
+            </td>
+            <td>
+                <button type="submit" id="motorola" name="product" value="Motorola">Add to Cart</button>           
+            </td>
+        </tr>
 </form>
 
 
