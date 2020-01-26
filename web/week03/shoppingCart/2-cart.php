@@ -1,13 +1,13 @@
 <?php
     session_start();
-    // if (!isset($_SESSION["cart"]))
-    // {
-    //     $_SESSION["cart"] = array();
-    // }
-
-    if(!isset($_POST['cart'])){ 
-        $_SESSION['cart'][] = $_POST['cart'];
+    if (!isset($_SESSION["cart"]))
+    {
+        $_SESSION["cart"][] = array();
     }
+
+    // if(!isset($_POST['cart'])){ 
+    //     $_SESSION['cart'][] = $_POST['cart'];
+    // }
 ?>
 
 <!DOCTYPE html>
