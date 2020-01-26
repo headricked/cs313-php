@@ -12,15 +12,15 @@
 </head>
 <body>
 
-<!-- <form method="post" action="2-cart-display.php">
+<form method="post" action="2-cart-display.php">
     Enter a product name <input type="text" name="product">
     <input type="submit" value="Add to Cart">
-</form> -->
+</form>
 
-<button id="samsung">Add to Cart</button>
+<!-- <button id="samsung">Add to Cart</button>
 <button id="apple">Add to Cart</button>
 <button id="google">Add to Cart</button>
-<button id="motorola">Add to Cart</button>
+<button id="motorola">Add to Cart</button> -->
 
 
 
