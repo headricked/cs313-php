@@ -56,7 +56,7 @@
 
 
 <?php
-    $_SESSION['cart'] = array(); // Declaring session array
+    $_SESSION['cart'][] = array(); // Declaring session array
     // array_push($_SESSION['cart'],'apple','mango','banana','orange'); // Items added to cart
     // array_push($_SESSION['cart']); // Items added to cart
 
@@ -81,11 +81,10 @@
         echo "Item: " . $val . "<br>"; 
     }
 
-
-
-
-
 ?>
+
+
+<!-- <?php include '2-add-cart.php';?> -->
 
 <div><a href="2-cart-add.php">Add</a></div>
 <div><a href="2-cart-display.php">View cart</a></div>
