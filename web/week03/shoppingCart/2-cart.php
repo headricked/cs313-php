@@ -5,7 +5,7 @@
     //     $_SESSION["cart"] = array();
     // }
 
-    if(!empty($_POST['cart'])){ 
+    if(!isset($_POST['cart'])){ 
         $_SESSION['cart'][] = $_POST['cart'];
     }
 ?>
