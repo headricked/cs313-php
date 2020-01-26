@@ -17,21 +17,10 @@
     <input type="submit" value="Add to Cart">
 </form> -->
 
-<form method="post" action="2-cart-display.php">
-    <input type="submit" name="samsung" value="Add to Cart">
-</form>
-
-<form method="post" action="2-cart-display.php">
-    <input type="submit" name="apple" value="Add to Cart">
-</form>
-
-<form method="post" action="2-cart-display.php">
-    <input type="submit" name="google" value="Add to Cart">
-</form>
-
-<form method="post" action="2-cart-display.php">
-    <input type="submit" name="motorola" value="Add to Cart">
-</form>
+<button id="samsung">Add to Cart</button>
+<button id="apple">Add to Cart</button>
+<button id="google">Add to Cart</button>
+<button id="motorola">Add to Cart</button>
 
 
 
