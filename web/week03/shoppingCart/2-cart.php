@@ -1,9 +1,9 @@
 <?php
     session_start();
-    if (!empty($_SESSION["cart"]))
-    {
-        $_SESSION["cart"][] = array();
-    }
+    // if (!empty($_SESSION["cart"]))
+    // {
+    //     $_SESSION["cart"][] = array();
+    // }
 
     // if(!isset($_POST['cart'])){ 
     //     $_SESSION['cart'][] = $_POST['cart'];
