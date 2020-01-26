@@ -28,7 +28,7 @@
     echo "<input type=submit value=Remove></form>";
 ?>
 
-<div><a href=2-cart.php>Cart adding</a></div>
+<div><a href=2-cart-add.php>Cart adding</a></div>
 <div><a href=2-cart-display.php>Display Items</a></div>
 <div><a href=2-cart-remove.php>Remove Item</a></div>
 
