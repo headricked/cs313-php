@@ -17,17 +17,18 @@
     <input type="submit" value="Add to Cart">
 </form> -->
 
-<input type="submit" id="samsung" name="product" value="Samsung">Add to Cart</input>
-<input type="submit" id="apple" name="product" value="Apple">Add to Cart</input>
-<input type="submit" id="google" name="product" value="Google">Add to Cart</input>
-<input type="submit" id="motorola" name="product" value="Motorola">Add to Cart</input>
-
+<form method="post" action="2-cart-display.php">
+    <button type="submit" id="samsung" name="product" value="Samsung">Add to Cart</button>
+    <button type="submit" id="apple" name="product" value="Apple">Add to Cart</button>
+    <button type="submit" id="google" name="product" value="Google">Add to Cart</button>
+    <button type="submit" id="motorola" name="product" value="Motorola">Add to Cart</button>
+</form>
 
 
 <?php
     @$product = $_POST['product'];
     if(strlen($product) != '') {
-            array_push($_SESSION['cart'],$product); // Items added to cart
+        array_push($_SESSION['cart'],$product); // Items added to cart
     }
         
     echo "<br>Number of Items in the cart: " . sizeof($_SESSION['cart']) . "<br/>";
