@@ -1,17 +1,5 @@
 <?php
     session_start();
-
-    // $product = $_POST['product'];
-    $prodnum = $_POST['prodnum'];
-    $original = $_POST['original'];
-
-    $_SESSION['artchoice'][] = array(
-        'product'  => $product,
-        'prodnum'  => $prodnum,
-        'original' => $original
-    );
-    
-    echo "artchoice: " . $_SESSION['artchoice']['product'] . "<br/>";
 ?>
 
 <!DOCTYPE html>
@@ -27,13 +15,13 @@
 <?php
     $_SESSION['cart'] = array(); // Declaring session array
     // array_push($_SESSION['cart'],'apple','mango','banana','orange'); // Items added to cart
-    // array_push($_SESSION['cart']); // Items added to cart
+    array_push($_SESSION['cart']); // Items added to cart
 
     // 
-    array_push($_SESSION['cart'] = array(
-                   'itemName'  => "'" . $_POST["name"]  . "'",
-                   'itemPrice' => "'" . $_POST["price"] . "'"
-                ));
+    // array_push($_SESSION['cart'] = array(
+    //                'itemName'  => "'" . $_POST["name"]  . "'",
+    //                'itemPrice' => "'" . $_POST["price"] . "'"
+    //             ));
 
     echo    "Number of Items in the cart = " .
             sizeof($_SESSION['cart']);
