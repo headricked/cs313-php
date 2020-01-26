@@ -1,5 +1,9 @@
 <?php
     session_start();
+    if (!isset($_SESSION["cart"]))
+    {
+        $_SESSION["cart"] = array();
+    }
 ?>
 
 <!DOCTYPE html>
@@ -35,9 +39,9 @@
     @$product = $_POST['product'];
 
 
-    // if(strlen($product) != '') {
+    if(strlen($product) != '') {
         array_push($_SESSION['cart'],$product); // Items added to cart
-    // }
+    }
         
     echo "<br>Number of Items in the cart: " . sizeof($_SESSION['cart']) . "<br/>";
     
