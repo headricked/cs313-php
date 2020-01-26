@@ -23,7 +23,7 @@
 
 <!-- <form method="post" action="2-cart-display.php"> -->
 <form method="post" action="">
-    <table id="phones">
+    <table>
         <tr>
             <td>
                 <img src="samsung.png" />
