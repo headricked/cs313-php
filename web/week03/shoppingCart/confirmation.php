@@ -1,4 +1,6 @@
 <?php
+    session_start();
+
     $name = htmlspecialchars($_POST['name']);
     $address = htmlspecialchars($_POST['address']);
     $city = htmlspecialchars($_POST['city']);
@@ -40,6 +42,24 @@
             <div>
                 ZIP: <?php echo $zip; ?>
             </div>
+
+            <?php
+                @$product = $_POST['product'];
+                if(strlen($product) != '') {
+                    array_push($_SESSION['cart'],$product); // Items added to cart
+                }
+                    
+                echo "<br>Number of Items in the cart: " . sizeof($_SESSION['cart']) . "<br/>";
+                
+                while (list($key, $val) = each ($_SESSION['cart'])) { 
+                    // echo "$key -> $val <br>"; 
+                    // echo "key: " . $key . " value: " . $val . "<br>"; 
+                    echo "Item: " . $val . "<br>"; 
+                }
+            ?>
+
+
+
     </fieldset>
 
 </body>
