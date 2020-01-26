@@ -19,14 +19,14 @@
         unset($_SESSION['cart'][$val1]);
     }
 
-    echo "Number of Items in the cart = ".sizeof($_SESSION['cart'])." <br>";
-    echo "<form method=post action=''>";
+    echo "Number of Items in the cart: ".sizeof($_SESSION['cart'])." <br>";
+    echo "<form method='post' action=''>";
 
     while (list ($key, $val) = each ($_SESSION['cart'])) { 
-        echo " <input type=checkbox name=item[] value='$key'>  $key -> $val <br>"; 
+        echo " <input type='checkbox' name='item[]' value='$key'>  $key -> $val <br>"; 
     }
 
-    echo "<input type=submit value=Remove></form>";
+    echo "<input type='submit' value='Remove'></form>";
 ?>
 
 <div><a href="2-cart-add.php">Add</a></div>

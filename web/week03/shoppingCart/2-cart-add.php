@@ -30,7 +30,7 @@
             array_push($_SESSION['cart'],$product); // Items added to cart
     }
         
-    echo "<br>Number of Items in the cart = " . sizeof($_SESSION['cart']) . "<br/>";
+    echo "<br>Number of Items in the cart: " . sizeof($_SESSION['cart']) . "<br/>";
     
     while (list($key, $val) = each ($_SESSION['cart'])) { 
         // echo "$key -> $val <br>"; 
