@@ -18,8 +18,9 @@
 
 <?php
     @$product=$_POST['product'];
-    if(strlen($product)>3){
-        array_push($_SESSION['cart'],$product); // Items added to cart
+    // if(strlen($product)>3){
+    if(strlen($product) != '') {
+            array_push($_SESSION['cart'],$product); // Items added to cart
     }
     
     echo "<br>Number of Items in the cart = ".sizeof($_SESSION['cart']);
