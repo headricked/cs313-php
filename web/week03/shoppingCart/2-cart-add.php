@@ -18,23 +18,19 @@
 </form> -->
 
 <form method="post" action="2-cart-display.php">
-    Enter a product name <input type="text" name="samsung">
-    <input type="submit" value="Add to Cart">
+    <input type="submit" name="samsung" value="Add to Cart">
 </form>
 
 <form method="post" action="2-cart-display.php">
-    Enter a product name <input type="text" name="apple">
-    <input type="submit" value="Add to Cart">
+    <input type="submit" name="apple" value="Add to Cart">
 </form>
 
 <form method="post" action="2-cart-display.php">
-    Enter a product name <input type="text" name="google">
-    <input type="submit" value="Add to Cart">
+    <input type="submit" name="google" value="Add to Cart">
 </form>
 
 <form method="post" action="2-cart-display.php">
-    Enter a product name <input type="text" name="motorola">
-    <input type="submit" value="Add to Cart">
+    <input type="submit" name="motorola" value="Add to Cart">
 </form>
 
 
