@@ -1,17 +1,17 @@
 <?php
     session_start();
 
-    $artitem = $_POST['artitem'];
+    $product = $_POST['product'];
     $prodnum = $_POST['prodnum'];
     $original = $_POST['original'];
 
     $_SESSION['artchoice'] = array(
-        'title'    => $title,
+        'product'  => $product,
         'prodnum'  => $prodnum,
         'original' => $original
     );
     
-    echo "artchoice: " . $_SESSION['artchoice']['title'] . "<br/>";
+    echo "artchoice: " . $_SESSION['artchoice']['product'] . "<br/>";
 ?>
 
 <!DOCTYPE html>
