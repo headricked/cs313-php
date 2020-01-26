@@ -17,10 +17,10 @@
     <input type="submit" value="Add to Cart">
 </form> -->
 
-<button type="submit" id="samsung" name="product" value="Samsung">Add to Cart</button>
-<button type="submit" id="apple" name="product" value="Apple">Add to Cart</button>
-<button type="submit" id="google" name="product" value="Google">Add to Cart</button>
-<button type="submit" id="motorola" name="product" value="Motorola">Add to Cart</button>
+<input type="submit" id="samsung" name="product" value="Samsung">Add to Cart</input>
+<input type="submit" id="apple" name="product" value="Apple">Add to Cart</input>
+<input type="submit" id="google" name="product" value="Google">Add to Cart</input>
+<input type="submit" id="motorola" name="product" value="Motorola">Add to Cart</input>
 
 
 
