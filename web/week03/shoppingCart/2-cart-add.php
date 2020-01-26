@@ -25,6 +25,7 @@
     echo "<br>Number of Items in the cart = ".sizeof($_SESSION['cart']);
 ?>
 
+<div><a href=2-cart-display.php>Display</a></div>
 <div><a href=2-cart-remove.php>Remove</a></div>
 
 </body>
