@@ -38,6 +38,9 @@
             <input type="submit" value="Submit"><input type="reset" value="Reset">
         </fieldset>        
     </form>
+
+    <div><a href="2-cart-display.php">Return to Cart</a></div>
+
     
 </body>
 </html>
