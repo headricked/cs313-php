@@ -32,7 +32,8 @@
     echo "<br>Number of Items in the cart = " . sizeof($_SESSION['cart']) . "<br/>";
     
     while (list ($key, $val) = each ($_SESSION['cart'])) { 
-        echo "$key -> $val <br>"; 
+        // echo "$key -> $val <br>"; 
+        echo "key: " . $key . " value: " . $val . "<br>"; 
     }
 ?>
 
