@@ -13,7 +13,7 @@
 <body>
 
 <form method="post" action="2-cart-display.php">
-    Enter a product name <input type="text" name="product">
+    Enter a product name <input type="text" name="product" value="Mickey Mouse" placeholder="Donald Duck">
     <input type="submit" value="Add to Cart">
 </form>
 
