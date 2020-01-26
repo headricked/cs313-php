@@ -8,7 +8,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="script.js"></script>
     <title>Cart Add</title>
 </head>
 <body>
@@ -42,6 +41,8 @@
 <div><a href="2-cart-add.php">Add</a></div>
 <div><a href="2-cart-display.php">Display</a></div>
 <div><a href="2-cart-remove.php">Remove</a></div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
