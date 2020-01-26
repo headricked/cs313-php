@@ -24,7 +24,9 @@
             array_push($_SESSION['cart'],$product); // Items added to cart
     }
     
-    echo "<br>Number of Items in the cart = ".sizeof($_SESSION['cart']);
+    echo "<br>Number of Items in the cart = " . sizeof($_SESSION['cart']) . "<br/>";
+    while (list ($key, $val) = each ($_SESSION['cart'])) { 
+        echo "$key -> $val <br/>"; 
 ?>
 
 <div><a href=2-cart-add.php>Add</a></div>
