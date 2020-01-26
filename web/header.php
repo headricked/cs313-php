@@ -27,7 +27,7 @@
                     <ul class="nav navbar-nav">
                         <!-- <li class="active"><a href="index.php">Portfolio</a></li> -->
                         <li><a href="week02.php">Week02</a></li>
-                        <li><a href="#">Week03</a></li>
+                        <li><a href="2-cart.php">Week03</a></li>
                         <li><a href="#">Week04</a></li>
                         <li><a href="#">Week05</a></li>
                         <li><a href="#">Week06</a></li>
