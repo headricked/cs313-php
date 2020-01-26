@@ -5,7 +5,7 @@
     $prodnum = $_POST['prodnum'];
     $original = $_POST['original'];
 
-    $_SESSION['artchoice'] = array(
+    $_SESSION['artchoice'][] = array(
         'product'  => $product,
         'prodnum'  => $prodnum,
         'original' => $original
