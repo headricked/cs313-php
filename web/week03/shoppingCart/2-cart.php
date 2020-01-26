@@ -12,7 +12,8 @@
 </head>
 <body>
 
-<form method="post" action="2-cart-display.php">
+<!-- <form method="post" action="2-cart-display.php"> -->
+<form method="post" action="">
     <button type="submit" id="samsung" name="product" value="Samsung">Add to Cart</button>
     <button type="submit" id="apple" name="product" value="Apple">Add to Cart</button>
     <button type="submit" id="google" name="product" value="Google">Add to Cart</button>
@@ -33,7 +34,7 @@
     // get product value from button click, assign it to product variable
     @$product = $_POST['product'];
 
-    
+
     if(strlen($product) != '') {
         array_push($_SESSION['cart'],$product); // Items added to cart
     }
