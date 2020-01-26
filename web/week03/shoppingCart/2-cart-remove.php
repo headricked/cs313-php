@@ -23,7 +23,8 @@
     echo "<form method='post' action=''>";
 
     while (list ($key, $val) = each ($_SESSION['cart'])) { 
-        echo " <input type='checkbox' name='item[]' value='$key'>  $key -> $val <br>"; 
+        // echo " <input type='checkbox' name='item[]' value='$key'>  $key -> $val <br>"; 
+        echo "<input type='checkbox' name='item[]' value='$key'>  Item: " . $val . "<br>"; 
     }
 
     echo "<input type='submit' value='Remove'></form>";
