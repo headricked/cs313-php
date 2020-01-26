@@ -1,7 +1,7 @@
 <?php
     session_start();
 
-    $product = $_POST['product'];
+    // $product = $_POST['product'];
     $prodnum = $_POST['prodnum'];
     $original = $_POST['original'];
 

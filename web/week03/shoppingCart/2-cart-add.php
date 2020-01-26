@@ -23,7 +23,7 @@
 </form>
 
 <?php
-    @$product=$_POST['product'];
+    @$product = $_POST['product'];
     // if(strlen($product)>3){
     if(strlen($product) != '') {
             array_push($_SESSION['cart'],$product); // Items added to cart
