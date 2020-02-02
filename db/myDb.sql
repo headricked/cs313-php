@@ -1,76 +1,50 @@
-CREATE TABLE weather (
-    city            varchar(80),
-    temp_lo         int,           -- low temperature
-    temp_hi         int,           -- high temperature
-    prcp            real,          -- precipitation
-    date            date
+CREATE DATABASE milestone;
+
+CREATE TABLE milestone
+(
+	milestone_id SERIAL NOT NULL PRIMARY KEY,
+    milestone_name VARCHAR(100) NOT NULL,
+    milestone_date TIMESTAMPTZ NOT NULL,
+    milestone_location VARCHAR(100) NOT NULL,
+    milestone_notes VARCHAR(500),
+    person_age INT NOT NULL
 );
 
-CREATE TABLE cities (
-    name            varchar(80),
-    location        point
+CREATE TABLE person
+(
+	person_id SERIAL NOT NULL PRIMARY KEY,
+	first_name VARCHAR(20) NOT NULL,
+	middle_name VARCHAR(20),
+	last_name VARCHAR(20) NOT NULL,
+  	birthdate TIMESTAMPTZ NOT NULL,
+	is_male BOOLEAN NOT NULL,
+	milestone_id INT REFERENCES public.milestone(milestone_id)
 );
 
-INSERT INTO weather VALUES ('San Francisco', 46, 50, 0.25, '1994-11-27');
+-- test data below
 
-INSERT INTO cities VALUES ('San Francisco', '(-194.0, 53.0)');
+INSERT INTO person (person_id, first_name, middle_name, last_name, birthdate, is_male)
+    VALUES (DEFAULT,'Emmett','Doc','Brown','1914-11-05 12:34:56',true);
 
-INSERT INTO weather (city, temp_lo, temp_hi, prcp, date)
-    VALUES ('San Francisco', 43, 57, 0.0, '1994-11-29');
+INSERT INTO milestone (milestone_id, milestone_name, milestone_date, milestone_location, milestone_notes, person_age)
+	VALUES (DEFAULT,'Birth','1914-11-05 12:34:56','Hill Valley, California','Born with white hair', 0);
 
-INSERT INTO weather (date, city, temp_hi, temp_lo)
-    VALUES ('1994-11-29', 'Hayward', 54, 37);
+INSERT INTO milestone (milestone_id, milestone_name, milestone_date, milestone_location, milestone_notes, person_age)
+	VALUES (DEFAULT,'First words','1915-12-28 12:34:56','Hill Valley, California','"flux capacitor"', 1);
 
-SELECT * FROM weather;
+INSERT INTO milestone (milestone_id, milestone_name, milestone_date, milestone_location, milestone_notes, person_age)
+	VALUES (DEFAULT,'Concussion','1955-11-05 12:34:56','Hill Valley, California','hit head on toilet; a red-letter date', 41);
 
-SELECT city, temp_lo, temp_hi, prcp, date FROM weather;
+INSERT INTO milestone (milestone_id, milestone_name, milestone_date, milestone_location, milestone_notes, person_age)
+	VALUES (DEFAULT,'Time Travel Success','1985-10-26 01:20:00','Twin Pines Mall, Hill Valley, California','Docs dog, Einstein, becomes the worlds first time traveler.', 71);
 
-SELECT city, (temp_hi+temp_lo)/2 AS temp_avg, date FROM weather;
+INSERT INTO person (person_id, first_name, middle_name, last_name, birthdate, is_male)
+    VALUES (DEFAULT,'Marty','','McFly','1968-06-20 12:34:56',true);
 
-SELECT * FROM weather
-    WHERE city = 'San Francisco' AND prcp > 0.0;
+INSERT INTO milestone (milestone_id, milestone_name, milestone_date, milestone_location, milestone_notes, person_age)
+	VALUES (DEFAULT,'Birth','1968-06-20 12:34:56','Hill Valley, California','', 0);
 
-SELECT * FROM weather
-    ORDER BY city;
+INSERT INTO milestone (milestone_id, milestone_name, milestone_date, milestone_location, milestone_notes, person_age)
+	VALUES (DEFAULT,'Travel Back in Time','1985-10-26 01:20:00','Twin Pines Mall, Hill Valley, California','Eludes Lybians by travelling back in time.', 17);
 
-SELECT * FROM weather
-    ORDER BY city, temp_lo;
-
-SELECT DISTINCT city
-    FROM weather;
-
-SELECT DISTINCT city
-    FROM weather
-    ORDER BY city;
-
-SELECT *
-    FROM weather, cities
-    WHERE city = name;
-
-SELECT city, temp_lo, temp_hi, prcp, date, location
-    FROM weather, cities
-    WHERE city = name;
-
-SELECT weather.city, weather.temp_lo, weather.temp_hi,
-       weather.prcp, weather.date, cities.location
-    FROM weather, cities
-    WHERE cities.name = weather.city;
-
-SELECT *
-    FROM weather INNER JOIN cities ON (weather.city = cities.name);
-
-SELECT *
-    FROM weather LEFT OUTER JOIN cities ON (weather.city = cities.name);
-
-SELECT W1.city, W1.temp_lo AS low, W1.temp_hi AS high,
-    W2.city, W2.temp_lo AS low, W2.temp_hi AS high
-    FROM weather W1, weather W2
-    WHERE W1.temp_lo < W2.temp_lo
-    AND W1.temp_hi > W2.temp_hi;
-
-SELECT *
-    FROM weather w, cities c
-    WHERE w.city = c.name;
-
-    -- the above command was the last one run in the console
 
