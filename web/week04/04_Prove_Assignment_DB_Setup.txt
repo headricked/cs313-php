@@ -1,0 +1,23 @@
+1. Provide a link to your myDb.sql file at GitHub (the file that contains all the SQL commands needed to create your database).
+https://github.com/headricked/cs313-php/blob/master/db/myDb.sql
+
+
+2. Describe something from your database that you think came together very nicely.
+I tried to think of a simple and intuitive way to design and label the database. So I only have two tables: one for the person, and one for the milestone event.
+
+3. Describe something from your database that you think could be improved or extended in the future.
+I spent many hours scouring the Internet to figure out how to subtract two dates from columns of different tables, then return a new column. I think I might need to use the JOIN functionality, but I'm not certain.
+
+4. Briefly describe the "coolest" thing you learned while completing this assignment.
+One of the coolest things I learned while completing this assignment is that there is a TIMESTAMPTZ data type to return dates and times, including the time zone. This may come in handy if time zones change.
+
+5. Briefly describe two principles of good database design.
+One principle of good database design is to organize information into subject-based tables to reduce redundancy. Another principle of good database design is to apply meaningful data types to ensure accurate data.
+
+
+6. Please select the category you feel best describes your assignment:
+5 - Shows creativity and excels above and beyond requirements
+
+
+7. Provide a brief justification (1-2 sentences) for selecting that category.
+I believe I demonstrated creativity, and went above and beyond the requirements, as evidenced by my generating code that inserts data into the database. This allowed me to see how the data appeared.
