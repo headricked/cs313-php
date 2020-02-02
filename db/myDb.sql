@@ -1,8 +1,7 @@
 CREATE DATABASE milestone;
 
-CREATE TABLE milestone
-(
-	milestone_id SERIAL NOT NULL PRIMARY KEY,
+CREATE TABLE milestone (
+    milestone_id SERIAL NOT NULL PRIMARY KEY,
     milestone_name VARCHAR(100) NOT NULL,
     milestone_date TIMESTAMPTZ NOT NULL,
     milestone_location VARCHAR(100) NOT NULL,
@@ -10,15 +9,14 @@ CREATE TABLE milestone
     person_age INT NOT NULL
 );
 
-CREATE TABLE person
-(
-	person_id SERIAL NOT NULL PRIMARY KEY,
-	first_name VARCHAR(20) NOT NULL,
-	middle_name VARCHAR(20),
-	last_name VARCHAR(20) NOT NULL,
-  	birthdate TIMESTAMPTZ NOT NULL,
-	is_male BOOLEAN NOT NULL,
-	milestone_id INT REFERENCES public.milestone(milestone_id)
+CREATE TABLE person (
+    person_id SERIAL NOT NULL PRIMARY KEY,
+    first_name VARCHAR(20) NOT NULL,
+    middle_name VARCHAR(20),
+    last_name VARCHAR(20) NOT NULL,
+    birthdate TIMESTAMPTZ NOT NULL,
+    is_male BOOLEAN NOT NULL,
+    milestone_id INT REFERENCES public.milestone(milestone_id)
 );
 
 -- test data below
