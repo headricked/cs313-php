@@ -13,9 +13,9 @@
     $stmt->execute();
     $scripture_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-    // $scripture_content = $scripture_rows[0]['content'];
+    $scripture_content = $scripture_rows[0]['content'];
     
-    var_dump($scripture_rows);
+    // var_dump($scripture_rows);
 
 ?>
 
@@ -45,7 +45,7 @@
         // }
 
 
-    $scripture_content = $scripture_rows[0]['content'];
+    // $scripture_content = $scripture_rows[0]['content'];
     echo $scripture_content;
 
         // foreach ($scripture_rows as $scrpture_row) {
