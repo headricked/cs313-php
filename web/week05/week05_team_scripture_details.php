@@ -6,15 +6,17 @@
         die('Error: scripture id not specified.');
     }
     
+    echo "second php is firing off";
+
     $scripture_id = htmlspecialchars($_GET['scripture_id']);
 
     require "week05_team_db_connect.php";
     $db = get_db();
   
     $stmt = $db->prepare('SELECT book, chapter, verse, content FROM scriptures WHERE id = :id');
-    // $stmt->bindValue(':id', $scripture_id, PDO::PARAM_INT);
-    // $stmt->execute();
-    // $scripture_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    $stmt->bindValue(':id', $scripture_id, PDO::PARAM_INT);
+    $stmt->execute();
+    $scripture_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
     
 ?>
 
