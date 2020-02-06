@@ -51,10 +51,23 @@
 
     <?php
 
-        foreach ($scripture_rows as $scrpture_row) {
-            $content = $scripture_row['content'];
-            echo "<p>$content<?p>";
-        }
+        while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+            $id = $row['id'];
+            $book = $row['book'];
+            $chapter = $row['chapter'];
+            $verse = $row['verse'];
+            $content = $row['content'];
+
+            // echo "<p><strong>$book $chapter:$verse</strong> - \"$content\"<p>";
+            echo "<p><strong><a href='week05_team_scripture_details.php?scripture_id=$id'>$book $chapter:$verse</a></strong><p>";
+            echo "<hr>";
+
+
+
+        // foreach ($scripture_rows as $scrpture_row) {
+        //     $content = $scripture_row['content'];
+        //     echo "<p>$content<?p>";
+        // }
 
     ?>
 
