@@ -20,7 +20,7 @@
   
     echo "fifth php is firing off<br/>";
 
-    $stmt = $db->prepare('SELECT book, chapter, verse, content FROM scriptures WHERE id = :id');
+    $stmt = $db->prepare('SELECT id, book, chapter, verse, content FROM scriptures WHERE id = :id');
 
     echo "sixth php is firing off<br/>";
 
@@ -51,7 +51,7 @@
 
     <?php
 
-        while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+        while ($scripture_rows = $stmt->fetch(PDO::FETCH_ASSOC)) {
             $id = $row['id'];
             $book = $row['book'];
             $chapter = $row['chapter'];
