@@ -1,5 +1,5 @@
 <?php
-  require('week05_team_db_connect.php');
+  require "week05_team_db_connect.php";
   $db = get_db();
 
   $query = 'SELECT id, book, chapter, verse, content FROM scriptures';
