@@ -19,6 +19,8 @@
     $statement = $db->prepare("SELECT book, chapter, verse, content FROM scriptures");
     $statement->execute();
 
+    echo "<hr>";
+
     while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
       $book = $row['book'];
       $chapter = $row['chapter'];
@@ -26,6 +28,7 @@
       $content = $row['content'];
 
       echo "<p><strong>$book $chapter:$verse</strong> - \"$content\"<p>";
+      echo "<hr>";
     }
 
   ?>
