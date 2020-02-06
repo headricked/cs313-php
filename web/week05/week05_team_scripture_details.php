@@ -15,7 +15,7 @@
     $stmt->bindValue(':id', $scripture_id, PDO::PARAM_INT);
     $stmt->execute();
     $scripture_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    echo `scripture_rows[2]: $scripture_rows[2]`;
+    
 ?>
 
 <!DOCTYPE html>
