@@ -13,6 +13,9 @@
     $stmt->execute();
     $scripture_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
+    $scripture_book = $scripture_rows[0]['book'];
+    $scripture_chapter = $scripture_rows[0]['chapter'];
+    $scripture_verse = $scripture_rows[0]['verse'];
     $scripture_content = $scripture_rows[0]['content'];
     
     // var_dump($scripture_rows);
@@ -28,7 +31,7 @@
     <title>Scripture Details</title>
 </head>
 <body>
-    <h1>Scripture Details for scripture ID: <?php echo $scripture_id ?></h1>
+    <h1>Scripture Details for <?php echo `$scripture_book $scripture_chapter:$scripture_verse` ?></h1>
 
     <?php
 
