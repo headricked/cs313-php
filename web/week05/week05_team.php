@@ -17,8 +17,8 @@
   <?php
 
     echo "Hello World!";
-    
-    $statement = $db->prepare("SELECT book, chapter, verse, content FROM scripture");
+
+    $statement = $db->prepare("SELECT book, chapter, verse, content FROM scriptures");
     $statement->execute();
 
     var_dump($statement);
