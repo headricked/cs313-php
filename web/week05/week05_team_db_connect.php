@@ -1,34 +1,41 @@
 <?php
+/**********************************************************
+* File: week05_team_db_connect.php
+* Author: Br. Burton
+* 
+* Description: Shows how to connect using either local
+* OR Heroku credentials, depending on whether the code
+* is executing at heroku.
+***********************************************************/
 
-    function get_db() {
-        $db = NULL;
+function get_db() {
+	$db = NULL;
 
-        try {
-            // default Heroku Postregs configuration URL
-            $dbUrl = getenv('DATABASE_URL');
+	try {
+		// default Heroku Postgres configuration URL
+		$dbUrl = getenv('DATABASE_URL');
 
-            // get the various parts of the DB Connection from the URL
-            $dbOpts = parse_url($dbUrl);
+		// Get the various parts of the DB Connection from the URL
+		$dbopts = parse_url($dbUrl);
 
-            $dbHost = $dbOpts["host"];
-            $dbPort = $dbOpts["port"];
-            $dbUser = $dbOpts["user"];
-            $dbPassword = $dbOpts["pass"];
-            $dbName = ltrim($dbOpts["path"],'/');
+		$dbHost = $dbopts["host"];
+		$dbPort = $dbopts["port"];
+		$dbUser = $dbopts["user"];
+		$dbPassword = $dbopts["pass"];
+		$dbName = ltrim($dbopts["path"],'/');
 
-            // create the PDO connection
-            $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+		// Create the PDO connection
+		$db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
 
-            // this line makes PDO give an exception when there are problems, helpful for debugging
-            $db->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
-        }
-        
-        catch (PDOException $ex) {
-            // if this were in production, you would not want to echo the exception details
-            echo "Error connecting to DB. Details: $ex";
-            die();
-            
-            return $db;
-        }
-    }
-?>
+		// this line makes PDO give us an exception when there are problems, and can be very helpful in debugging!
+		$db->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+	}
+	catch (PDOException $ex) {
+		// If this were in production, you would not want to echo
+		// the details of the exception.
+		echo "Error connecting to DB. Details: $ex";
+		die();
+	}
+
+	return $db;
+}
