@@ -12,8 +12,8 @@
     $db = get_db();
   
     $stmt = $db->prepare('SELECT book, chapter, verse, content FROM scriptures WHERE id = :id');
-    $stmt->bindValue(':id', $scripture_id, PDO::PARAM_INT);
-    $stmt->execute();
+    // $stmt->bindValue(':id', $scripture_id, PDO::PARAM_INT);
+    // $stmt->execute();
     // $scripture_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
     
 ?>
