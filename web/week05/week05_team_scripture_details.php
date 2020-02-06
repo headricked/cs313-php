@@ -52,11 +52,11 @@
     <?php
 
         while ($scripture_rows = $stmt->fetch(PDO::FETCH_ASSOC)) {
-            $id = $row['id'];
-            $book = $row['book'];
-            $chapter = $row['chapter'];
-            $verse = $row['verse'];
-            $content = $row['content'];
+            $id = $scripture_rows['id'];
+            $book = $scripture_rows['book'];
+            $chapter = $scripture_rows['chapter'];
+            $verse = $scripture_rows['verse'];
+            $content = $scripture_rows['content'];
 
             // echo "<p><strong>$book $chapter:$verse</strong> - \"$content\"<p>";
             echo "<p><strong><a href='week05_team_scripture_details.php?scripture_id=$id'>$book $chapter:$verse</a></strong><p>";
