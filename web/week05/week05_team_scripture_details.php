@@ -12,14 +12,9 @@
     $db = get_db();
   
     $stmt = $db->prepare('SELECT book, chapter, verse, content FROM scriptures WHERE id = :id');
-
-    var_dump($stmt);
-
     $stmt->bindValue(':id', $scripture_id, PDO::PARAM_INT);
     $stmt->execute();
     $scripture_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-
 ?>
 
 <!DOCTYPE html>
@@ -34,7 +29,7 @@
     <h1>Scripture Details for scripture ID: <?php echo $scripture_id ?></h1>
 
     <?php
-        echo "second php is firing off";
+        echo $scripture_rows['content'];
 
         foreach ($scripture_rows as $scrpture_row) {
             $content = $scripture_row['content'];
