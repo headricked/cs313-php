@@ -61,6 +61,7 @@
             // echo "<p><strong>$book $chapter:$verse</strong> - \"$content\"<p>";
             echo "<p><strong><a href='week05_team_scripture_details.php?scripture_id=$id'>$book $chapter:$verse</a></strong><p>";
             echo "<hr>";
+        }
 
 
 
