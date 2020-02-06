@@ -47,7 +47,7 @@
     <title>Scripture Details</title>
 </head>
 <body>
-    <h1>Scripture Details for scripture ID: <?php echo $scripture_id ?></h1>
+    <h1>Scripture Details for scripture ID: <?php echo $scripture_id; ?></h1>
 
     <?php
 
