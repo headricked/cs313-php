@@ -1,14 +1,16 @@
 <?php
 
-    echo "first php is firing off";
+    echo "first php is firing off<br/>";
 
     if (!isset($_GET['scripture_id'])) {
         die('Error: scripture id not specified.');
     }
     
-    echo "second php is firing off";
+    echo "second php is firing off<br/>";
 
     $scripture_id = htmlspecialchars($_GET['scripture_id']);
+
+    echo "third php is firing off<br/>";
 
     require "week05_team_db_connect.php";
     $db = get_db();
