@@ -15,6 +15,7 @@
     $stmt->bindValue(':id', $scripture_id, PDO::PARAM_INT);
     $stmt->execute();
     $scripture_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    echo `scripture_rows[2]: $scripture_rows[2]`;
 ?>
 
 <!DOCTYPE html>
@@ -29,7 +30,6 @@
     <h1>Scripture Details for scripture ID: <?php echo $scripture_id ?></h1>
 
     <?php
-        echo $scripture_rows[2];
 
         foreach ($scripture_rows as $scrpture_row) {
             $content = $scripture_row['content'];
