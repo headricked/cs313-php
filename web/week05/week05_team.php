@@ -33,6 +33,9 @@
   <h1>Scripture Resources</h1>
   
   <?php
+
+    echo "<hr>";
+
     foreach ($db->query('SELECT id, book, chapter, verse, content FROM scriptures') as $row)
     {
       echo
@@ -44,7 +47,8 @@
         $row["verse"] .
         "</strong> - \"" .
         $row["content"] .
-        "\"" . "</div>";
+        "\"" .
+        "</div><hr><br/>";
       }
 ?>
 
