@@ -42,7 +42,7 @@
         $row["chapter"] .
         ":" .
         $row["verse"] .
-        "</b> - \"" .
+        "</strong> - \"" .
         $row["content"] .
         "\"" . "</div>";
       }
