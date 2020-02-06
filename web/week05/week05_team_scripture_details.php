@@ -35,6 +35,7 @@
     $scripture_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
     
     echo "ninth php is firing off<br/>";
+    var_dump($scripture_rows);
 
 ?>
 
@@ -47,7 +48,7 @@
     <title>Scripture Details</title>
 </head>
 <body>
-    <h1>Scripture Details for scripture ID: <?php echo $scripture_id; ?></h1>
+    <h1>Scripture Details for scripture ID: <?php echo $scripture_id ?></h1>
 
     <?php
 
