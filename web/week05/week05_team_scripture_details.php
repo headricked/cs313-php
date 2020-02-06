@@ -45,11 +45,13 @@
         // }
 
 
+    $scripture_content = $scripture_rows[0]['content'];
+    echo $scripture_content;
 
-        foreach ($scripture_rows as $scrpture_row) {
-            $content = $scripture_row[0]['content'];
-            echo "<p>$content<?p>";
-        }
+        // foreach ($scripture_rows as $scrpture_row) {
+        //     $content = $scripture_row[0]['content'];
+        //     echo "<p>$content<?p>";
+        // }
 
     ?>
 
