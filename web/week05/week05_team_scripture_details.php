@@ -13,10 +13,8 @@
     $stmt->execute();
     $scripture_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-    $scripture_content = $scripture_rows[0]['content'];
+    // $scripture_content = $scripture_rows[0]['content'];
     
-    echo $scripture_content;
-
     var_dump($scripture_rows);
 
 ?>
@@ -34,10 +32,24 @@
 
     <?php
 
-        foreach ($scripture_rows as $scrpture_row) {
-            $content = $scripture_row['content'];
-            echo "<p>$content<?p>";
+        while ($scripture_rows = $stmt->fetch(PDO::FETCH_ASSOC)) {
+            $id = $scripture_rows[0]['id'];
+            $book = $scripture_rows[0]['book'];
+            $chapter = $scripture_rows[0]['chapter'];
+            $verse = $scripture_rows[0]['verse'];
+            $content = $scripture_rows[0]['content'];
+
+            echo "<p><strong>$book $chapter:$verse</strong> - \"$content\"<p>";
+            // echo "<p><strong><a href='week05_team_scripture_details.php?scripture_id=$id'>$book $chapter:$verse</a></strong><p>";
+            echo "<hr>";
         }
+
+
+
+        // foreach ($scripture_rows as $scrpture_row) {
+        //     $content = $scripture_row['content'];
+        //     echo "<p>$content<?p>";
+        // }
 
     ?>
 
