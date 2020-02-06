@@ -16,17 +16,13 @@
 
   <?php
 
-    $statement = $db->prepare("SELECT book, chapter, verse, content FROM scriptures");
+    $statement = $db->prepare("SELECT id, book, chapter, verse, content FROM scriptures");
     $statement->execute();
 
     echo "<hr>";
 
     while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
-
       $id = $row['id'];
-
-      echo "id : $id";
-
       $book = $row['book'];
       $chapter = $row['chapter'];
       $verse = $row['verse'];
