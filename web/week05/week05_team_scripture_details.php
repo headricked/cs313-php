@@ -33,7 +33,7 @@
 <body>
     <h1>Scripture Details</h1> 
     
-    <h3><?php echo $scripture_book . "" . $scripture_chapter . ":" . $scripture_verse ?></h3>
+    <h3><?php echo $scripture_book . "&nbsp;" . $scripture_chapter . ":" . $scripture_verse ?></h3>
 
     <hr>
 
