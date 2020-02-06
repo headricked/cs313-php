@@ -1,5 +1,7 @@
 <?php
 
+    echo "first php is firing off";
+
     if (!isset($_GET['scripture_id'])) {
         die('Error: scripture id not specified.');
     }
@@ -29,6 +31,7 @@
     <h1>Scripture Details for scripture ID: <?php echo $scripture_id ?></h1>
 
     <?php
+        echo "second php is firing off";
 
         foreach ($scripture_rows as $scrpture_row) {
             $content = $scripture_row['content'];
