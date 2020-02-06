@@ -48,7 +48,7 @@
         "</strong> - \"" .
         $row["content"] .
         "\"" .
-        "</div><hr><br/>";
+        "</div><hr>";
       }
 ?>
 
