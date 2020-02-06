@@ -18,6 +18,8 @@
 
     $db = get_db();
   
+    echo "fifth php is firing off<br/>";
+
     $stmt = $db->prepare('SELECT book, chapter, verse, content FROM scriptures WHERE id = :id');
     $stmt->bindValue(':id', $scripture_id, PDO::PARAM_INT);
     $stmt->execute();
