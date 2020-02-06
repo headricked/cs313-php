@@ -22,7 +22,11 @@
     echo "<hr>";
 
     while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+
       $id = $row['id'];
+
+      echo "id : $id";
+
       $book = $row['book'];
       $chapter = $row['chapter'];
       $verse = $row['verse'];
