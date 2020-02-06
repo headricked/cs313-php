@@ -7,7 +7,13 @@
     <title>Scripture Details</title>
 </head>
 <body>
-<h1>Scripture Details for __________</h1>
-    
+    <h1>Scripture Details for __________</h1>
+
+    <?php
+
+
+
+    ?>
+
 </body>
 </html>
