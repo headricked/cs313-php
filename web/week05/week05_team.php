@@ -20,9 +20,6 @@
   
   <?php
 
-    echo "<hr>";
-
-
     $statement = $db->prepare("SELECT book, chapter, verse, content FROM scripture");
     $statement->execute();
 
@@ -37,7 +34,7 @@
       $verse = $row['verse'];
       $content = $row['content'];
 
-      echo `<p><strong>$book $chapter:$verse</strong> - \"$content\"<p>`;
+      echo "<p><strong>$book $chapter:$verse</strong> - \"$content\"<p>";
     }
   ?>
 
