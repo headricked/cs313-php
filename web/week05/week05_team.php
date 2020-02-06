@@ -38,13 +38,6 @@
         echo
             "<div><strong>" .
             $row['book'] .
-            " " .
-            $row['chapter'] .
-            ":" .
-            $row['verse'] .
-            "</strong> - \"" .
-            $row['content'] .
-            "\"" .
             "</div>";
     }
 ?>
