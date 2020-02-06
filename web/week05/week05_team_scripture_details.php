@@ -31,7 +31,7 @@
     <title>Scripture Details</title>
 </head>
 <body>
-    <h1>Scripture Details for <?php echo `$scripture_book $scripture_chapter:$scripture_verse` ?></h1>
+    <h1>Scripture Details for <?php echo $scripture_book . $scripture_chapter . ":" . $scripture_verse ?></h1>
 
     <?php
 
