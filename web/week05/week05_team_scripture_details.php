@@ -13,7 +13,7 @@
   
     $stmt = $db->prepare('SELECT book, chapter, verse, content FROM scriptures WHERE id = :id');
 
-    echo $stmt;
+    var_dump($stmt);
 
     $stmt->bindValue(':id', $scripture_id, PDO::PARAM_INT);
     $stmt->execute();
