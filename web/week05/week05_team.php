@@ -33,6 +33,8 @@
 
 <?php
 
+    echo "Hello World!";
+
     foreach ($db->query('SELECT id, book, chapter, verse, content FROM scriptures') as $row)
     {
         echo
