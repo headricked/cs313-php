@@ -1,3 +1,13 @@
+<?php
+
+    if (!isset($_GET['scripture_id'])) {
+        die('Error: scripture id not specified.');
+    }
+    
+    $scripture_id = htmlspecialchars($_GET['scripture_id']);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +17,7 @@
     <title>Scripture Details</title>
 </head>
 <body>
-    <h1>Scripture Details for __________</h1>
+    <h1>Scripture Details for scripture ID: <?php echo $scripture_id ?></h1>
 
     <?php
 
