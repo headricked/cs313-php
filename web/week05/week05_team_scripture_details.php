@@ -21,10 +21,21 @@
     echo "fifth php is firing off<br/>";
 
     $stmt = $db->prepare('SELECT book, chapter, verse, content FROM scriptures WHERE id = :id');
+
+    echo "sixth php is firing off<br/>";
+
     $stmt->bindValue(':id', $scripture_id, PDO::PARAM_INT);
+
+    echo "seventh php is firing off<br/>";
+
     $stmt->execute();
+
+    echo "eighth php is firing off<br/>";
+
     $scripture_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
     
+    echo "ninth php is firing off<br/>";
+
 ?>
 
 <!DOCTYPE html>
