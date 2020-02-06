@@ -13,6 +13,9 @@
     echo "third php is firing off<br/>";
 
     require "week05_team_db_connect.php";
+
+    echo "fourth php is firing off<br/>";
+
     $db = get_db();
   
     $stmt = $db->prepare('SELECT book, chapter, verse, content FROM scriptures WHERE id = :id');
