@@ -29,7 +29,7 @@
     <h1>Scripture Details for scripture ID: <?php echo $scripture_id ?></h1>
 
     <?php
-        echo $scripture_rows['content'];
+        echo $scripture_rows[2];
 
         foreach ($scripture_rows as $scrpture_row) {
             $content = $scripture_row['content'];
