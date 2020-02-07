@@ -44,10 +44,10 @@
     <hr>
     <h3>Add a Scripture</h3>
     <form method="POST" action="insert_notes.php">
-        <input    name="scripture_book"    placeholder="book">
-        <input    name="scripture_chapter" placeholder="chapter">
-        <input    name="scripture_verse"   placeholder="verse">
-        <textarea name="scripture_content" placeholder="content" cols="30" rows="30"></textarea>
+        <input    name="scripture_book"    placeholder="book"><br/>
+        <input    name="scripture_chapter" placeholder="chapter"><br/>
+        <input    name="scripture_verse"   placeholder="verse"><br/>
+        <textarea name="scripture_content" placeholder="content" cols="50" rows="10"></textarea><br/>
         <input type="submit" value="Create note">
     </form>
 
