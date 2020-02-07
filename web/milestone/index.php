@@ -19,8 +19,6 @@
     // $statement = $db->prepare("SELECT id, book, chapter, verse, content FROM scriptures");
     // $statement->execute();
 
-    echo "first php line";
-
     $statement_milestone = $db->prepare("
         WITH theEvent AS (
           SELECT * FROM milestone
@@ -31,11 +29,11 @@
           AS person_age, milestone_location, milestone_notes
           FROM theEvent;
       ");
-    $statement->execute();
+    $statement_milestone->execute();
 
     echo "<hr>";
 
-    while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+    while ($row = $statement_milestone->fetch(PDO::FETCH_ASSOC)) {
       $name     = $row['milestone_name'];
       $date     = $row['milestone_date'];
       $age      = $row['person_age'];
