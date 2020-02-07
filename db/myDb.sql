@@ -35,14 +35,14 @@ INSERT INTO milestone (milestone_id, milestone_name, milestone_date, milestone_l
 INSERT INTO milestone (milestone_id, milestone_name, milestone_date, milestone_location, milestone_notes, person_id)
 	VALUES (DEFAULT,'Time Travel Success','1985-10-26 01:20:00','Twin Pines Mall, Hill Valley, California','Docs dog, Einstein, becomes the worlds first time traveler.', 1);
 
-INSERT INTO person (person_id, first_name, middle_name, last_name, birthdate, is_male)
-    VALUES (DEFAULT,'Marty','','McFly','1968-06-20 12:34:56',true);
+-- INSERT INTO person (person_id, first_name, middle_name, last_name, birthdate, is_male)
+--     VALUES (DEFAULT,'Marty','','McFly','1968-06-20 12:34:56',true);
 
-INSERT INTO milestone (milestone_id, milestone_name, milestone_date, milestone_location, milestone_notes, person_id)
-	VALUES (DEFAULT,'Birth','1968-06-20 12:34:56','Hill Valley, California','', 2);
+-- INSERT INTO milestone (milestone_id, milestone_name, milestone_date, milestone_location, milestone_notes, person_id)
+-- 	VALUES (DEFAULT,'Birth','1968-06-20 12:34:56','Hill Valley, California','', 2);
 
-INSERT INTO milestone (milestone_id, milestone_name, milestone_date, milestone_location, milestone_notes, person_id)
-	VALUES (DEFAULT,'Travel Back in Time','1985-10-26 01:20:00','Twin Pines Mall, Hill Valley, California','Eludes Lybians by travelling back in time.', 2);
+-- INSERT INTO milestone (milestone_id, milestone_name, milestone_date, milestone_location, milestone_notes, person_id)
+-- 	VALUES (DEFAULT,'Travel Back in Time','1985-10-26 01:20:00','Twin Pines Mall, Hill Valley, California','Eludes Lybians by travelling back in time.', 2);
 
 
 -- WITH event AS (
