@@ -17,6 +17,10 @@
     $scripture_chapter = $scripture_rows[0]['chapter'];
     $scripture_verse = $scripture_rows[0]['verse'];
     $scripture_content = $scripture_rows[0]['content'];
+    $scripture_reference = 
+        $scripture_rows[0]['book'] . "&nbsp;" .
+        $scripture_rows[0]['chapter'] . ":" .
+        $scripture_rows[0]['verse'];
     
     // var_dump($scripture_rows);
 
@@ -35,32 +39,19 @@
     
     <h3><?php echo $scripture_book . "&nbsp;" . $scripture_chapter . ":" . $scripture_verse ?></h3>
 
+    <h3><?php echo $scripture_reference ?></h3>
+
     <hr>
 
     <?php
-
-        // while ($scripture_rows = $stmt->fetch(PDO::FETCH_ASSOC)) {
-        //     $id = $scripture_rows[0]['id'];
-        //     $book = $scripture_rows[0]['book'];
-        //     $chapter = $scripture_rows[0]['chapter'];
-        //     $verse = $scripture_rows[0]['verse'];
-        //     $content = $scripture_rows[0]['content'];
-
-        //     echo "<p><strong>$book $chapter:$verse</strong> - \"$content\"<p>";
-        //     // echo "<p><strong><a href='week05_team_scripture_details.php?scripture_id=$id'>$book $chapter:$verse</a></strong><p>";
-        //     echo "<hr>";
-        // }
-
-
-    // $scripture_content = $scripture_rows[0]['content'];
-    echo $scripture_content;
-
-        // foreach ($scripture_rows as $scrpture_row) {
-        //     $content = $scripture_row[0]['content'];
-        //     echo "<p>$content<?p>";
-        // }
-
+        echo $scripture_content;
     ?>
+
+    <form method="POST" action="insert_notes.php">
+        <input type="hidden" name="" value="">
+        <textarea name="note_content" id="" cols="30" rows="10"></textarea>
+        <input type="submit" value="Create note">
+    </form>
 
 </body>
 </html>
