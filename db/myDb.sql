@@ -1,4 +1,4 @@
-CREATE DATABASE milestone;
+-- CREATE DATABASE milestone;
 
 CREATE TABLE person (
     person_id SERIAL NOT NULL PRIMARY KEY,
@@ -15,7 +15,6 @@ CREATE TABLE milestone (
     milestone_date TIMESTAMP NOT NULL,
     milestone_location VARCHAR(100) NOT NULL,
     milestone_notes VARCHAR(500),
-   -- person INT NOT NULL
   	person_id INT NOT NULL REFERENCES person(person_id)
 );
 
