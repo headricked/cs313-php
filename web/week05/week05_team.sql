@@ -17,3 +17,7 @@ INSERT INTO scriptures (book, chapter, verse, content)
 
 INSERT INTO scriptures (book, chapter, verse, content)
     VALUES ('Mosiah', 16, 9, 'He is the light and the life of the world; yea, a light that is endless, that can never be darkened; yea, and also a life which is endless, that there can be no more death.');
+
+UPDATE scriptures SET content = 'And it came to pass that I, Nephi, said unto my father: I will go and do the things which the Lord hath commanded, for I know that the Lord giveth no commandments unto the children of men, save he shall prepare a way for them that they may accomplish the thing which he commandeth them.' WHERE content = 'I will go I will do';
+
+UPDATE scriptures SET content = 'Adam fell that men might be; and men are, that they might have joy.' WHERE content = 'Adam fell that men might be and men are that they might have joy.';
