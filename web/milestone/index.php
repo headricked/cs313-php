@@ -19,6 +19,8 @@
     // $statement = $db->prepare("SELECT id, book, chapter, verse, content FROM scriptures");
     // $statement->execute();
 
+    echo "first php line";
+
     $statement_milestone = $db->prepare("
         WITH theEvent AS (
           SELECT * FROM milestone
