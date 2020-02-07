@@ -37,18 +37,17 @@
 </head>
 <body>
     <h1>Scripture Details</h1> 
-    
     <h3><?php echo $scripture_reference ?></h3>
-
     <hr>
-
-    <?php
-        echo $scripture_content;
-    ?>
-
+    <?php echo $scripture_content ?>
+    
+    <hr>
+    <h3>Add a Scripture</h3>
     <form method="POST" action="insert_notes.php">
-        <input type="hidden" name="" value="">
-        <textarea name="note_content" id="" cols="30" rows="10"></textarea>
+        <input    name="scripture_book"    placeholder="book">
+        <input    name="scripture_chapter" placeholder="chapter">
+        <input    name="scripture_verse"   placeholder="verse">
+        <textarea name="scripture_content" placeholder="content" cols="30" rows="30"></textarea>
         <input type="submit" value="Create note">
     </form>
 
