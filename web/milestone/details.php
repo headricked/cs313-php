@@ -38,26 +38,6 @@
       $p_last_name   = $row_name['last_name'];
       $full_name = $p_first_name . " " . $p_middle_name . " " . $p_last_name;
     }
-
-
-    // query the database for person data
-    // $statement_person = $db->prepare("SELECT id, book, chapter, verse, content FROM scriptures WHERE id = :id");
-    // $statement_person->bindValue(':id', $person_id, PDO::PARAM_INT);
-    // $statement_person->execute();
-    // $scripture_rows = $statement_person->fetchAll(PDO::FETCH_ASSOC);
-
-    // $scripture_id = $scripture_rows[0]['id'];
-    // $scripture_book = $scripture_rows[0]['book'];
-    // $scripture_chapter = $scripture_rows[0]['chapter'];
-    // $scripture_verse = $scripture_rows[0]['verse'];
-    // $scripture_content = $scripture_rows[0]['content'];
-    // $scripture_reference = 
-    //     $scripture_rows[0]['book'] . "&nbsp;" .
-    //     $scripture_rows[0]['chapter'] . ":" .
-    //     $scripture_rows[0]['verse'];
-    
-    // var_dump($scripture_rows);
-
 ?>
 
 <!DOCTYPE html>
