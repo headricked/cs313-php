@@ -42,7 +42,8 @@
 
     $full_name = $p_first_name . " " . $p_middle_name . " " . $p_last_name;
 
-    echo "<h1>$full_name</h1>";
+    // echo "<h1>$full_name</h1>";
+    echo "<h3><a href='week05_team_scripture_details.php?scripture_id=$id'>$full_name</a><h3>";
     echo "<hr>";
 
     while ($row_milestone = $statement_milestone->fetch(PDO::FETCH_ASSOC)) {
@@ -53,9 +54,7 @@
       $m_notes    = $row_milestone['milestone_notes'];
 
       // echo "<p><strong><a href='week05_team_scripture_details.php?scripture_id=$id'>$book $chapter:$verse</a></strong><p>";
-      // echo "<p>$m_name : $m_date : $m_age : $m_location : $m_notes<p>";
-      echo "<h3><a href='week05_team_scripture_details.php?scripture_id=$id'>$full_name</a><h3>";
-      
+      echo "<p>$m_name : $m_date : $m_age : $m_location : $m_notes<p>";      
       echo "<hr>";
     }
 
