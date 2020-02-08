@@ -45,7 +45,7 @@
     $full_name = $p_first_name . " " . $p_middle_name . " " . $p_last_name;
 
     // echo "<h1>$full_name</h1>";
-    echo "<h3><a href='details.php?scripture_id=$p_person_id'>$full_name</a></h3>";
+    echo "<h3><a href='details.php?person_id=$p_person_id'>$full_name</a></h3>";
     echo "<hr>";
 
     while ($row_milestone = $statement_milestone->fetch(PDO::FETCH_ASSOC)) {
