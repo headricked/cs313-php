@@ -30,6 +30,7 @@
     // $statement_person = $db->prepare("SELECT first_name, middle_name, last_name FROM person;");
     // $statement_person = $db->prepare("SELECT first_name, middle_name, last_name FROM person WHERE person_id = 1;");
     $statement_person = $db->prepare("SELECT first_name, middle_name, last_name FROM person WHERE person_id = :person_id;");
+    $statement_person->bindValue(':person_id', $person_id, PDO::PARAM_INT);
     $statement_person->execute();
 
     while ($row_name = $statement_person->fetch(PDO::FETCH_ASSOC)) {
