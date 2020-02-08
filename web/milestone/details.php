@@ -41,8 +41,8 @@
       $full_name = $p_first_name . " " . $p_middle_name . " " . $p_last_name;
 
       // echo "<h1>$full_name</h1>";
-      echo "<h3>$full_name</h3>";
-      echo "<hr>";
+    //   echo "<h3>$full_name</h3>";
+    //   echo "<hr>";
     }
 
 
