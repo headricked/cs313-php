@@ -53,9 +53,12 @@
       $m_notes    = $row_milestone['milestone_notes'];
 
       // echo "<p><strong><a href='week05_team_scripture_details.php?scripture_id=$id'>$book $chapter:$verse</a></strong><p>";
-      echo "<p>$m_name : $m_date : $m_age : $m_location : $m_notes<p>";
+      // echo "<p>$m_name : $m_date : $m_age : $m_location : $m_notes<p>";
+      echo "<h3><a href='week05_team_scripture_details.php?scripture_id=$id'>$full_name</a><h3>";
+      
       echo "<hr>";
     }
+
 
   ?>
 
