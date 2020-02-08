@@ -31,10 +31,12 @@
     $statement_milestone->execute();
 
     // Query the person database and assign to variable
-    $statement_person = $db->prepare("SELECT first_name, middle_name, last_name FROM person");
+    // $statement_person = $db->prepare("SELECT first_name, middle_name, last_name FROM person;");
+    $statement_person = $db->prepare("SELECT person_id, first_name, middle_name, last_name FROM person;");
     $statement_person->execute();
 
     while ($row_name = $statement_person->fetch(PDO::FETCH_ASSOC)) {
+      $p_person_id   = $row_name['person_id'];
       $p_first_name  = $row_name['first_name'];
       $p_middle_name = $row_name['middle_name'];
       $p_last_name   = $row_name['last_name'];
@@ -43,7 +45,7 @@
     $full_name = $p_first_name . " " . $p_middle_name . " " . $p_last_name;
 
     // echo "<h1>$full_name</h1>";
-    echo "<h3><a href='details.php?scripture_id=$id'>$full_name</a></h3>";
+    echo "<h3><a href='details.php?scripture_id=$p_person_id'>$full_name</a></h3>";
     echo "<hr>";
 
     while ($row_milestone = $statement_milestone->fetch(PDO::FETCH_ASSOC)) {
