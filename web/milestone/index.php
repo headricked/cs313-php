@@ -13,7 +13,8 @@
   <body>
 
   <h1>Milestone Tracker</h1> 
-
+  <hr>
+  
   <?php
 
     // $statement = $db->prepare("SELECT id, book, chapter, verse, content FROM scriptures");
