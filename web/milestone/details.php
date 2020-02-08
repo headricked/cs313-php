@@ -15,7 +15,7 @@
             SELECT * FROM milestone
             INNER JOIN person
             ON milestone.person_id = person.person_id
-            WHERE person.person_id = :person_id)
+            WHERE person.person_id = ':person_id')
        
        SELECT milestone_name, milestone_date, DATE_PART('year', milestone_date) - DATE_PART('year', birthdate)
             AS person_age, milestone_location, milestone_notes
