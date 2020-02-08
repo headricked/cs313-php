@@ -49,12 +49,8 @@
     <title>Scripture Details</title>
 </head>
 <body>
-    <!-- <h1>Milestones</h1> -->
-    <!-- <h3><?php echo $scripture_reference ?></h3> -->
     <h1><?php echo $full_name ?></h1>
     <hr>
-    <!-- <?php echo $scripture_content ?> -->
-
     <?php
         while ($row_milestone = $statement_milestone->fetch(PDO::FETCH_ASSOC)) {
         $m_name     = $row_milestone['milestone_name'];
