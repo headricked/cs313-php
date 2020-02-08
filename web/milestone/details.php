@@ -51,7 +51,7 @@
     <title>Scripture Details</title>
 </head>
 <body>
-    <h1>Scripture Details</h1> 
+    <h1>Milestones</h1> 
     <h3><?php echo $scripture_reference ?></h3>
     <hr>
     <?php echo $scripture_content ?>
