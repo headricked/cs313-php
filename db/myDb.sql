@@ -61,6 +61,18 @@ INSERT INTO milestone (milestone_id, milestone_name, milestone_date, milestone_l
 INSERT INTO milestone (milestone_id, milestone_name, milestone_date, milestone_location, milestone_notes, person_id)
 	VALUES (DEFAULT,'Won love of Lorraine, future wife','1955-11-12 21:05:00','Hill Valley High School, Hill Valley, California','Punched Biff to stand up for Lorraine at the Enchantment Under the Sea Dance.', 3);
 
+-- LORRAINE BAINES
+INSERT INTO person (person_id, first_name, middle_name, last_name, birthdate, is_male)
+    VALUES (DEFAULT,'Lorraine','Baines','McFly','1938-01-01 00:00:00',false);
+
+INSERT INTO milestone (milestone_id, milestone_name, milestone_date, milestone_location, milestone_notes, person_id)
+	VALUES (DEFAULT,'Birth','1938-01-01 00:00:00','Hill Valley, California','Born with dark brown hair.', 4);
+
+INSERT INTO milestone (milestone_id, milestone_name, milestone_date, milestone_location, milestone_notes, person_id)
+	VALUES (DEFAULT,'Fell in love with George','1955-11-12 21:05:00','Hill Valley High School, Hill Valley, California','Enchantment Under the Sea Dance.', 4);
+
+
+
 -- WITH event AS (
 --   SELECT * FROM milestone 
 -- INNER JOIN person ON milestone.person_id = person.person_id)
