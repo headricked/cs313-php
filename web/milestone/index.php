@@ -7,10 +7,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Milestone</title>
+    <title>Milestone Tracker</title>
   </head>
 
   <body>
+
+  <h1>Milestone Tracker</h1> 
 
   <?php
 
