@@ -25,6 +25,24 @@
     $statement_milestone->bindValue(':person_id', $person_id, PDO::PARAM_INT);
     $statement_milestone->execute();
 
+    // Query the person database and assign to variable
+    // $statement_person = $db->prepare("SELECT first_name, middle_name, last_name FROM person;");
+    $statement_person = $db->prepare("SELECT first_name, middle_name, last_name FROM person;");
+    $statement_person->execute();
+
+    while ($row_name = $statement_person->fetch(PDO::FETCH_ASSOC)) {
+      $p_first_name  = $row_name['first_name'];
+      $p_middle_name = $row_name['middle_name'];
+      $p_last_name   = $row_name['last_name'];
+
+      $full_name = $p_first_name . " " . $p_middle_name . " " . $p_last_name;
+
+      // echo "<h1>$full_name</h1>";
+      echo "<h3>$full_name</h3>";
+      echo "<hr>";
+    }
+
+
     // query the database for person data
     // $statement_person = $db->prepare("SELECT id, book, chapter, verse, content FROM scriptures WHERE id = :id");
     // $statement_person->bindValue(':id', $person_id, PDO::PARAM_INT);
