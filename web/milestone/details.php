@@ -243,7 +243,7 @@
             <textarea name="milestone_notes" placeholder="notes" rows="10"></textarea>
           <hr/>
 
-          <input type="hidden" name="person_id" value="21">
+          <input type="hidden" name="person_id" value="<?php htmlspecialchars($_GET['person_id']) ?>">
 
             <input type="submit" value="ADD">
         </form>
