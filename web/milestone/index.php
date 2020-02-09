@@ -245,7 +245,7 @@
 
           <label for="gender">Choose a gender:</label><br/>
             <input name="gender" type="radio" value="male"> Male<br>
-            <input name="gender" type="radio" value="female"> Female<br><br/>
+            <input name="gender" type="radio" value="female"> Female<br>
 
           <hr>
 
