@@ -74,8 +74,8 @@
         <input name="person_first_name"  placeholder="fist name"   type="text"><br/>
         <input name="person_middle_name" placeholder="middle name" type="text"><br/>
         <input name="person_last_name"   placeholder="last name"   type="text"><br/>
-
-        <p>Enter a birthdate</p>
+        <hr/>
+        Enter a birthdate<br/>
         <label for="month">Month:</label>
         <select id="month">
           <option value="01">January</option>
@@ -236,7 +236,7 @@
           <option value="1920">1920</option>
         </select>
 
-        <br/>
+        <hr>
 
         <label for="gender">Choose a gender:</label><br/>
         <input name="gender" type="radio" value="male"> Male<br>
