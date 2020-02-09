@@ -67,7 +67,7 @@
 
 
     
-    <hr>
+    <!-- <hr>
     <h3>Add a Scripture</h3>
     <form method="POST" action="insert_notes.php">
         <input    name="scripture_book"    placeholder="book"    type="text"><br/>
@@ -75,7 +75,7 @@
         <input    name="scripture_verse"   placeholder="verse"   type="number" min="1"><br/>
         <textarea name="scripture_content" placeholder="content" cols="50" rows="10"></textarea><br/>
         <input type="submit" value="Create note">
-    </form>
+    </form> -->
 
 </body>
 </html>
