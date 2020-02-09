@@ -75,7 +75,8 @@
         <input name="person_middle_name" placeholder="middle name" type="text"><br/>
         <input name="person_last_name"   placeholder="last name"   type="text"><br/>
 
-        <label for="month">Choose a month:</label>
+        <p>Enter a birthdate</p>
+        <label for="month">Month:</label>
         <select id="month">
           <option value="01">January</option>
           <option value="02">February</option>
@@ -93,7 +94,7 @@
 
         <br/>
 
-        <label for="day">Choose a day:</label>
+        <label for="day">Day:</label>
         <select id="day">
           <option value="01">1</option>
           <option value="02">2</option>
@@ -130,7 +131,7 @@
 
         <br/>
 
-        <label for="year">Choose a year:</label>
+        <label for="year">Year:</label>
         <select id="year">
           <option value="2020">2020</option>
           <option value="2019">2019</option>
@@ -237,7 +238,7 @@
 
         <br/>
 
-        <label for="gender">Choose a gender:</label>
+        <label for="gender">Choose a gender:</label><br/>
         <input name="gender" type="radio" value="male"> Male<br>
         <input name="gender" type="radio" value="female"> Female<br><br/>
 
