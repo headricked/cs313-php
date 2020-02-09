@@ -44,6 +44,8 @@
     // query the last inserted row from the person table and return the person id
     $person_id = $db->prepare("SELECT person_id FROM person ORDER BY person_id DESC LIMIT 1;");
 
+    echo "person_id: $person_id";
+
     // insert birth milestone into milestone table
     $stmt_milestone = $db->prepare("INSERT INTO milestone (milestone_id, milestone_name, milestone_date, milestone_location, milestone_notes, person_id)
         VALUES (DEFAULT, 'Birth', :birth_date, :birth_location, :birth_notes, :person_id);");
@@ -55,11 +57,8 @@
 
     $new_page = "index.php";
 
-    header("Location: $new_page");
+    // header("Location: $new_page");
     
     die();
-
-    // $scripture_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
 
 ?>
