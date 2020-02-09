@@ -65,10 +65,6 @@
         }
     ?>
 
-INSERT INTO milestone (milestone_id, milestone_name, milestone_date, milestone_location, milestone_notes, person_id)
-	VALUES (DEFAULT,'Birth','1914-11-05 12:34:56','Hill Valley, California','Born with white hair', 1);
-
-
 <section>
   <fieldset>
       <legend>Add a milestone</legend>
