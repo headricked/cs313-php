@@ -250,6 +250,8 @@
   </fieldset>
 </section>
 
+<a href="index.php">Return to list of persons</a>
+
     
     <!-- <hr>
     <h3>Add a Scripture</h3>
