@@ -250,11 +250,11 @@
           <hr>
 
           <label for="milestone_birth_location">Enter birth location:</label><br/>
-            <textarea name="milestone_birth_location" placeholder="location" cols="30" rows="3"></textarea>
+            <textarea name="milestone_birth_location" placeholder="location" rows="3"></textarea>
           <hr/>
 
           <label for="milestone_notes">Enter birth notes:</label><br/>
-            <textarea name="milestone_notes" placeholder="notes" cols="30" rows="10"></textarea>
+            <textarea name="milestone_notes" placeholder="notes" rows="10"></textarea>
           <hr/>
 
             <input type="submit" value="ADD">
