@@ -71,10 +71,11 @@
   <section>
   <h3>Add a person</h3>
     <form method="POST" action="add_person.php">
-        <input name="person_first_name"    placeholder="fist name"    type="text"><br/>
-        <input name="person_middle_name" placeholder="middle name" type="text" min="1"><br/>
-        <input name="person_last_name"   placeholder="last name"   type="text" min="1"><br/>
+        <input name="person_first_name"  placeholder="fist name"   type="text"><br/>
+        <input name="person_middle_name" placeholder="middle name" type="text"><br/>
+        <input name="person_last_name"   placeholder="last name"   type="text"><br/>
 
+        <label for="month">Choose a month:</label>
         <select id="month">
           <option value="01">January</option>
           <option value="02">February</option>
@@ -90,6 +91,9 @@
           <option value="12">December</option>
         </select>
 
+        <br/>
+
+        <label for="day">Choose a day:</label>
         <select id="day">
           <option value="01">1</option>
           <option value="02">2</option>
@@ -124,6 +128,9 @@
           <option value="31">31</option>
         </select>
 
+        <br/>
+
+        <label for="year">Choose a year:</label>
         <select id="year">
           <option value="2020">2020</option>
           <option value="2019">2019</option>
@@ -228,9 +235,9 @@
           <option value="1920">1920</option>
         </select>
 
-        <input name="person_birthdate_month" placeholder="month" type="number" min="1" max="12"><br/>
-        <input name="person_birthdate_day" placeholder="day" type="number" min="1" max="31"><br/>
-        <input name="person_birthdate_year" placeholder="year" type="number"><br/>
+        <br/>
+
+        <label for="gender">Choose a gender:</label>
         <input name="gender" type="radio" value="male"> Male<br>
         <input name="gender" type="radio" value="female"> Female<br><br/>
 
