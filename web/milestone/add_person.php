@@ -30,6 +30,8 @@
     // create a date formatted for database insertion
     $birth_date = $year . "-" . $month . "-" . $day . " 00:00:00";
 
+    echo "birth_date: $birth_date";
+
     // convert gender value male/female to true/false
     // in relation to isMale boolean
     if ($gender == 'male') {
@@ -38,8 +40,12 @@
         $isMale = false;
     }
 
+    echo "isMale: $isMale";
+
     require "db_connect.php";
     $db = get_db();
+
+    echo "db: $db";
 
     // insert new person into person table
     $stmt_person = $db->prepare("INSERT INTO person (person_id, first_name, middle_name, last_name, birthdate, is_male)
@@ -50,6 +56,8 @@
     $stmt_person->bindValue(':birth_date',  $birth_date,  PDO::PARAM_STR);
     $stmt_person->bindValue(':isMale',      $isMale,      PDO::PARAM_BOOL);
     $stmt_person->execute();
+
+    echo "stmt_person: $stmt_person";
 
     // query the last inserted row from the person table and return the person id
     $person_id = $db->prepare("SELECT person_id FROM person ORDER BY person_id DESC LIMIT 1;");
