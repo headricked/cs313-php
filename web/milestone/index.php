@@ -249,6 +249,14 @@
 
           <hr>
 
+          <label for="milestone_birth_location">Enter birth location:</label>
+            <textarea name="milestone_birth_location" placeholder="location" cols="30" rows="3"></textarea>
+          <hr/>
+
+          <label for="milestone_notes">Enter birth notes:</label>
+            <textarea name="milestone_notes" placeholder="notes" cols="30" rows="10"></textarea>
+          <hr/>
+
             <input type="submit" value="ADD">
         </form>
   </fieldset>
