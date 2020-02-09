@@ -52,7 +52,7 @@
     $stmt_person->execute();
 
     // query the last inserted row from the person table and return the person id
-    // $person_id = $db->prepare("SELECT person_id FROM person ORDER BY person_id DESC LIMIT 1;");
+    $person_id = $db->prepare("SELECT person_id FROM person ORDER BY person_id DESC LIMIT 1;");
 
     echo "person_id: $person_id";
 
