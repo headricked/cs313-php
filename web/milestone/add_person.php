@@ -17,6 +17,15 @@
     $birth_location = htmlspecialchars($_POST['birth_location']);
     $birth_notes    = htmlspecialchars($_POST['birth_notes']);
 
+    echo "first_name: $first_name";
+    echo "middle_name: $middle_name";
+    echo "last_name: $last_name";
+    echo "month: $month";
+    echo "day: $day";
+    echo "year: $year";
+    echo "gender: $gender";
+    echo "birth_location: $birth_location";
+    echo "birth_notes: $birth_notes";
 
     // create a date formatted for database insertion
     $birth_date = $year . "-" . $month . "-" . $day . " 00:00:00";
