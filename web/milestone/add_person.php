@@ -3,7 +3,7 @@
     // if (!isset($_GET['person_id'])) {
     //     die('Error: person_id not specified.');
     // }
-    $person_id = htmlspecialchars($_GET['person_id']);
+    // $person_id = htmlspecialchars($_GET['person_id']);
 
     // get then assign the values from the add person form
     $first_name     = htmlspecialchars($_POST['birth_first_name']);
@@ -40,6 +40,9 @@
     $stmt_person->bindValue(':birth_date',  $birth_date,  PDO::PARAM_STR);
     $stmt_person->bindValue(':isMale',      $isMale,      PDO::PARAM_BOOL);
     $stmt_person->execute();
+
+    // query the last inserted row from the person table and return the person id
+    $person_id = $db->prepare("SELECT person_id FROM person ORDER BY person_id DESC LIMIT 1;");
 
     // insert birth milestone into milestone table
     $stmt_milestone = $db->prepare("INSERT INTO milestone (milestone_id, milestone_name, milestone_date, milestone_location, milestone_notes, person_id)
