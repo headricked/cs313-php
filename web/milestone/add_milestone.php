@@ -1,9 +1,9 @@
 <?php
 
-    if (!isset($_GET['person_id'])) {
-        die('Error: person_id not specified.');
-    }
-    $person_id = htmlspecialchars($_GET['person_id']);
+    // if (!isset($_GET['person_id'])) {
+    //     die('Error: person_id not specified.');
+    // }
+    // $person_id = htmlspecialchars($_GET['person_id']);
 
 
     // get then assign the values from the add person form
@@ -13,6 +13,7 @@
     $milestone_year     = htmlspecialchars($_POST['milestone_year']);
     $milestone_location = htmlspecialchars($_POST['milestone_location']);
     $milestone_notes    = htmlspecialchars($_POST['milestone_notes']);
+    $person_id          = htmlspecialchars($_POST['person_id']);
 
     // create a date formatted for database insertion
     $milestone_date = $milestone_year . "-" . $milestone_month . "-" . $milestone_day . " 00:00:00";
