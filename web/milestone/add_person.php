@@ -58,7 +58,7 @@
 
     echo "stmt_milestone: $stmt_milestone";
 
-    $new_page = "index.php";
+    $new_page = "details.php";
 
     header("Location: $new_page");
     
