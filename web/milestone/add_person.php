@@ -1,10 +1,9 @@
 <?php
 
-    if (!isset($_GET['person_id'])) {
-        die('Error: person_id not specified.');
-    }
+    // if (!isset($_GET['person_id'])) {
+    //     die('Error: person_id not specified.');
+    // }
     // $person_id = htmlspecialchars($_GET['person_id']);
-    $person_id = $db->prepare("SELECT person_id FROM person ORDER BY person_id DESC LIMIT 1;");
 
 
     // get then assign the values from the add person form
@@ -59,7 +58,7 @@
 
     $new_page = "index.php";
 
-    // header("Location: $new_page");
+    header("Location: $new_page");
     
     die();
 
