@@ -73,16 +73,16 @@
       <legend>Add a person</legend>
         <form method="POST" action="add_person.php">
           Enter a name:<br/>
-          <label for="person_first_name">First name:</label>
-            <input name="person_first_name"  placeholder="fist name"   type="text"><br/>
-          <label for="person_middle_name">Middle name:</label>
-            <input name="person_middle_name" placeholder="middle name" type="text"><br/>
-          <label for="person_last_name">Last name:</label>
-            <input name="person_last_name"   placeholder="last name"   type="text"><br/>
+          <label for="birth_first_name">First name:</label>
+            <input name="birth_first_name"  placeholder="fist name"   type="text"><br/>
+          <label for="birth_middle_name">Middle name:</label>
+            <input name="birth_middle_name" placeholder="middle name" type="text"><br/>
+          <label for="birth_last_name">Last name:</label>
+            <input name="birth_last_name"   placeholder="last name"   type="text"><br/>
           <hr/>
           Enter a birthdate:<br/>
-          <label for="month">Month:</label>
-            <select id="month">
+          <label for="birth_month">Month:</label>
+            <select name="birth_month" id="birth_month">
               <option value="01">January</option>
               <option value="02">February</option>
               <option value="03">March</option>
@@ -99,8 +99,8 @@
 
           <br/>
 
-          <label for="day">Day:</label>
-            <select id="day">
+          <label for="birth_day">Day:</label>
+            <select name="birth_day" id="birth_day">
               <option value="01">1</option>
               <option value="02">2</option>
               <option value="03">3</option>
@@ -136,8 +136,8 @@
 
           <br/>
 
-          <label for="year">Year:</label>
-            <select id="year">
+          <label for="birth_year">Year:</label>
+            <select name="birth_year" id="birth_year">
               <option value="2020">2020</option>
               <option value="2019">2019</option>
               <option value="2018">2018</option>
@@ -243,18 +243,18 @@
 
           <hr>
 
-          <label for="gender">Choose a gender:</label><br/>
-            <input name="gender" type="radio" value="male"> Male<br>
-            <input name="gender" type="radio" value="female"> Female<br>
+          <label for="birth_gender">Choose a gender:</label><br/>
+            <input name="birth_gender" type="radio" value="male"> Male<br>
+            <input name="birth_gender" type="radio" value="female"> Female<br>
 
           <hr>
 
-          <label for="milestone_birth_location">Enter birth location:</label><br/>
-            <textarea name="milestone_birth_location" placeholder="location" rows="3"></textarea>
+          <label for="birth_location">Enter birth location:</label><br/>
+            <textarea name="birth_location" placeholder="location" rows="3"></textarea>
           <hr/>
 
-          <label for="milestone_notes">Enter birth notes:</label><br/>
-            <textarea name="milestone_notes" placeholder="notes" rows="10"></textarea>
+          <label for="birth_notes">Enter birth notes:</label><br/>
+            <textarea name="birth_notes" placeholder="notes" rows="10"></textarea>
           <hr/>
 
             <input type="submit" value="ADD">
