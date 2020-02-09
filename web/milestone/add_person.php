@@ -55,11 +55,11 @@
     $stmt_person->bindValue(':isMale',      $isMale,      PDO::PARAM_BOOL);
     $stmt_person->execute();
 
-    echo "stmt_person: $stmt_person";
-
     // query the last inserted row from the person table and return the person id
-    $person_id = $db->prepare("SELECT person_id FROM person ORDER BY person_id DESC LIMIT 1;");
-    $person_id->execute();
+    $statement_person_id = $db->prepare("SELECT person_id FROM person ORDER BY person_id DESC LIMIT 1;");
+    $statement_person_id->execute();
+    $row_person_id = $statement_person_id->fetch(PDO::FETCH_ASSOC);
+    $person_id = $row_person_id['person_id'];
 
     echo "person_id: $person_id";
 
