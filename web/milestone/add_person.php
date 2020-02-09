@@ -45,8 +45,6 @@
     require "db_connect.php";
     $db = get_db();
 
-    echo "db: $db";
-
     // insert new person into person table
     $stmt_person = $db->prepare("INSERT INTO person (person_id, first_name, middle_name, last_name, birthdate, is_male)
         VALUES (DEFAULT, :first_name, :middle_name, :last_name, :birth_date, :isMale);");
