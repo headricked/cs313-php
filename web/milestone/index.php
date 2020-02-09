@@ -250,7 +250,7 @@
 
             <input type="submit" value="ADD">
         </form>
-  <fieldset>
+  </fieldset>
 </section>
 
 
