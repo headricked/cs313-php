@@ -56,6 +56,8 @@
     $stmt_milestone->bindValue(':person_id',      $person_id,      PDO::PARAM_INT);
     $stmt_milestone->execute();
 
+    echo "stmt_milestone: $stmt_milestone";
+
     $new_page = "index.php";
 
     header("Location: $new_page");
