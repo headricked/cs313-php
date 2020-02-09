@@ -47,7 +47,7 @@
     $row_person_id = $statement_person_id->fetch(PDO::FETCH_ASSOC);
     $person_id = $row_person_id['person_id'];
 
-    echo "person_id: $person_id";
+    // echo "person_id: $person_id";
 
     // insert birth milestone into milestone table
     $stmt_milestone = $db->prepare("INSERT INTO milestone (milestone_id, milestone_name, milestone_date, milestone_location, milestone_notes, person_id)
@@ -61,7 +61,7 @@
     // echo "stmt_milestone: $stmt_milestone";
 
     // $new_page = "details.php";
-    $new_page = "details.php?person_id=$p_person_id";
+    $new_page = "details.php?person_id=$person_id";
 
 
     header("Location: $new_page");
