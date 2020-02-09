@@ -16,7 +16,7 @@
     $stmt->bindValue(':content', $content, PDO::PARAM_STR);
     $stmt->execute();
 
-    $new_page = "week05_team.php";
+    $new_page = "index.php";
 
     header("Location: $new_page");
     
