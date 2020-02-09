@@ -72,6 +72,7 @@
   <fieldset>
       <legend>Add a person</legend>
         <form method="POST" action="add_person.php">
+          Enter a name:<br/>
           <label for="person_first_name">First name:</label>
             <input name="person_first_name"  placeholder="fist name"   type="text"><br/>
           <label for="person_middle_name">Middle name:</label>
@@ -79,7 +80,7 @@
           <label for="person_last_name">Last name:</label>
             <input name="person_last_name"   placeholder="last name"   type="text"><br/>
           <hr/>
-          Enter a birthdate<br/>
+          Enter a birthdate:<br/>
           <label for="month">Month:</label>
             <select id="month">
               <option value="01">January</option>
