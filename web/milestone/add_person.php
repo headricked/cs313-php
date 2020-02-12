@@ -42,7 +42,8 @@
     $stmt_person->execute();
 
     // query the last inserted row from the person table and return the person id
-    $statement_person_id = $db->prepare("SELECT person_id FROM person ORDER BY person_id DESC LIMIT 1;");
+    $statement_person_id = $db->prepare("SELECT :person_id FROM person ORDER BY :person_id DESC LIMIT 1;");
+    $statement_person->bindValue(':person_id',  $person_id,  PDO::PARAM_STR);
     $statement_person_id->execute();
     $row_person_id = $statement_person_id->fetch(PDO::FETCH_ASSOC);
     $person_id = $row_person_id['person_id'];
