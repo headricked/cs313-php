@@ -51,8 +51,10 @@
       echo "<div>
               <a href='details.php?person_id=$p_person_id'>$full_name</a>
               <div class='button'>
-                <button onclick='update_person()'>UPDATE</button>
-                <button onclick='delete_person()'>DELETE</button>
+                <form method='POST'>
+                  <button type='submit' name='update_person' value='$p_person_id'>UPDATE PERSON $p_person_id</button>
+                  <button type='submit' name='delete_person' value='$p_person_id'>DELETE PERSON $p_person_id</button>
+                </form>
               </div>
             </div>";
       echo "<hr>";
