@@ -43,7 +43,14 @@
 
       $full_name = $p_first_name . " " . $p_middle_name . " " . $p_last_name;
 
-      echo "<a href='details.php?person_id=$p_person_id'>$full_name</a>";
+      echo "<div>
+              <div>
+                <a href='details.php?person_id=$p_person_id'>$full_name</a>
+                <div>
+                  <a href='delete_person.php?del=$row_name[$p_person_id]'>DELETE</a>
+                </div>
+            </div>";
+              
       echo "<hr>";
     }
 
