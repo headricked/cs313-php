@@ -18,9 +18,6 @@
 
   <?php
 
-    // $statement = $db->prepare("SELECT id, book, chapter, verse, content FROM scriptures");
-    // $statement->execute();
-
     // Query the milestone database and assign to variable
     $statement_milestone = $db->prepare("
         WITH theEvent AS (
@@ -35,7 +32,6 @@
     $statement_milestone->execute();
 
     // Query the person database and assign to variable
-    // $statement_person = $db->prepare("SELECT first_name, middle_name, last_name FROM person;");
     $statement_person = $db->prepare("SELECT person_id, first_name, middle_name, last_name FROM person;");
     $statement_person->execute();
 
@@ -47,25 +43,9 @@
 
       $full_name = $p_first_name . " " . $p_middle_name . " " . $p_last_name;
 
-      // echo "<h1>$full_name</h1>";
       echo "<a href='details.php?person_id=$p_person_id'>$full_name</a>";
       echo "<hr>";
     }
-
-
-    
-    // while ($row_milestone = $statement_milestone->fetch(PDO::FETCH_ASSOC)) {
-    //   $m_name     = $row_milestone['milestone_name'];
-    //   $m_date     = $row_milestone['milestone_date'];
-    //   $m_age      = $row_milestone['person_age'];
-    //   $m_location = $row_milestone['milestone_location'];
-    //   $m_notes    = $row_milestone['milestone_notes'];
-
-    //   // echo "<p><strong><a href='week05_team_scripture_details.php?scripture_id=$id'>$book $chapter:$verse</a></strong><p>";
-    //   echo "<p>$m_name : $m_date : $m_age : $m_location : $m_notes<p>";      
-    //   echo "<hr>";
-    // }
-
 
   ?>
 
