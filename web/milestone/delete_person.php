@@ -17,13 +17,13 @@
 
         echo "id: $id";
 
-        // $sql = 'DELETE FROM person WHERE person_id = $id';
-        $sql = 'DELETE FROM person WHERE person_id = 10';
+        $sql = 'DELETE FROM person WHERE person_id = :id;';
+        // $sql = 'DELETE FROM person WHERE person_id = 10';
         
         echo "sql statement: $sql";
 
         $stmt = $db->prepare($sql);
-        // $stmt->bindValue(':id', $id);
+        $stmt->bindValue(':id', $id);
         $stmt->execute();
     }
 
