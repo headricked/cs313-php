@@ -17,7 +17,8 @@
 
         echo "id: $id";
 
-        $sql = 'DELETE FROM person WHERE person_id = $id';
+        // $sql = 'DELETE FROM person WHERE person_id = $id';
+        $sql = 'DELETE FROM person WHERE person_id = 10';
         
         echo "sql statement: $sql";
 
