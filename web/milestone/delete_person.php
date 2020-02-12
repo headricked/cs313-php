@@ -1,5 +1,7 @@
 <?php
 
+    echo "delete_person.php";
+
     require "db_connect.php";
     $db = get_db();
 
