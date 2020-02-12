@@ -57,7 +57,6 @@
               <form method='POST' action='delete_person.php'>
                 <button type='submit' name='delete_person' value='$p_person_id'>DELETE PERSON $p_person_id</button>
               </form>
-    </div>
             </div>";
       echo "<hr>";
     }
