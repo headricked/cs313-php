@@ -9,10 +9,10 @@
     // $sql = 'DELETE FROM person WHERE person_id = :person_id';
     if ( isset($_POST['del']) ) {
         $id = $_POST['del'];
-        $sql = 'DELETE FROM person WHERE person_id = :id';
+        $sql = 'DELETE FROM person WHERE person_id = $id';
         
         $stmt = $this->pdo->prepare($sql);
-        $stmt->bindValue(':id', $id);
+        // $stmt->bindValue(':id', $id);
         $stmt->execute();
     }
 
