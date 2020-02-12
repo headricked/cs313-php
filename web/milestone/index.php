@@ -49,6 +49,7 @@
                 <div>
                   <a href='delete_person.php?del=$p_person_id'>DELETE</a>
                 </div>
+              </div>
             </div>";
               
       echo "<hr>";
