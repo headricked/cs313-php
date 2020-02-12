@@ -50,8 +50,10 @@
       // echo "<h1>$full_name</h1>";
       echo "<div>
               <a href='details.php?person_id=$p_person_id'>$full_name</a>
-              <button onclick='delete_person()'>DELETE</button>
-              <button onclick='update_person()'>UPDATE</button>
+              <div class='button'>
+                <button onclick='update_person()'>UPDATE</button>
+                <button onclick='delete_person()'>DELETE</button>
+              </div>
             </div>";
       echo "<hr>";
     }
