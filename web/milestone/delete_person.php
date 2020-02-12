@@ -8,7 +8,7 @@
     // get the 
     $person_id = htmlspecialchars($_POST['p_person_id']);
 
-    $button_name = 'update_person_' . $person_id;
+    $button_name = 'delete_person_' . $person_id;
 
     require "db_connect.php";
     $db = get_db();
