@@ -8,6 +8,7 @@
 <html>
   <head>
     <title>Milestone Tracker</title>
+    <link rel="stylesheet" href="milestone.css">
   </head>
 
   <body>
@@ -49,7 +50,7 @@
       // echo "<h1>$full_name</h1>";
       echo "<div>
               <a href='details.php?person_id=$p_person_id'>$full_name</a>
-              <input type='button' onclick='delete()'>DELETE</input>
+              <button onclick='delete()'>DELETE</button>
             </div>";
       echo "<hr>";
     }
