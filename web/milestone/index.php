@@ -48,17 +48,7 @@
       $full_name = $p_first_name . " " . $p_middle_name . " " . $p_last_name;
 
       // echo "<h1>$full_name</h1>";
-      echo "<div>
-              <a href='details.php?person_id=$p_person_id'>$full_name</a>
-              <div class='button'>
-                <form method='POST' action='update_person.php'>
-                  <button type='submit' name='update_person_$p_person_id' value='$p_person_id'>UPDATE PERSON $p_person_id</button>
-                </form>
-                <form method='POST' action='delete_person.php'>
-                  <button type='submit' name='delete_person_$p_person_id' value='$p_person_id'>DELETE PERSON $p_person_id</button>
-                </form>
-              </div>
-            </div>";
+      echo "<a href='details.php?person_id=$p_person_id'>$full_name</a>";
       echo "<hr>";
     }
 
