@@ -7,22 +7,29 @@
 
     // Delete a row in the person table specified by id
     // $sql = 'DELETE FROM person WHERE person_id = :person_id';
-    if ( isset($_POST['del']) ) {
-        $id = $_POST['del'];
-        $sql = 'DELETE FROM person WHERE person_id = $id';
+    if ( isset($_GET['del']) ) {
+        $id = $_GET['del'];
+        $sql = 'DELETE FROM person WHERE person_id = :id';
         
-        $stmt = $this->pdo->prepare($sql);
-        // $stmt->bindValue(':id', $id);
+        $stmt = $db->prepare($sql);
+        $stmt->bindValue(':id', $id);
         $stmt->execute();
     }
 
 
 
-    // $sql = 'DELETE FROM person WHERE person_id = 10';
 
-    // $stmt = $this->pdo->prepare($sql);
-    // $stmt->bindValue(':person_id', $person_id);
-    // $stmt->execute();
+    // $stmt_milestone = $db->prepare("INSERT INTO milestone (milestone_id, milestone_name, milestone_date, milestone_location, milestone_notes, person_id)
+    //     VALUES (DEFAULT, 'Birth', :birth_date, :birth_location, :birth_notes, :person_id);");
+    // $stmt_milestone->bindValue(':birth_date',     $birth_date,     PDO::PARAM_STR);
+    // $stmt_milestone->bindValue(':birth_location', $birth_location, PDO::PARAM_STR);
+    // $stmt_milestone->bindValue(':birth_notes',    $birth_notes,    PDO::PARAM_STR);
+    // $stmt_milestone->bindValue(':person_id',      $person_id,      PDO::PARAM_INT);
+    // $stmt_milestone->execute();
+
+
+
+
 
     $new_page = "index.php";
 
