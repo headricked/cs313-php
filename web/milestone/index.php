@@ -51,7 +51,7 @@
       echo "<div>
               <a href='details.php?person_id=$p_person_id'>$full_name</a>
               <div class='button'>
-                <form method='POST'>
+                <form method='POST' action='delete_person.php'>
                   <button type='submit' name='update_person' value='$p_person_id'>UPDATE PERSON $p_person_id</button>
                   <button type='submit' name='delete_person' value='$p_person_id'>DELETE PERSON $p_person_id</button>
                 </form>
