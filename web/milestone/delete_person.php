@@ -1,28 +1,16 @@
 <?php
 
-    echo "delete_person.php";
-
     require "db_connect.php";
     $db = get_db();
 
-    echo "connect to db";
-
     // Delete a row in the person table specified by id
-    // $sql = 'DELETE FROM person WHERE person_id = :person_id';
     if ( isset($_GET['del']) ) {
 
-        echo "entered if statement";
+        $id = htmlspecialchars($_GET['del']);
 
-        $id = $_GET['del'];
-
-        echo "id: $id";
-
-        $sql = 'DELETE FROM person WHERE person_id = :id;';
-        // $sql = 'DELETE FROM person WHERE person_id = 10';
+        $sql_delete_person = 'DELETE FROM person WHERE person_id = :id;';
         
-        echo "sql statement: $sql";
-
-        $stmt = $db->prepare($sql);
+        $stmt = $db->prepare($sql_delete_person);
         $stmt->bindValue(':id', $id);
         $stmt->execute();
     }
