@@ -370,8 +370,15 @@
   </fieldset>
 </section>
 
-<a href="index.php">Return to list of persons</a>
-
+<?php
+  echo "
+    <div class='button'>
+      <a href='index.php'>Return to List</a>
+      <a href='update_person.php?del=$p_person_id'>Update Person</a>
+      <a href='delete_person.php?del=$p_person_id'>Delete Person</a>
+    </div>
+  ;"
+?>
     
     <!-- <hr>
     <h3>Add a Scripture</h3>
