@@ -9,13 +9,22 @@ CREATE TABLE person (
     is_male BOOLEAN NOT NULL
 );
 
+-- CREATE TABLE milestone (
+--     milestone_id SERIAL NOT NULL PRIMARY KEY,
+--     milestone_name VARCHAR(100) NOT NULL,
+--     milestone_date TIMESTAMP NOT NULL,
+--     milestone_location VARCHAR(100) NOT NULL,
+--     milestone_notes VARCHAR(500),
+--   	person_id INT NOT NULL REFERENCES person(person_id)
+-- );
+
 CREATE TABLE milestone (
     milestone_id SERIAL NOT NULL PRIMARY KEY,
     milestone_name VARCHAR(100) NOT NULL,
     milestone_date TIMESTAMP NOT NULL,
     milestone_location VARCHAR(100) NOT NULL,
     milestone_notes VARCHAR(500),
-  	person_id INT NOT NULL REFERENCES person(person_id)
+  	person_id INT NOT NULL REFERENCES person(person_id) ON DELETE CASCADE
 );
 
 -- test data below

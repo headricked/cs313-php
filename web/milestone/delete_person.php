@@ -18,16 +18,6 @@
 
 
 
-    // $stmt_milestone = $db->prepare("INSERT INTO milestone (milestone_id, milestone_name, milestone_date, milestone_location, milestone_notes, person_id)
-    //     VALUES (DEFAULT, 'Birth', :birth_date, :birth_location, :birth_notes, :person_id);");
-    // $stmt_milestone->bindValue(':birth_date',     $birth_date,     PDO::PARAM_STR);
-    // $stmt_milestone->bindValue(':birth_location', $birth_location, PDO::PARAM_STR);
-    // $stmt_milestone->bindValue(':birth_notes',    $birth_notes,    PDO::PARAM_STR);
-    // $stmt_milestone->bindValue(':person_id',      $person_id,      PDO::PARAM_INT);
-    // $stmt_milestone->execute();
-
-
-
 
 
     $new_page = "index.php";
