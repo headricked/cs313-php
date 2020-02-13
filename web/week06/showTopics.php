@@ -20,6 +20,8 @@
             $statement = $db->prepare('SELECT id, book, chapter, verse, content FROM scriptures');
             $statement->execute();
 
+            echo '<hr>';
+
             while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
                 echo '<p>';
                 echo '<strong>' . $row['book'] . ' ' . $row['chapter'] . ':';
@@ -38,6 +40,7 @@
                 }
 
                 echo '</p>';
+                echo '<hr>';
             }
 
         } catch (PDOException $ex) {
