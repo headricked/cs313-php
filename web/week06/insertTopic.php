@@ -23,7 +23,7 @@
         $statement->execute();
 
         // get new id using special function
-        $scriptureId = $db->lastInsertId("scripture_id_seq");
+        $scriptureId = $db->lastInsertId("scriptures_id_seq");
 
         // loop through each topicid and insert the value into each scripture
         foreach ($topicIds as $topicId) {
