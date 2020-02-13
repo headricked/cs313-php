@@ -50,5 +50,7 @@
 
     ?>
 
+    <a href="index.php">Add Another Scripture</a>
+
 </body>
 </html>
