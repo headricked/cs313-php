@@ -17,7 +17,7 @@
     <?php
 
         try {
-            $statement = $db->prepare('SELECT id, book, chapter, verse, content FROM scripture');
+            $statement = $db->prepare('SELECT id, book, chapter, verse, content FROM scriptures');
             $statement->execute();
 
             while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
@@ -28,7 +28,7 @@
                 echo 'Topics: ';
 
                 // get the topics for the scripture
-                $statementTopics = $db->prepare('SELECT name FROM topic t' . ' INNER JOIN scripture_topic st ON st.topicId = t.id' . ' WHERE st.scriptureId = :scriptureId');
+                $statementTopics = $db->prepare('SELECT name FROM topic t' . ' INNER JOIN scripture_topic st ON st.topic_id = t.id' . ' WHERE st.scripture_id = :scriptureId');
 
                 $statementTopics->bindValue(':scriptureId', $row['id']);
                 $statementTopics->execute();
