@@ -27,9 +27,9 @@
 
         // loop through each topicid and insert the value into each scripture
         foreach ($topicIds as $topicId) {
-            echo "ScriptureId: $scriptureId, topicId: $topicId";
+            echo "scripture_id: $scriptureId, topic_id: $topicId";
 
-            $statement = $db->prepare('INSERT INTO scripture_topic(scriptureId, topicId) VALUES (:scriptureId, :topicId)');
+            $statement = $db->prepare('INSERT INTO scripture_topic(scripture_id, topic_id) VALUES (:scriptureId, :topicId)');
 
             $statement->bindValue(':scriptureId', $scriptureId);
             $statement->bindValue(':topicId', $topicId);
