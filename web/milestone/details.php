@@ -374,8 +374,8 @@
   echo "
     <div class='button'>
       <a href='index.php'>Return to List</a>
-      <a href='update_person.php?del=$person_id'>Update Person</a>
-      <a href='delete_person.php?del=$person_id'>Delete Person</a>
+      <a href='update_person.php?update=$person_id'>Update Person</a>
+      <a href='delete_person.php?delete=$person_id'>Delete Person</a>
     </div>
   "
 ?>
