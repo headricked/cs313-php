@@ -24,7 +24,7 @@
         <label for="txtVerse">Verse</label>
             <input type="text" id="txtVerse" name="txtVerse"></input><br/><br/>
 
-        <label for="txtConent">Book</label>
+        <label for="txtConent">Content</label>
             <textarea type="text" id="txtConent" name="txtConent" rows="5" cols="50"></textarea><br/><br/>
 
         <label>Topics:</label><br/>
