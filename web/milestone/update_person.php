@@ -1,29 +1,31 @@
 <?php
 
-    if (!isset($_GET['person_id'])) {
-        die('Error: person_id not specified.');
-    }
-    $person_id = htmlspecialchars($_GET['person_id']);
-
     require "db_connect.php";
     $db = get_db();
 
-    // Delete a row in the person table specified by id
+    if (!isset($_GET['update'])) {
+        die('Error: \'update\' not specified.');
+    }
+    $person_id = htmlspecialchars($_GET['update']);
+
+
+    // update a row in the person table specified by id
     if ( isset($_GET['update']) ) {
 
         $id = htmlspecialchars($_GET['update']);
 
         $sql = "SELECT * FROM person";
+
         $res = $db->prepare($sql);
         $row = $res->fetch(PDO::FETCH_ASSOC);
-
-
-        // $sql_update_person = 'DELETE FROM person WHERE person_id = :id;';        
-        // $stmt = $db->prepare($sql_update_person);
-        // $stmt->bindValue(':id', $id);
         $stmt->execute();
     }
 
+    if ( isset($_POST[])) {
+
+    }
+
+    
 
 
 

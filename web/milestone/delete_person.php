@@ -16,10 +16,6 @@
     }
 
 
-
-
-
-
     $new_page = "index.php";
 
     header("Location: $new_page");
