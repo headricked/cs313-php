@@ -14,7 +14,6 @@
   <body>
 
   <h1>Milestone Tracker</h1> 
-  <hr>
 
   <?php
 
@@ -35,6 +34,14 @@
     $statement_person = $db->prepare("SELECT person_id, first_name, middle_name, last_name FROM person;");
     $statement_person->execute();
 
+    echo "<table>
+            <thead>
+              <tr>
+                <th>Person</th>
+              </tr>
+            </thead>
+            <tbody>";
+
     while ($row_name = $statement_person->fetch(PDO::FETCH_ASSOC)) {
       $p_person_id   = $row_name['person_id'];
       $p_first_name  = $row_name['first_name'];
@@ -43,11 +50,16 @@
 
       $full_name = $p_first_name . " " . $p_middle_name . " " . $p_last_name;
 
-      echo "<a href='details.php?person_id=$p_person_id'>$full_name</a>";
-      echo "<hr>";
+      echo "<tr>
+              <td><a href='details.php?person_id=$p_person_id'>$full_name</a></td>
+            </tr>";
     }
+    echo "</tbody>
+          </table>";
 
   ?>
+
+  <br/><br/>
 
   <section>
   <fieldset>
