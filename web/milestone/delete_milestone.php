@@ -16,7 +16,9 @@
     }
 
 
-    $new_page = "index.php";
+    // $new_page = "index.php";
+    $new_page = "details.php?person_id=$person_id";
+
 
     header("Location: $new_page");
     

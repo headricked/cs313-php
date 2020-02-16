@@ -53,6 +53,7 @@
     <hr>
     <?php
         while ($row_milestone = $statement_milestone->fetch(PDO::FETCH_ASSOC)) {
+          $m_id     = $row_milestone['milestone_id'];
           $m_name     = $row_milestone['milestone_name'];
           $m_date     = $row_milestone['milestone_date'];
           $m_age      = $row_milestone['person_age'];
