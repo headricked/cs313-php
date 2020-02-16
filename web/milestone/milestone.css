@@ -1,14 +1,18 @@
+* {
+    padding: 10px;
+}
+
 /* div.button {
     float: right;
 } */
 
-/* table {
+table {
     border-collapse: collapse;
     padding: 10px;
     width: 100%;
 }
 
-thead {
+/* thead {
     background-color: #333;
     color: #fff;
 }
