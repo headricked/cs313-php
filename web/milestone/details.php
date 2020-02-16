@@ -19,7 +19,8 @@
        
        SELECT milestone_id, milestone_name, milestone_date, DATE_PART('year', milestone_date) - DATE_PART('year', birthdate)
             AS person_age, milestone_location, milestone_notes
-            FROM theEvent;
+            FROM theEvent
+            ORDER BY milestone_date DESC;
     ");
     // bind person id values together
     $statement_milestone->bindValue(':person_id', $person_id, PDO::PARAM_INT);
