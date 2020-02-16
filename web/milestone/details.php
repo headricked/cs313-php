@@ -61,9 +61,27 @@
           $m_notes    = $row_milestone['milestone_notes'];
 
           // echo "<p><strong><a href='week05_team_scripture_details.php?scripture_id=$id'>$book $chapter:$verse</a></strong><p>";
-          echo "<div>
-                  <p>$m_id : $m_name : $m_date : $m_age : $m_location : $m_notes<p>
-                  <a href='delete_milestone.php?delete=$m_id&person=$person_id'>Delete Milestone</a>
+          echo "<table>
+                  <thead>
+                    <tr>
+                      <th>Milestone</th>
+                      <th>Date</th>
+                      <th>Age</th>
+                      <th>Location</th>
+                      <th>Notes</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody
+                    <tr>
+                      <td>$m_name</td>
+                      <td>$m_date</td>
+                      <td>$m_age</td>
+                      <td>$m_location</td>
+                      <td>$m_notes</td>
+                      <td><a href='delete_milestone.php?delete=$m_id&person=$person_id'>Delete Milestone</a></td>
+                    </tr>
+                  </tbody>
                 </div>";      
           echo "<hr>";
         }
