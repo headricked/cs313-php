@@ -53,7 +53,7 @@
     <hr>
     <?php
         while ($row_milestone = $statement_milestone->fetch(PDO::FETCH_ASSOC)) {
-          $m_id     = $row_milestone['milestone_id'];
+          $m_id       = $row_milestone['milestone_id'];
           $m_name     = $row_milestone['milestone_name'];
           $m_date     = $row_milestone['milestone_date'];
           $m_age      = $row_milestone['person_age'];
@@ -63,7 +63,7 @@
           // echo "<p><strong><a href='week05_team_scripture_details.php?scripture_id=$id'>$book $chapter:$verse</a></strong><p>";
           echo "<div>
                   <p>$m_name : $m_date : $m_age : $m_location : $m_notes<p>
-                  <a href='delete_milestone.php?delete=$milestone_id'>Delete Milestone</a>
+                  <a href='delete_milestone.php?delete=$m_id'>Delete Milestone</a>
                 </div>";      
           echo "<hr>";
         }
