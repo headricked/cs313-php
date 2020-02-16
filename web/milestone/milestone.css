@@ -1,3 +1,14 @@
 div.button {
     float: right;
 }
+
+table {
+    border-collapse: collapse;
+    padding: 10px;
+    border: 1px solid #444;
+}
+
+thead {
+    background-color: #555;
+    color: #fff;
+}
