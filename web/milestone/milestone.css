@@ -6,22 +6,26 @@
     float: right;
 } */
 
+button {
+    float: right;
+}
+
 table {
     border-collapse: collapse;
     padding: 10px;
     width: 100%;
 }
 
-/* thead {
-    background-color: #333;
+thead {
+    background-color: #007bff;
     color: #fff;
 }
 
-th {
+/* th {
     padding: 10px 0;
-}
+} */
 
-td {
+/* td {
     padding: 10px;
 } */
 
