@@ -11,8 +11,13 @@ table {
 thead {
     background-color: #555;
     color: #fff;
+    padding: 10px;
 }
 
 td {
     padding: 10px;
+}
+
+tr:nth-child(odd) {
+    background-color: #999;
 }
