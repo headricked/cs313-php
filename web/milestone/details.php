@@ -97,12 +97,8 @@
 
 
   <div class="container">
-  <h2>Centered Modal Example</h2>
-  <p>Center the modal vertically and horizontally within the page, with the .modal-dialog-centered class.</p>
   <!-- Button to Open the Modal -->
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-    Open modal
-  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add Milestone</button>
 
   <!-- The Modal -->
   <div class="modal fade" id="myModal">
@@ -735,6 +731,8 @@
         </form>
   </fieldset>
 </section> -->
+
+<br/><br/>
 
 <?php
   echo "
