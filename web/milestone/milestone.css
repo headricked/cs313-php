@@ -5,7 +5,7 @@ div.button {
 table {
     border-collapse: collapse;
     padding: 10px;
-    border: 1px solid #444;
+    /* border: 1px solid #444; */
 }
 
 thead {
@@ -19,5 +19,5 @@ td {
 }
 
 tr:nth-child(odd) {
-    background-color: #999;
+    background-color: #ddd;
 }

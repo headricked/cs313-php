@@ -65,7 +65,7 @@
                   <th></th>
                 </tr>
               </thead>
-              <tbody";
+              <tbody>";
 
         while ($row_milestone = $statement_milestone->fetch(PDO::FETCH_ASSOC)) {
           $m_id       = $row_milestone['milestone_id'];
