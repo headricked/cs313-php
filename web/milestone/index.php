@@ -31,7 +31,10 @@
     $statement_milestone->execute();
 
     // Query the person database and assign to variable
-    $statement_person = $db->prepare("SELECT person_id, first_name, middle_name, last_name FROM person;");
+    $statement_person = $db->prepare("
+        SELECT person_id, first_name, middle_name, last_name
+        FROM person
+        ORDER BY last_name ASC;");
     $statement_person->execute();
 
     echo "<table>
