@@ -1,5 +1,7 @@
 <?php
 
+    $person_id = htmlspecialchars($_POST['person_id']);
+
     require "db_connect.php";
     $db = get_db();
 
