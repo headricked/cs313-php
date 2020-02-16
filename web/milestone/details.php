@@ -51,7 +51,7 @@
 </head>
 <body>
     <h1><?php echo $full_name ?></h1>
-    <hr>
+    <br/>
     <?php
 
         echo "<table>
@@ -89,6 +89,7 @@
           </table>";
 
     ?>
+  <br/>
 
 <section>
   <fieldset>
