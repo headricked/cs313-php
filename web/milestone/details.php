@@ -62,7 +62,7 @@
 
           // echo "<p><strong><a href='week05_team_scripture_details.php?scripture_id=$id'>$book $chapter:$verse</a></strong><p>";
           echo "<div>
-                  <p>$m_name : $m_date : $m_age : $m_location : $m_notes<p>
+                  <p>$m_id : $m_name : $m_date : $m_age : $m_location : $m_notes<p>
                   <a href='delete_milestone.php?delete=$m_id'>Delete Milestone</a>
                 </div>";      
           echo "<hr>";
