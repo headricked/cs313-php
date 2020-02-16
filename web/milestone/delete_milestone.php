@@ -1,6 +1,6 @@
 <?php
 
-    $person_id = htmlspecialchars($_POST['person_id']);
+    $person_id = htmlspecialchars($_GET['person_id']);
 
     echo `person_id: $person_id`;
 
