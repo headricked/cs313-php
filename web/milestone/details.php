@@ -446,7 +446,7 @@
         <!-- Modal body -->
         <div class="modal-body">
           <section>
-            <form method="POST" action="update_person.php">
+            <form method="POST" action="update_person.php?update=<?php echo $person_id?>">
               <label for="birth_first_name">First name:</label>
                 <input name="birth_first_name"  value="<?php echo $p_first_name ?>"   type="text"><br/>
               <label for="birth_middle_name">Middle name:</label>
