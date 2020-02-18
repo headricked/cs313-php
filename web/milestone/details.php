@@ -55,50 +55,52 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>  </head>
 </head>
 <body>
+  <div>
     <h1><?php echo $full_name ?></h1>
-    <?php
+    <!-- Button to Open the Modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add Milestone</button>
+  </div>
 
-        echo "<table>
-              <thead>
-                <tr>
-                  <th>Milestone</th>
-                  <th>Date</th>
-                  <th>Age</th>
-                  <th>Location</th>
-                  <th>Notes</th>
-                  <th></th>
-                </tr>
-              </thead>
-              <tbody>";
+  <?php
+      echo "<table>
+            <thead>
+              <tr>
+                <th>Milestone</th>
+                <th>Date</th>
+                <th>Age</th>
+                <th>Location</th>
+                <th>Notes</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>";
 
-        while ($row_milestone = $statement_milestone->fetch(PDO::FETCH_ASSOC)) {
-          $m_id       = $row_milestone['milestone_id'];
-          $m_name     = $row_milestone['milestone_name'];
-          $m_date     = $row_milestone['milestone_date'];
-          $m_age      = $row_milestone['person_age'];
-          $m_location = $row_milestone['milestone_location'];
-          $m_notes    = $row_milestone['milestone_notes'];
+      while ($row_milestone = $statement_milestone->fetch(PDO::FETCH_ASSOC)) {
+        $m_id       = $row_milestone['milestone_id'];
+        $m_name     = $row_milestone['milestone_name'];
+        $m_date     = $row_milestone['milestone_date'];
+        $m_age      = $row_milestone['person_age'];
+        $m_location = $row_milestone['milestone_location'];
+        $m_notes    = $row_milestone['milestone_notes'];
 
-          // echo "<p><strong><a href='week05_team_scripture_details.php?scripture_id=$id'>$book $chapter:$verse</a></strong><p>";
-          echo "<tr>
-                  <td>$m_name</td>
-                  <td>$m_date</td>
-                  <td>$m_age</td>
-                  <td>$m_location</td>
-                  <td>$m_notes</td>
-                  <td><a href='delete_milestone.php?delete=$m_id&person=$person_id'>Delete Milestone</a></td>
-                </tr>";
-        }
+        // echo "<p><strong><a href='week05_team_scripture_details.php?scripture_id=$id'>$book $chapter:$verse</a></strong><p>";
+        echo "<tr>
+                <td>$m_name</td>
+                <td>$m_date</td>
+                <td>$m_age</td>
+                <td>$m_location</td>
+                <td>$m_notes</td>
+                <td><a href='delete_milestone.php?delete=$m_id&person=$person_id'>Delete Milestone</a></td>
+              </tr>";
+      }
+
       echo "</tbody>
           </table>";
-
     ?>
   <br/><br/>
 
 
   <div class="container">
-  <!-- Button to Open the Modal -->
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add Milestone</button>
 
   <!-- The Modal -->
   <div class="modal fade" id="myModal">
