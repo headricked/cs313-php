@@ -16,8 +16,12 @@
 
   <body>
 
-  <h1>Milestone Tracker</h1> 
-
+  <div>
+    <h1>Milestone Tracker</h1>
+    <!-- Button to Open the Modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add a person</button>
+  </div>
+  
   <?php
 
     // Query the milestone database and assign to variable
@@ -72,8 +76,8 @@
 
 
 <div class="container">
-  <!-- Button to Open the Modal -->
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add a person</button>
+  <!-- Button to Open the Modal
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add a person</button> -->
 
   <!-- The Modal -->
   <div class="modal fade" id="myModal">
