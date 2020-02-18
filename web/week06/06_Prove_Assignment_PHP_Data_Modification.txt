@@ -1,0 +1,39 @@
+1. Copy and paste the URL for your web application:
+https://floating-headland-29156.herokuapp.com/milestone/index.php
+
+2. Copy and paste the URL for your source code repository (e.g., GitHub):
+https://github.com/headricked/cs313-php/tree/master/web/milestone
+
+
+3. Briefly list and describe the elements of the application that are functioning. Include any special instructions about how to login and/or use your application.
+
+A: index page: this is the starting point, and populates a listing of all persons full names currently recorded in the person table of the database. This page also contains a web form that allows a user to add a new person to the list. https://floating-headland-29156.herokuapp.com/milestone/index.php
+
+B: details page: one arrives at this page based on the link of the person clicked from the index page. That person's ID is a value passed through the query parameter, and, based on that value, the page queries the database to display milestone information about that person. This page also provides a web form that allows a user to add a new milestone for that user, then immediately displays it on that same page. https://floating-headland-29156.herokuapp.com/milestone/details.php?person_id=5
+
+C: add person page: this page handles the function of inserting a person's data into the person table, then takes the user to that new person's details (milestone) page.
+
+D: add milestone page: this page handles the function of inserting a person's milestone data into the milestone table, then returns the user to the details page.
+
+E: delete milestone page: this page handles the deletion of a milestone, then returns the user to the details (milestone) page.
+
+F: delete person page: this page handles the deletion of the person, and the person's milestones using the CASCADE database attribute.
+
+G: data base connection page: this page handles the connection to the Heroku database.
+
+
+4. Briefly describe any pieces of the assignment that are not yet working correctly.
+The updating functionality is not working, unfortunately. I wish I had more time to complete that for this week. I hope to find the time to resolve that functionality. Other than that, everything is working as expected.
+
+5. Briefly describe the "coolest" thing you learned while completing this assignment.
+The coolest thing I learned while completing this assignment was actually making things work. I worried that I wouldn't be make the connection between the front end and back end. But, I was able to do that following very helpful tutorials from a BYUI instructor.
+
+6. What is a benefit of having a foreign key constraint?
+This allows the type of data to be consistent when managing data additions or updates to table data.
+
+7. Please select the category you feel best describes your assignment:
+5 - Shows creativity and excels above and beyond requirements
+
+
+8. Provide a brief justification (1-2 sentences) for selecting that category.
+I feel I excelled above and beyond the requirements. I added references to some bootstrap and javascript libraries to help with modal functionality and style.
