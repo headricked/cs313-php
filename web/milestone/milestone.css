@@ -2,18 +2,22 @@
     padding: 10px;
 }
 
-/* div.button {
-    float: right;
-} */
-
 button {
     float: right;
+}
+
+h1 {
+    display: inline-block;
 }
 
 table {
     border-collapse: collapse;
     padding: 10px;
     width: 100%;
+}
+
+tbody>tr:nth-child(even) {
+    background-color: #eee;
 }
 
 textarea {
@@ -33,6 +37,3 @@ thead {
     padding: 10px;
 } */
 
-tbody>tr:nth-child(even) {
-    background-color: #eee;
-}
