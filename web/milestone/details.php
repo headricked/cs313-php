@@ -27,7 +27,7 @@
     $statement_milestone->execute();
 
     // Query the person database and assign to variable
-    $statement_person = $db->prepare("SELECT first_name, middle_name, last_name FROM person WHERE person_id = :person_id;");
+    $statement_person = $db->prepare("SELECT first_name, middle_name, last_name, is_male FROM person WHERE person_id = :person_id;");
     // bind person id values together
     $statement_person->bindValue(':person_id', $person_id, PDO::PARAM_INT);
     $statement_person->execute();
@@ -37,6 +37,7 @@
       $p_first_name  = $row_name['first_name'];
       $p_middle_name = $row_name['middle_name'];
       $p_last_name   = $row_name['last_name'];
+      $p_is_male     = $row_name['is_male'];
       $full_name = $p_first_name . " " . $p_middle_name . " " . $p_last_name;
     }
 ?>
@@ -456,8 +457,12 @@
               <hr/>
 
               <label for="birth_gender">Gender:</label><br/>
-                <input name="birth_gender" type="radio" value="male"> Male<br>
-                <input name="birth_gender" type="radio" value="female"> Female<br>
+
+                <input name="birth_gender" type="radio" value="male" <?php if ($p_is_male == true){echo ' checked'; } ?>> Male<br>
+                <input name="birth_gender" type="radio" value="female" <?php if ($p_is_male == false){echo ' checked'; } ?>> Female<br>
+
+                <!-- <input name="birth_gender" type="radio" value="male"> Male<br> -->
+                <!-- <input name="birth_gender" type="radio" value="female"> Female<br> -->
 
               <hr>
 
