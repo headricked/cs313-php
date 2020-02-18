@@ -20,7 +20,7 @@
   <div>
     <h1>Milestone Tracker</h1>
     <!-- Button to Open the Modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add a person</button>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_addPerson">Add a person</button>
   </div>
   
   <?php
@@ -81,7 +81,7 @@
   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add a person</button> -->
 
   <!-- The Modal -->
-  <div class="modal fade" id="myModal">
+  <div class="modal fade" id="modal_addPerson">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
       

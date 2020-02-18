@@ -58,7 +58,7 @@
   <div>
     <h1><?php echo $full_name ?></h1>
     <!-- Button to Open the Modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add Milestone</button>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_addMilestone">Add Milestone</button>
   </div>
 
   <?php
@@ -100,10 +100,10 @@
   <br/><br/>
 
 
-  <div class="container">
+<div class="container">
 
   <!-- The Modal -->
-  <div class="modal fade" id="myModal">
+  <div class="modal fade" id="modal_addMilestone">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
       
@@ -736,13 +736,11 @@
 <br/><br/>
 
 <?php
-  echo "
-    <div class='button'>
-      <a href='index.php'>Return to List</a>
-      <a href='update_person.php?update=$person_id'>Update Person</a>
-      <a href='delete_person.php?delete=$person_id'>Delete Person</a>
-    </div>
-  "
+  echo "<div class='button'>
+          <a href='index.php'>Return to List</a>
+          <a href='update_person.php?update=$person_id'>Update Person</a>
+          <a href='delete_person.php?delete=$person_id'>Delete Person</a>
+        </div>"
 ?>
     
     <!-- <hr>
