@@ -118,3 +118,10 @@ WITH theEvent AS (
  SELECT milestone_name, milestone_date, DATE_PART('year', milestone_date) - DATE_PART('year', birthdate)
   AS person_age, milestone_location, milestone_notes
   FROM theEvent;
+
+UPDATE person
+  SET first_name  = 'Mary',
+      middle_name = 'Tyler',
+      last_name   = 'Moore',
+      is_male      = 'false'
+  WHERE person_id = 10;

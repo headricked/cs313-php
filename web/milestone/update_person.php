@@ -21,12 +21,12 @@
     // convert gender value male/female to true/false
     // in relation to isMale boolean
     if ($new_gender == 'male') {
-        $isMale = 'true';
+        $new_is_male = 'true';
     } else {
-        $isMale = 'false';
+        $new_is_male = 'false';
     }
 
-    echo "isMale: $isMale";
+    echo "new_is_male: $new_is_male";
 
     require "db_connect.php";
     $db = get_db();
@@ -34,17 +34,17 @@
     // update to person in person table
     $stmt_person = $db->prepare("
                                 UPDATE person
-                                SET :first_name  ='$new_first_name',
-                                    :middle_name ='$new_middle_name',
-                                    :last_name   ='$last_name',
-                                    :isMale      ='$isMale',
-                                WHERE :person_id ='$person_id'
+                                SET first_name  = '$new_first_name',
+                                    middle_name = '$new_middle_name',
+                                    last_name   = '$new_last_name',
+                                    is_male     = '$new_is_male'
+                                WHERE person_id = '$person_id';
                                 ");
-    $stmt_person->bindValue(':first_name',  $first_name,  PDO::PARAM_STR);
-    $stmt_person->bindValue(':middle_name', $middle_name, PDO::PARAM_STR);
-    $stmt_person->bindValue(':last_name',   $last_name,   PDO::PARAM_STR);
-    $stmt_person->bindValue(':isMale',      $isMale,      PDO::PARAM_BOOL);
-    $stmt_person->bindValue(':person_id',   $person_id,   PDO::PARAM_INT);
+    $stmt_person->bindValue(':new_first_name',  $new_first_name,  PDO::PARAM_STR);
+    $stmt_person->bindValue(':new_middle_name', $new_middle_name, PDO::PARAM_STR);
+    $stmt_person->bindValue(':last_name',       $new_last_name,   PDO::PARAM_STR);
+    $stmt_person->bindValue(':new_is_male',     $new_is_male,     PDO::PARAM_BOOL);
+    $stmt_person->bindValue(':person_id',       $person_id,       PDO::PARAM_INT);
     $stmt_person->execute();
 
     // query the last inserted row from the person table and return the person id
