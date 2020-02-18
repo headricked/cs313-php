@@ -18,7 +18,7 @@
   <body>
 
   <div>
-    <p>Milestone Tracker</p>
+    <h1>Milestone Tracker</h1>
     <!-- Button to Open the Modal -->
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add a person</button>
   </div>
