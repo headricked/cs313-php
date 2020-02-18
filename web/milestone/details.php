@@ -742,7 +742,9 @@
           <a href='delete_person.php?delete=$person_id'>Delete Person</a>
         </div>"
 ?>
-    
+
+<a href='update_person.php?update=<?php $person_id?>' type='button' class='btn btn-primary' data-toggle='modal' data-target='#modal_updatePerson'>Update Person</a>
+
     <!-- <hr>
     <h3>Add a Scripture</h3>
     <form method="POST" action="insert_notes.php">
