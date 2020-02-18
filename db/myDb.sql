@@ -123,5 +123,5 @@ UPDATE person
   SET first_name  = 'Mary',
       middle_name = 'Tyler',
       last_name   = 'Moore',
-      is_male      = 'false'
+      is_male     = 'false'
   WHERE person_id = 10;
