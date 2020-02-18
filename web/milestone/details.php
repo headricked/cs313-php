@@ -409,7 +409,6 @@
 
               <label for="milestone_notes">Enter milestone notes:</label><br/>
                 <textarea name="milestone_notes" placeholder="notes" rows="10"></textarea>
-              <hr/>
 
               <input type="hidden" name="person_id" value="<?php echo $person_id ?>">
 

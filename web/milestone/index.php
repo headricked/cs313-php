@@ -398,7 +398,6 @@
 
                 <label for="birth_notes">Enter birth notes:</label><br/>
                   <textarea name="birth_notes" placeholder="notes" rows="10"></textarea>
-                <hr/>
 
                 <!-- Modal footer -->
                 <div class="modal-footer">
