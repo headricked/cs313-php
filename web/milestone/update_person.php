@@ -26,10 +26,12 @@
         $isMale = false;
     }
 
+    echo "isMale: $isMale";
+
     require "db_connect.php";
     $db = get_db();
 
-    // insert new person into person table
+    // update to person in person table
     $stmt_person = $db->prepare("
                                 UPDATE person
                                 SET :first_name  ='$new_first_name',
