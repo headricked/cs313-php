@@ -1,9 +1,9 @@
 <?php
 
-    // if (!isset($_GET['person_id'])) {
-    //     die('Error: person_id not specified.');
-    // }
-    $person_id = htmlspecialchars($_GET['person_id']);
+    if (!isset($_GET['update'])) {
+        die('Error: person_id not specified.');
+    }
+    $person_id = htmlspecialchars($_GET['update']);
 
     echo "person_id: $person_id";
 
