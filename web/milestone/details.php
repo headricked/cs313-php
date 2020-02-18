@@ -743,7 +743,7 @@
         </div>"
 ?>
 
-<a href='update_person.php?update=<?php $person_id?>' type='button' class='btn btn-primary' data-toggle='modal' data-target='#modal_updatePerson'>Update Person</a>
+<a href='update_person.php?update=<?php echo $person_id?>' type='button' class='btn btn-primary' data-toggle='modal' data-target='#modal_updatePerson'>Update Person</a>
 
     <!-- <hr>
     <h3>Add a Scripture</h3>
