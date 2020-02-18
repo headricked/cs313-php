@@ -4,15 +4,12 @@
 
 button {
     float: right;
-    vertical-align: middle;
 }
 
 h1 {
     display: inline-block;
-}
-
-.header {
-    vertical-align: middle;
+    padding-bottom: 0px 10px 5px;
+    margin: 0px;
 }
 
 table {
