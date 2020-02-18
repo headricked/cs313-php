@@ -13,6 +13,11 @@
     $new_last_name      = htmlspecialchars($_POST['birth_last_name']);
     $new_gender         = htmlspecialchars($_POST['birth_gender']);
 
+    echo "new_first_name: $new_first_name";
+    echo "new_middle_name: $new_middle_name";
+    echo "new_last_name: $new_last_name";
+    echo "new_gender: $new_gender";
+
     // convert gender value male/female to true/false
     // in relation to isMale boolean
     if ($new_gender == 'male') {
