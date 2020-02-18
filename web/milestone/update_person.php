@@ -21,9 +21,9 @@
     // convert gender value male/female to true/false
     // in relation to isMale boolean
     if ($new_gender == 'male') {
-        $isMale = true;
+        $isMale = 'true';
     } else {
-        $isMale = false;
+        $isMale = 'false';
     }
 
     echo "isMale: $isMale";
