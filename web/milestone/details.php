@@ -461,9 +461,6 @@
                 <input name="birth_gender" type="radio" value="male" <?php if ($p_is_male == true){echo ' checked'; } ?>> Male<br>
                 <input name="birth_gender" type="radio" value="female" <?php if ($p_is_male == false){echo ' checked'; } ?>> Female<br>
 
-                <!-- <input name="birth_gender" type="radio" value="male"> Male<br> -->
-                <!-- <input name="birth_gender" type="radio" value="female"> Female<br> -->
-
               <hr>
 
               <input type="hidden" name="person_id" value="<?php echo $person_id ?>">
@@ -800,7 +797,9 @@
         </div>"
 ?>
 
-<a href='update_person.php?update=<?php echo $person_id?>' type='button' class='btn btn-primary' data-toggle='modal' data-target='#modal_updatePerson'>Update Person</a>
+<!-- <a href='update_person.php?update=<?php echo $person_id?>' type='button' class='btn btn-primary' data-toggle='modal' data-target='#modal_updatePerson'>Update Person</a> -->
+
+<button type='button' class='btn btn-primary' data-toggle='modal' data-target='#modal_updatePerson'>Update Person</button>
 
     <!-- <hr>
     <h3>Add a Scripture</h3>
