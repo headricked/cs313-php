@@ -40,8 +40,6 @@
       $p_is_male     = $row_name['is_male'];
       $full_name     = $p_first_name . " " . $p_middle_name . " " . $p_last_name;
     }
-
-    echo "m_date: $m_date";
 ?>
 
 <!DOCTYPE html>
@@ -102,6 +100,9 @@
 
       echo "</tbody>
           </table>";
+
+      echo "m_date: $m_date";
+      
     ?>
   <br/><br/>
 
