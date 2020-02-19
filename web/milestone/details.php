@@ -456,7 +456,7 @@
                   <input name="milestone_name" value="<?php echo $m_name ?>" type="text"><br/>
                 
                 <label for="milestone_month">Milestone month:</label>
-                  <input name="milestone_month" value="<?php echo  ?>" type="text"><br/>
+                  <input name="milestone_month" value="<?php echo $m_name ?>" type="text"><br/>
                 
                 <label for="birth_last_name">Last name:</label>
                   <input name="birth_last_name"   value="<?php echo $p_last_name ?>"   type="text"><br/>
