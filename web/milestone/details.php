@@ -92,17 +92,14 @@
                 <td>$m_location</td>
                 <td>$m_notes</td>
                 <td>
-                  <a data-toggle='modal' data-target='#modal_updateMilestone'>Update Milestone</button>
+                  <a data-toggle='modal' data-target='#modal_updateMilestone_$m_id'>Update Milestone</button>
                   <a href='delete_milestone.php?delete=$m_id&person=$person_id'>Delete Milestone</a>
                 </td>
               </tr>";
       }
 
       echo "</tbody>
-          </table>";
-
-      echo "m_date: $m_date";
-      
+          </table>";      
     ?>
   <br/><br/>
 
@@ -438,7 +435,7 @@
   <div class="container">
 
     <!-- The Modal -->
-    <div class="modal fade" id="modal_updateMilestone">
+    <div class="modal fade" id="modal_updateMilestone_<?php echo $m_id ?>">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
         
