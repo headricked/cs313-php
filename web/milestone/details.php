@@ -38,8 +38,10 @@
       $p_middle_name = $row_name['middle_name'];
       $p_last_name   = $row_name['last_name'];
       $p_is_male     = $row_name['is_male'];
-      $full_name = $p_first_name . " " . $p_middle_name . " " . $p_last_name;
+      $full_name     = $p_first_name . " " . $p_middle_name . " " . $p_last_name;
     }
+
+    echo "m_date: $m_date";
 ?>
 
 <!DOCTYPE html>
@@ -91,7 +93,10 @@
                 <td>$m_age</td>
                 <td>$m_location</td>
                 <td>$m_notes</td>
-                <td><a href='delete_milestone.php?delete=$m_id&person=$person_id'>Delete Milestone</a></td>
+                <td>
+                  <a data-toggle='modal' data-target='#modal_updateMilestone'>Update Milestone</button>
+                  <a href='delete_milestone.php?delete=$m_id&person=$person_id'>Delete Milestone</a>
+                </td>
               </tr>";
       }
 
@@ -428,8 +433,63 @@
     
   </div>
 
-
   <!-- MODAL EDIT MILESTONE -->
+  <div class="container">
+
+    <!-- The Modal -->
+    <div class="modal fade" id="modal_updateMilestone">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Update Milestone</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          
+          <!-- Modal body -->
+          <div class="modal-body">
+            <section>
+              <form method="POST" action="update_milestone.php?update=<?php echo $m_id ?>&person=<?php echo $person_id ?>">
+
+                <label for="milestone_name">Milestone name:</label>
+                  <input name="milestone_name" value="<?php echo $m_name ?>" type="text"><br/>
+                
+                <label for="milestone_month">Milestone month:</label>
+                  <input name="milestone_month" value="<?php echo  ?>" type="text"><br/>
+                
+                <label for="birth_last_name">Last name:</label>
+                  <input name="birth_last_name"   value="<?php echo $p_last_name ?>"   type="text"><br/>
+    
+                <hr/>
+
+                <label for="birth_gender">Gender:</label><br/>
+
+                  <input name="birth_gender" type="radio" value="male" <?php if ($p_is_male == true){echo ' checked'; } ?>> Male<br>
+                  <input name="birth_gender" type="radio" value="female" <?php if ($p_is_male == false){echo ' checked'; } ?>> Female<br>
+
+                <hr>
+
+                <input type="hidden" name="person_id" value="<?php echo $person_id ?>">
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <input type="submit" class="btn btn-secondary" value="Update">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </form>
+            </section>
+
+          </div>        
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+
+
+  <!-- MODAL EDIT PERSON -->
   <div class="container">
 
     <!-- The Modal -->
