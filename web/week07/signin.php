@@ -67,7 +67,7 @@
 
     ?>
     
-    <h1>Sing in</h1>
+    <h1>Sign in</h1>
     <form id="mainForm" action="welcome.php" method="POST">
         <label for="txtUser">Username</label>
             <input type="text" name="txtUser" id="txtUser" placeholder="Username">
