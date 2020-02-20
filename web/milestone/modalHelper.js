@@ -11,13 +11,13 @@ $('#modal_updateMilestone').on('show.bs.modal', function (event)
 
         var modal  = $(this);
 
-        modal.find('.modal-title').text('New message to ' + p_id);
-        modal.find('.modal-body input').val(m_id);
+        modal.find('#').val(p_id);
+        modal.find('#').val(m_id);
+        modal.find('#').val(m_name);
+        modal.find('#').val(m_date);
+        modal.find('#').val(m_age);
+        modal.find('#').val(m_location);
+        modal.find('#').val(m_notes);
+
     }
 )
-
-{/* <td>$m_name</td>
-<td>$m_date</td>
-<td>$m_age</td>
-<td>$m_location</td>
-<td>$m_notes</td> */}

@@ -92,7 +92,17 @@
                 <td>$m_location</td>
                 <td>$m_notes</td>
                 <td>
-                  <a data-toggle='modal' data-target='#modal_updateMilestone' data-pId='<?php $person_id ?>' data-mId='<?php $m_id ?>'>Update Milestone</a>
+                  <a
+                    data-toggle='modal'
+                    data-target='#modal_updateMilestone'
+                    data-pId='<?php $person_id ?>'
+                    data-mId='<?php $m_id ?>'
+                    data-mName='<?php $m_name ?>'
+                    data-mDate='<?php $m_date ?>'
+                    data-mAge='<?php $m_age ?>'
+                    data-mLocation='<?php $m_location ?>'
+                    data-mNotes='<?php $m_notes ?>'
+                  >Update Milestone</a>
                   <a href='delete_milestone.php?delete=$m_id&person=$person_id'>Delete Milestone</a>
                 </td>
               </tr>";
@@ -450,14 +460,20 @@
             <section>
               <form method="POST" action="update_milestone.php?update=<?php echo $m_id ?>&person=<?php echo $person_id ?>">
 
-                <label for="milestone_name">Milestone name:</label>
-                  <input name="milestone_name" value="<?php echo $m_name ?>" type="text"><br/>
+                <label for="milestone_name">Milestone:</label>
+                  <input name="milestone_name" id="mName" value="" type="text"><br/>
                 
-                <label for="milestone_month">Milestone month:</label>
-                  <input name="milestone_month" value="<?php echo $m_name ?>" type="text"><br/>
+                <label for="milestone_date">Date:</label>
+                  <input name="milestone_date" id="mDate" value="" type="text"><br/>
                 
-                <label for="birth_last_name">Last name:</label>
-                  <input name="birth_last_name"   value="<?php echo $p_last_name ?>"   type="text"><br/>
+                <label for="milestone_age">Age:</label>
+                  <input name="milestone_age" id="mAge" value="" type="text"><br/>
+    
+                <label for="milestone_location">Location:</label>
+                  <input name="milestone_location" id="mLocation" value="" type="text"><br/>
+    
+                <label for="milestone_notes">Notes:</label>
+                  <input name="milestone_notes" id="mNotes" value="" type="text"><br/>
     
                 <hr/>
 
