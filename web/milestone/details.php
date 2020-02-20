@@ -856,5 +856,7 @@
 
   <button type='button' class='btn btn-primary' data-toggle='modal' data-target='#modal_updatePerson'>Update Person</button>
 
+  <script src="modalHelper.js"></script>
+
 </body>
 </html>
