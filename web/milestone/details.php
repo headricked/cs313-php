@@ -95,13 +95,13 @@
                   <a
                     data-toggle='modal'
                     data-target='#modal_updateMilestone'
-                    data-pId='<?php $person_id ?>'
-                    data-mId='<?php $m_id ?>'
-                    data-mName='<?php $m_name ?>'
-                    data-mDate='<?php $m_date ?>'
-                    data-mAge='<?php $m_age ?>'
-                    data-mLocation='<?php $m_location ?>'
-                    data-mNotes='<?php $m_notes ?>'
+                    data-pId='$person_id'
+                    data-mId='$m_id'
+                    data-mName='$m_name'
+                    data-mDate='$m_date'
+                    data-mAge='$m_age'
+                    data-mLocation='$m_location'
+                    data-mNotes='$m_notes'
                   >Update Milestone</a>
                   <a href='delete_milestone.php?delete=$m_id&person=$person_id'>Delete Milestone</a>
                 </td>
