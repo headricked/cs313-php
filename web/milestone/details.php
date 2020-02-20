@@ -475,14 +475,6 @@
                 <label for="milestone_notes">Notes:</label>
                   <input name="milestone_notes" id="mNotes" type="text"><br/>
     
-                <hr/>
-
-                <label for="birth_gender">Gender:</label><br/>
-
-                  <input name="birth_gender" type="radio" value="male" <?php if ($p_is_male == true){echo ' checked'; } ?>> Male<br>
-                  <input name="birth_gender" type="radio" value="female" <?php if ($p_is_male == false){echo ' checked'; } ?>> Female<br>
-
-                <hr>
 
                 <input type="hidden" name="person_id" value="<?php echo $person_id ?>">
 
