@@ -1,6 +1,6 @@
 <?php
 
-    $person_id = htmlspecialchars($_GET['person']);
+    $person_id = htmlspecialchars($_POST['person']);
 
     // echo `person_id: $person_id`;
 
@@ -8,9 +8,9 @@
     $db = get_db();
 
     // Delete a row in the milestone table specified by id
-    if ( isset($_GET['delete']) ) {
+    if ( isset($_POST['delete']) ) {
 
-        $id = htmlspecialchars($_GET['delete']);
+        $id = htmlspecialchars($_POST['delete']);
 
         $sql_delete_milestone = 'DELETE FROM milestone WHERE milestone_id = :id;';
         

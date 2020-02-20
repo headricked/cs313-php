@@ -32,11 +32,11 @@
     // insert milestone into milestone table
     $stmt_milestone = $db->prepare("INSERT INTO milestone (milestone_id, milestone_name, milestone_date, milestone_location, milestone_notes, person_id)
         VALUES (DEFAULT, :milestone_name, :milestone_date, :milestone_location, :milestone_notes, :person_id);");
-    $stmt_milestone->bindValue(':milestone_name',     $milestone_name,  PDO::PARAM_STR);
-    $stmt_milestone->bindValue(':milestone_date',     $milestone_date,  PDO::PARAM_STR);
+    $stmt_milestone->bindValue(':milestone_name',     $milestone_name,     PDO::PARAM_STR);
+    $stmt_milestone->bindValue(':milestone_date',     $milestone_date,     PDO::PARAM_STR);
     $stmt_milestone->bindValue(':milestone_location', $milestone_location, PDO::PARAM_STR);
-    $stmt_milestone->bindValue(':milestone_notes',    $milestone_notes, PDO::PARAM_STR);
-    $stmt_milestone->bindValue(':person_id',          $person_id,       PDO::PARAM_INT);
+    $stmt_milestone->bindValue(':milestone_notes',    $milestone_notes,    PDO::PARAM_STR);
+    $stmt_milestone->bindValue(':person_id',          $person_id,          PDO::PARAM_INT);
     $stmt_milestone->execute();
 
     // $new_page = "details.php";
