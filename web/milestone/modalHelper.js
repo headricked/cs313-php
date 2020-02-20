@@ -11,13 +11,13 @@ $('#modal_updateMilestone').on('show.bs.modal', function (event)
 
         var modal  = $(this);
 
-        modal.find('#').val(p_id);
-        modal.find('#').val(m_id);
-        modal.find('#').val(m_name);
-        modal.find('#').val(m_date);
-        modal.find('#').val(m_age);
-        modal.find('#').val(m_location);
-        modal.find('#').val(m_notes);
+        // modal.find('#').val(p_id);
+        // modal.find('#').val(m_id);
+        modal.find('#mName').val(m_name);
+        modal.find('#mDate').val(m_date);
+        modal.find('#mAge').val(m_age);
+        modal.find('#mLocation').val(m_location);
+        modal.find('#mNotes').val(m_notes);
 
     }
 )
