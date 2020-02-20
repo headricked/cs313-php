@@ -92,7 +92,7 @@
                 <td>$m_location</td>
                 <td>$m_notes</td>
                 <td>
-                  <a data-toggle='modal' data-target='#modal_updateMilestone' data-personid='<?php $person_id ?>' data-milestoneid='<?php $m_id ?>'>Update Milestone</a>
+                  <a data-toggle='modal' data-target='#modal_updateMilestone' data-pId='<?php $person_id ?>' data-mId='<?php $m_id ?>'>Update Milestone</a>
                   <a href='delete_milestone.php?delete=$m_id&person=$person_id'>Delete Milestone</a>
                 </td>
               </tr>";
