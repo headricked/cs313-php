@@ -571,6 +571,8 @@
   <p id="demo"></p>
 
   <script>
+  
+    obj = { "table":"milestone", "limit":1 };
 
     dbParam = JSON.stringify(obj);
 
