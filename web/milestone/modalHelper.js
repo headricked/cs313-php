@@ -19,7 +19,8 @@ $('#modal_updateMilestone').on('show.bs.modal', function (event)
         // modal.find('#mLocation').val(m_location);
         // modal.find('#mNotes').val(m_notes);
 
-        alert('milestone name: ' + m_name);
+        alert('modal: ' + modal);
+        // alert('milestone name: ' + m_name);
 
     }
 )
