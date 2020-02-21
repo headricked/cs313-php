@@ -562,6 +562,40 @@
 
   <button type='button' class='btn btn-primary' data-toggle='modal' data-target='#modal_updatePerson'>Update Person</button>
 
+
+
+<!-- Use JSON.stringify() to convert the JavaScript object into JSON -->
+<!-- Get data as JSON from a PHP file on the server -->
+
+  <h2>JSON data from database table 'milestone':</h2>
+  <p id="demo"></p>
+
+  <script>
+
+    dbParam = JSON.stringify(obj);
+
+    xmlhttp = new XMLHttpRequest();
+
+    xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        myObj = JSON.parse(this.responseText);
+        
+        for (x in myObj) {
+          txt += myObj[x].name + "<br>";
+        }
+
+        document.getElementById("demo").innerHTML = txt;
+      }
+    };
+
+    xmlhttp.open("POST", "json_demo_db_post.php", true);
+    xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xmlhttp.send("x=" + dbParam);
+    
+  </script>
+
+
+
   <script src="modalHelper.js"></script>
 
 </body>

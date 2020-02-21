@@ -108,7 +108,7 @@ WITH theEvent AS (
   AS person_age, milestone_location, milestone_notes
   FROM theEvent;
 
--- milstones for marty george mcfly
+-- milstones for user with person_id = 2
 WITH theEvent AS (
   SELECT * FROM milestone
   INNER JOIN person
@@ -125,3 +125,8 @@ UPDATE person
       last_name   = 'Moore',
       is_male     = 'false'
   WHERE person_id = 10;
+
+SELECT milestone_id, milestone_name, milestone_date, milestone_location, milestone_notes, person_id
+  FROM milestone
+  WHERE person_id = 3
+  AND milestone_id = 43;
