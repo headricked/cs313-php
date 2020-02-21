@@ -94,7 +94,7 @@
                 <td>
                   <a
                     data-toggle='modal'
-                    data-target='#modal_updateMilestone'
+                    href='#modal_updateMilestone'
                     data-pId='$person_id'
                     data-mId='$m_id'
                     data-mName='$m_name'
