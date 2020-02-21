@@ -462,19 +462,19 @@
 
                 <label for="milestone_name">Milestone:</label>
                   <input name="milestone_name" id="mName" type="text"><br/>
-                
-                <label for="milestone_date">Date:</label>
+
+                <!-- <label for="milestone_date">Date:</label>
                   <input name="milestone_date" id="mDate" type="text"><br/>
-                
+
                 <label for="milestone_age">Age:</label>
                   <input name="milestone_age" id="mAge" type="text"><br/>
-    
+
                 <label for="milestone_location">Location:</label>
                   <input name="milestone_location" id="mLocation" type="text"><br/>
-    
+
                 <label for="milestone_notes">Notes:</label>
-                  <input name="milestone_notes" id="mNotes" type="text"><br/>
-    
+                  <input name="milestone_notes" id="mNotes" type="text"><br/> -->
+
 
                 <input type="hidden" name="person_id" value="<?php echo $person_id ?>">
 
