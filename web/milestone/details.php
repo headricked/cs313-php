@@ -72,6 +72,7 @@
                 <th>Location</th>
                 <th>Notes</th>
                 <th></th>
+                <th></th>
               </tr>
             </thead>
             <tbody>";
@@ -103,6 +104,8 @@
                     data-mLocation='$m_location'
                     data-mNotes='$m_notes'
                   >Update</a>
+                </td>
+                <td>
                   <a href='delete_milestone.php?delete=$m_id&person=$person_id'>Delete</a>
                 </td>
               </tr>";
