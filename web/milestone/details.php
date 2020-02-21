@@ -94,15 +94,15 @@
                 <td>$m_notes</td>
                 <td>
                   <a
-                    data-toggle='modal'
-                    href='#modal_updateMilestone'
-                    data-pId='$person_id'
-                    data-mId='$m_id'
-                    data-mName='$m_name'
-                    data-mDate='$m_date'
-                    data-mAge='$m_age'
-                    data-mLocation='$m_location'
-                    data-mNotes='$m_notes'
+                    data-toggle='modal' 
+                    href='#modal_updateMilestone' 
+                    data-pId='$person_id' 
+                    data-mId='$m_id' 
+                    data-mName='$m_name' 
+                    data-mDate='$m_date' 
+                    data-mAge='$m_age' 
+                    data-mLocation='$m_location' 
+                    data-mNotes='$m_notes' 
                   >Update</a>
                 </td>
                 <td>
