@@ -21,7 +21,7 @@
     $stmt->bind_param("ss", $obj->table, $obj->limit);
     $stmt->execute();
     $result = $stmt->get_result();
-    $outp = $result->fetch_all(MYSQLI_ASSOC);
+    $outp = $result->fetch(PDO::FETCH_ASSOC);
 
     echo json_encode($outp);
 ?>
