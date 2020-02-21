@@ -102,8 +102,8 @@
                     data-mAge='$m_age'
                     data-mLocation='$m_location'
                     data-mNotes='$m_notes'
-                  >Update Milestone</a>
-                  <a href='delete_milestone.php?delete=$m_id&person=$person_id'>Delete Milestone</a>
+                  >Update</a>
+                  <a href='delete_milestone.php?delete=$m_id&person=$person_id'>Delete</a>
                 </td>
               </tr>";
       }
