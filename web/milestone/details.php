@@ -567,8 +567,8 @@
 <!-- Use JSON.stringify() to convert the JavaScript object into JSON -->
 <!-- Get data as JSON from a PHP file on the server -->
 
-  <h2>JSON data from database table 'milestone':</h2>
-  <p id="demo"></p>
+  <!-- <h2>JSON data from database table 'milestone':</h2>
+  <p id="demo"></p> -->
 
   <!-- <script>
   
