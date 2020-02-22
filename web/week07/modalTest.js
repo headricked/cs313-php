@@ -16,7 +16,7 @@ $('#exampleModal').on('show.bs.modal', function (event)
 
         // modal.find('.modal-body textarea').val(recipient + "Doody");
 
-        modal.find('#mNotes).val(two);
+        modal.find('#mNotes').val(two);
         
     }
 )
