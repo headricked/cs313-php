@@ -466,8 +466,7 @@
               <form method="POST" action="update_milestone.php?update=<?php echo $m_id ?>&person=<?php echo $person_id ?>">
 
                 <label for="milestone_name">Milestone:</label>
-                  <input name="milestone_name" id="mName" type="text"><br/>
-
+                  <input type="text" id="mName" name="milestone_name"><br/>
                 <!-- <label for="milestone_date">Date:</label>
                   <input name="milestone_date" id="mDate" type="text"><br/>
 
