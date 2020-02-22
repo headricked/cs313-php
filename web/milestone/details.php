@@ -570,7 +570,7 @@
   <h2>JSON data from database table 'milestone':</h2>
   <p id="demo"></p>
 
-  <script>
+  <!-- <script>
   
     obj = { "table":"milestone", "limit":1 };
 
@@ -595,7 +595,7 @@
     xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xmlhttp.send("x=" + dbParam);
     
-  </script>
+  </script> -->
 
 
 
