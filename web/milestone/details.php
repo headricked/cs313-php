@@ -87,11 +87,11 @@
 
         // echo "<p><strong><a href='week05_team_scripture_details.php?scripture_id=$id'>$book $chapter:$verse</a></strong><p>";
         echo "<tr>
-                <td>$m_name</td>
-                <td>$m_date</td>
-                <td>$m_age</td>
-                <td>$m_location</td>
-                <td>$m_notes</td>
+                <td id='milestoneName'>$m_name</td>
+                <td id='milestoneDate'>$m_date</td>
+                <td id='milestoneAge'>$m_age</td>
+                <td id='milestoneLocation'>$m_location</td>
+                <td id='milestoneNotes'>$m_notes</td>
                 <td>
                   <a
                     data-toggle='modal' 
@@ -579,6 +579,7 @@
     xmlhttp = new XMLHttpRequest();
 
     xmlhttp.onreadystatechange = function() {
+      alert('enter xmlhttp.onreadystatechange function');
       if (this.readyState == 4 && this.status == 200) {
         myObj = JSON.parse(this.responseText);
         
