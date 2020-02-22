@@ -2,7 +2,7 @@ $('#exampleModal').on('show.bs.modal', function (event)
     {
         var button = $(event.relatedTarget); // Button that triggered the modal
         var one = button.data('mname'); // Extract info from data-* attributes
-        var two = button.data('whatever2'); // Extract info from data-* attributes
+        var two = button.data('mNotes'); // Extract info from data-* attributes
         var three = button.data('whatever3'); // Extract info from data-* attributes
 
         // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
