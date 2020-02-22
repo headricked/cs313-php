@@ -471,8 +471,8 @@
                 <label for="milestone_date">Date:</label>
                   <input name="milestone_date" id="mDate" type="text"><br/>
 
-                <label for="milestone_age">Age:</label>
-                  <input name="milestone_age" id="mAge" type="text"><br/>
+                <!-- <label for="milestone_age">Age:</label>
+                  <input name="milestone_age" id="mAge" type="text"><br/> -->
 
                 <label for="milestone_location">Location:</label>
                   <input name="milestone_location" id="mLocation" type="text"><br/>
