@@ -9,6 +9,8 @@ $('#modal_updateMilestone').on('show.bs.modal', function (event)
         // var m_location = a.data('mLocation'); // Extract info from data-mLocation attributes
         // var m_notes    = a.data('mNotes'); // Extract info from data-mNotes attributes
 
+        alert('a: ' + a);
+
         var modal  = $(this);
 
         // modal.find('#').val(p_id);
