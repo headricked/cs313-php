@@ -1,6 +1,6 @@
 $('#modal_updateMilestone').on('show.bs.modal', function (event)
     {
-        var a     = $(event.relatedTarget.val); // Anchor (link) that triggered the modal
+        var a     = $(event.relatedTarget); // Anchor (link) that triggered the modal
         // var p_id       = a.data('pId'); // Extract info from data-pId attributes
         // var m_id       = a.data('mId'); // Extract info from data-mId attributes
         var m_name     = a.data('mName'); // Extract info from data-mName attributes
