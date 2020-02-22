@@ -581,7 +581,7 @@
     xmlhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
         myObj = JSON.parse(this.responseText);
-        alert('Hello');
+        alert('this.readyState: ' + this.readyState);
 
         for (x in myObj) {
           txt += myObj[x].name + "<br>";
