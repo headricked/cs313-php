@@ -593,7 +593,7 @@
     xmlhttp.open("POST", "json_demo_db_post.php", true);
     xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     // xmlhttp.send("x=" + dbParam);
-    xmlhttp.send(dbParam);
+    xmlhttp.send();
     
   </script>
 
