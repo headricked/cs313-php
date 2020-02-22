@@ -85,7 +85,7 @@
         $m_location = $row_milestone['milestone_location'];
         $m_notes    = $row_milestone['milestone_notes'];
 
-        alert('$m_name: ' + $m_name);
+        echo('$m_name: ' . $m_name);
 
         // echo "<p><strong><a href='week05_team_scripture_details.php?scripture_id=$id'>$book $chapter:$verse</a></strong><p>";
         echo "<tr>
