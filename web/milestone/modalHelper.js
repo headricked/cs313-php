@@ -1,13 +1,13 @@
 $('#modal_updateMilestone').on('show.bs.modal', function (event)
     {
-        var button     = $(event.relatedTarget); // Button that triggered the modal
-        // var p_id       = button.data('pId'); // Extract info from data-pId attributes
-        // var m_id       = button.data('mId'); // Extract info from data-mId attributes
-        var m_name     = button.data('mName'); // Extract info from data-mName attributes
-        // var m_date     = button.data('mDate'); // Extract info from data-mDate attributes
-        // var m_age      = button.data('mAge'); // Extract info from data-mAge attributes
-        // var m_location = button.data('mLocation'); // Extract info from data-mLocation attributes
-        // var m_notes    = button.data('mNotes'); // Extract info from data-mNotes attributes
+        var a     = $(event.relatedTarget); // Anchor (link) that triggered the modal
+        // var p_id       = a.data('pId'); // Extract info from data-pId attributes
+        // var m_id       = a.data('mId'); // Extract info from data-mId attributes
+        var m_name     = a.data('mName'); // Extract info from data-mName attributes
+        // var m_date     = a.data('mDate'); // Extract info from data-mDate attributes
+        // var m_age      = a.data('mAge'); // Extract info from data-mAge attributes
+        // var m_location = a.data('mLocation'); // Extract info from data-mLocation attributes
+        // var m_notes    = a.data('mNotes'); // Extract info from data-mNotes attributes
 
         var modal  = $(this);
 
@@ -19,7 +19,7 @@ $('#modal_updateMilestone').on('show.bs.modal', function (event)
         // modal.find('#mLocation').val(m_location);
         // modal.find('#mNotes').val(m_notes);
 
-        alert("button.data('mName'): " + button.data('mName'));
+        alert("a.data('mName'): " + a.data('mName'));
         // alert('milestone name: ' + m_name);
 
     }
