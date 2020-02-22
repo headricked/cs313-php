@@ -7,9 +7,9 @@ $('#exampleModal').on('show.bs.modal', function (event)
         var modal = $(this);
         modal.find('.modal-title').text('New message to ' + recipient);
         // modal.find('.modal-body input').val(recipient);
-        modal.find('#recipient-name').val(recipient + "Howdy!");
+        modal.find('#recipient-name').val(recipient);
         // modal.find('.modal-body textarea').val(recipient + "Doody");
-        modal.find('#message-text').val(recipient + "Doody");
+        modal.find('#message-text').val(recipient);
         
     }
 )
