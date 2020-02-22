@@ -3,7 +3,7 @@ $('#modal_updateMilestone').on('show.bs.modal', function (event)
         var a     = $(event.relatedTarget); // Anchor (link) that triggered the modal
         // var p_id       = a.data('pId'); // Extract info from data-pId attributes
         // var m_id       = a.data('mId'); // Extract info from data-mId attributes
-        var m_name     = a.data('mName'); // Extract info from data-mName attributes
+        var m_name     = a.data('m_name'); // Extract info from data-mName attributes
         // var m_date     = a.data('mDate'); // Extract info from data-mDate attributes
         // var m_age      = a.data('mAge'); // Extract info from data-mAge attributes
         // var m_location = a.data('mLocation'); // Extract info from data-mLocation attributes

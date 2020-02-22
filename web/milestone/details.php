@@ -98,13 +98,13 @@
                   <a
                     data-toggle='modal' 
                     href='#modal_updateMilestone' 
-                    data-pId='$person_id' 
-                    data-mId='$m_id' 
-                    data-mName='$m_name' 
-                    data-mDate='$m_date' 
-                    data-mAge='$m_age' 
-                    data-mLocation='$m_location' 
-                    data-mNotes='$m_notes' 
+                    data-p_id='$person_id' 
+                    data-m_id='$m_id' 
+                    data-m_name='$m_name' 
+                    data-m_date='$m_date' 
+                    data-m_age='$m_age' 
+                    data-m_location='$m_location' 
+                    data-m_notes='$m_notes' 
                   >Update</a>
                 </td>
                 <td>
