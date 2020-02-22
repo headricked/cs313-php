@@ -463,7 +463,7 @@
           <!-- Modal body -->
           <div class="modal-body">
             <section>
-              <form method="POST" action="update_milestone.php?update=<?php echo $m_id ?>&person=<?php echo $person_id ?>">
+              <form method="POST" action="update_milestone.php?milestone_id=<?php echo $m_id ?>&person=<?php echo $person_id ?>">
 
                 <label for="milestone_name">Milestone:</label>
                   <input type="text" id="mName" name="milestone_name"><br/>
@@ -481,6 +481,7 @@
                   <input name="milestone_notes" id="mNotes" type="text"><br/>
 
 
+                <input type="hidden" name="milestone_id" value="<?php echo $m_id ?>">
                 <input type="hidden" name="person_id" value="<?php echo $person_id ?>">
 
                 <!-- Modal footer -->

@@ -1,10 +1,10 @@
 <?php
 
     if (!isset($_GET['update'])) {
-        die('Error: milestone_id not specified.');
+        die('Error: person_id not specified.');
     }
-    $milestone_id = htmlspecialchars($_GET['update']);
-    // $person_id = htmlspecialchars($_GET['person_id']);
+    $milestone_id = htmlspecialchars($_GET['milestone_id']);
+    $person_id = htmlspecialchars($_GET['person_id']);
 
 
     echo "milestone_id: $milestone_id";
