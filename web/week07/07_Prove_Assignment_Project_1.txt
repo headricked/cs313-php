@@ -17,7 +17,7 @@ b) update a user
 c) delete a user
 d) add a milestone
 e) update a milestone
-f) deletee a milestone
+f) delete a milestone
 
 6. Briefly describe any pieces of the assignment that are not yet working correctly.
 The update a milestone function is not working exactly how it should. When a milestone is updated, it is overwriting another record in the database; specifically, it appears to be overwriting the earliest milestone of the given person.
