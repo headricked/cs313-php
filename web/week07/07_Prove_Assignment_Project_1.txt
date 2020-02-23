@@ -1,0 +1,23 @@
+1. Project Title / One sentence description:
+Milestone application / This web application allows the user enter milestone information for individual people.
+
+2. The Heroku URL for your web application:
+https://floating-headland-29156.herokuapp.com/milestone/index.php
+
+3. The GitHub URL for your source code repository:
+https://github.com/headricked/cs313-php/tree/master/web/milestone
+
+4. A link to the SQL file that contains the commands used to create your tables (e.g. a link to the myDb.sql file at GitHub, or something similar).
+https://github.com/headricked/cs313-php/blob/master/db/myDb.sql
+
+5. Please provide a brief description of what your project does and how to use the application. Make sure to include any required information like a username and password.
+The application allows the user to record and display person and milestone data. The user can carry out the following functions:
+a) add a user
+b) update a user
+c) delete a user
+d) add a milestone
+e) update a milestone
+f) deletee a milestone
+
+6. Briefly describe any pieces of the assignment that are not yet working correctly.
+The update a milestone function is not working exactly how it should. When a milestone is updated, it is overwriting another record in the database; specifically, it appears to be overwriting the earliest milestone of the given person.
