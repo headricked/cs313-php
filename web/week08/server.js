@@ -23,13 +23,7 @@ function onRequest(req, res) {
         res.end();
     }
     else if (req.url === '/getData') {
-        let jsonData = `{
-                            "firstName":"David",
-                            "lastName":"Headrick",
-                            "school":"Brigham Young University - Idaho",
-                            "major":"Software Engineering",
-                            "course":"cs313"
-                        }`;
+        let jsonData = `{"firstName":"David","lastName":"Headrick","school":"Brigham Young University - Idaho","major":"Software Engineering","course":"cs313"}`;
 
         res.writeHead(200, { "Content-Type": "application/json" });
 
