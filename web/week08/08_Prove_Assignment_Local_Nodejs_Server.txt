@@ -1,0 +1,11 @@
+0. Don't forget to also upload your javascript file to the assignment dropbox in I-Learn: Done
+
+1. Briefly describe any pieces of the assignment that are not yet working correctly: All requirements are functioning correctly.
+
+2. Briefly describe the "coolest" thing you learned while completing this assignment: The coolest thing that I learned was the ability to create a local server and to use JavaScript as a server-side language to serve requests.
+
+3. Describe anything you did to go above and beyond with this assignment: I tried to get the contents of the JSON file to display to the page, but, despite my efforts, I couldn't figure it out.
+
+4. Please select the category you feel best describes your assignment: 4 - Meets requirements
+
+5. Provide a brief justification (1-2 sentences) for selecting that category: I was able to meet the requirements. I tried to get the contents of the JSON file to display to the page, but, despite my efforts, I couldn't figure it out.
