@@ -1,0 +1,22 @@
+1. Copy and paste the URL for your web application:
+https://mysterious-shore-83940.herokuapp.com/form_rateCalc.html
+
+2. Copy and paste the URL for your source code repository (e.g., GitHub):
+https://github.com/headricked/node-js-getting-started
+
+3. Briefly list and describe the elements of the application that are functioning. Include any special instructions about how to login and/or use your application.
+The Node.js Express server is functioning as expected. The web form elements are functioning as expected. The calculation logic is functioning as expected.
+
+4. Briefly describe any pieces of the assignment that are not yet working correctly.
+I was unable to validate the user input successfully. I was also unable to reference the local stylesheets, so instead, I referenced external Bootstrap stylesheets.
+
+5. Briefly describe the "coolest" thing you learned while completing this assignment.
+The coolest the thing I learned while completing the assignment was the ability to host a local server. Also, it was cool to learn that the variable values could be injected into the HTML using the <%= variable %> notation.
+
+6. In your own words, briefly describe the concept of a callback function and why it is useful.
+A callback function is a function passed in as a parameter of another function.
+
+7. Please select the category you feel best describes your assignment: 5 - Shows creativity and excels above and beyond requirements
+
+8. Provide a brief justification (1-2 sentences) for selecting that category.
+Above meeting the requirements, I was able to add some style to the HTML to make the pages more visually appealing.
