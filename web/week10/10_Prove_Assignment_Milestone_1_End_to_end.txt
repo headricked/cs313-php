@@ -13,7 +13,7 @@ I was able to make an AJAX/Fetch/HTTP request to the database, and return data f
 5. Please select the category you feel best describes your assignment: 4 - Meets requirements
 
 6. Provide a brief justification (1-2 sentences) for selecting that category.
-Starting from the user interface, the clicks on a button that causes an AJAX request to be made to the Node.js server, which queries my Postgresql data layer, returns that information back in a response, which is handled by client-side code in the the browser to render a result to the user.
+Starting from the user interface, the user clicks on a button that causes an AJAX request to be made to the Node.js server, which queries my Postgresql data layer, returns that information back in a response, which is handled by client-side code in the the browser to render a result to the user.
 
 7. Please list any questions you have for the instructor regarding this assignment or this week's topic.
 Getting this far was challenging. I'm not sure what to do next. Should I create a class to store locally the status of a visited state?
