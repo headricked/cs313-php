@@ -1,0 +1,26 @@
+1. Project Title / One sentence description:
+States Visited Tracker: this application will allow the user to record U.S. states visited, displaying a map of the U.S. and the visited states.
+
+2. Copy and paste the URL for your web application (if applicable):
+https://limitless-shelf-86699.herokuapp.com/scriptures.html
+
+3. Copy and paste the URL for your source code repository (e.g., GitHub):
+https://github.com/headricked/state-visit-tracker
+
+4. Describe the functionality that is currently working, along with any special instructions of how to use your web application:
+I was able to make an AJAX/Fetch/HTTP request to the database, and return data from the database to the same page. I was able to use JavaScript to render the data nicely on the web page. I was able to dynamically add stylized toggle inputs (checkboxes) next to each state name.
+
+5. Describe the features that are not yet working correctly.
+I have yet to do the following:
+(a) formulate a query that will display all of the states and the current status (visited/not-visited).
+(b) formulate a POST query that will update the database after the user has changed the status of the state (visited/not-visited).
+(c) incorporate the U.S. map that will change dynamically based on state status (visited/not-visited).
+
+6. Please select the category you feel best describes your assignment: 4 - Meets requirements
+
+7. Provide a brief justification (1-2 sentences) for selecting that category.
+Starting from the user interface, the user clicks on a button that causes an AJAX request to be made to the Node.js server, which queries my Postgresql data layer, returns more complete information back in a response, which is handled by client-side code in the the browser to render a result to the user.
+
+8. Please list any questions you have for the instructor regarding this assignment or this week's topic.
+Am I doing my database schema correctly? I'm not sure that I have the correct tables. Perhaps there is a better way to keep track of U.S. states and whether or not they were visited? Right now I have three tables: (1) states, (2) person, (3) visited.
+I'm also unsure of how I'm going to get the user input (toggle) to update the database accordingly.
